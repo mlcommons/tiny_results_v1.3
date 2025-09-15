@@ -1,0 +1,597 @@
+{
+    "activation_encodings": {
+        "activation/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 7.362586498260498,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.028872888228472542
+            }
+        ],
+        "activation_1/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 11.737337112426758,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.04602877298990885
+            }
+        ],
+        "activation_10/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 9.272418975830078,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.03636242735619639
+            }
+        ],
+        "activation_11/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 7.672763347625732,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.030089268029904834
+            }
+        ],
+        "activation_12/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 8.99140453338623,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.03526040993484796
+            }
+        ],
+        "activation_13/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 9.070928573608398,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.035572268916111364
+            }
+        ],
+        "activation_14/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 7.186668395996094,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.02818301331763174
+            }
+        ],
+        "activation_15/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 11.570239067077637,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.04537348653755936
+            }
+        ],
+        "activation_16/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 7.043710708618164,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.027622394935757508
+            }
+        ],
+        "activation_17/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 8.903757095336914,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.03491669449151731
+            }
+        ],
+        "activation_18/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 5.782271862030029,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.022675575929529526
+            }
+        ],
+        "activation_19/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 11.139382362365723,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.04368385240143421
+            }
+        ],
+        "activation_2/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 12.19102668762207,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.04780794779459636
+            }
+        ],
+        "activation_20/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 5.635626316070557,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.022100495357139437
+            }
+        ],
+        "activation_21/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 11.302641868591309,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.044324085759181606
+            }
+        ],
+        "activation_22/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 4.942949295043945,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.019384114882525276
+            }
+        ],
+        "activation_23/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 7.307196617126465,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.02865567300833908
+            }
+        ],
+        "activation_24/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 6.782601833343506,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.026598438562131396
+            }
+        ],
+        "activation_25/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 8.784849166870117,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.03445038888968673
+            }
+        ],
+        "activation_26/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 5.775091648101807,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.022647418227850224
+            }
+        ],
+        "activation_3/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 9.697189331054688,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.03802819345511642
+            }
+        ],
+        "activation_4/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 8.778738021850586,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.034426423615100336
+            }
+        ],
+        "activation_5/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 12.241799354553223,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.04800705629236558
+            }
+        ],
+        "activation_6/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 12.646632194519043,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.049594636056937424
+            }
+        ],
+        "activation_7/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 9.578261375427246,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.037561809315400964
+            }
+        ],
+        "activation_8/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 9.426839828491211,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.03696799932741651
+            }
+        ],
+        "activation_9/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 8.04699993133545,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.031556862475825294
+            }
+        ],
+        "average_pooling2d/AvgPool": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.5584518909454346,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.006111576042923273
+            }
+        ],
+        "dense/BiasAdd": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 2.334538459777832,
+                "min": -2.352920652374508,
+                "offset": -128,
+                "scale": 0.018382192596675843
+            }
+        ],
+        "dense/Softmax": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "False",
+                "max": 2.342832215627035,
+                "min": -2.1155425230662024,
+                "offset": -121.0,
+                "scale": 0.01748382250467936
+            }
+        ],
+        "input_1": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.0,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.00392156862745098
+            }
+        ]
+    },
+    "param_encodings": {
+        "conv2d/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 2.0797278881073,
+                "min": -2.096103698249877,
+                "offset": -128,
+                "scale": 0.016375810142577163
+            }
+        ],
+        "conv2d_1/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.1923832893371582,
+                "min": -1.2017721341350887,
+                "offset": -128,
+                "scale": 0.00938884479793038
+            }
+        ],
+        "conv2d_10/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.790188193321228,
+                "min": -0.7964101475993479,
+                "offset": -128,
+                "scale": 0.006221954278119906
+            }
+        ],
+        "conv2d_11/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.6204512119293213,
+                "min": -0.625336654542938,
+                "offset": -128,
+                "scale": 0.004885442613616703
+            }
+        ],
+        "conv2d_12/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.5244808197021484,
+                "min": -0.5286105899360236,
+                "offset": -128,
+                "scale": 0.0041297702338751845
+            }
+        ],
+        "conv2d_13/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.7321895360946655,
+                "min": -1.7458288237804502,
+                "offset": -128,
+                "scale": 0.01363928768578477
+            }
+        ],
+        "conv2d_2/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.2711398601531982,
+                "min": -1.2811488354299951,
+                "offset": -128,
+                "scale": 0.010008975276796837
+            }
+        ],
+        "conv2d_3/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.2090935707092285,
+                "min": -1.2186139925258366,
+                "offset": -128,
+                "scale": 0.009520421816608098
+            }
+        ],
+        "conv2d_4/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.1089879274368286,
+                "min": -1.117720115841843,
+                "offset": -128,
+                "scale": 0.008732188405014399
+            }
+        ],
+        "conv2d_5/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.9150481224060059,
+                "min": -0.9222532257320374,
+                "offset": -128,
+                "scale": 0.007205103326031543
+            }
+        ],
+        "conv2d_6/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.9702132940292358,
+                "min": -0.9778527687853715,
+                "offset": -128,
+                "scale": 0.007639474756135715
+            }
+        ],
+        "conv2d_7/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.7052836418151855,
+                "min": -0.7108370563176674,
+                "offset": -128,
+                "scale": 0.005553414502481776
+            }
+        ],
+        "conv2d_8/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.6171104311943054,
+                "min": -0.6219695684478039,
+                "offset": -128,
+                "scale": 0.004859137253498468
+            }
+        ],
+        "conv2d_9/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.0944361686706543,
+                "min": -1.1030537762979822,
+                "offset": -128,
+                "scale": 0.008617607627327988
+            }
+        ],
+        "dense/kernel/transpose": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.5994767546653748,
+                "min": -0.6041970440721888,
+                "offset": -128,
+                "scale": 0.004720289406813974
+            }
+        ],
+        "depthwise_conv2d/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 7.1115498542785645,
+                "min": -7.167546309824065,
+                "offset": -128,
+                "scale": 0.055996455545500506
+            }
+        ],
+        "depthwise_conv2d_1/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 2.1300888061523438,
+                "min": -2.146861158956693,
+                "offset": -128,
+                "scale": 0.01677235280434916
+            }
+        ],
+        "depthwise_conv2d_10/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 10.030354499816895,
+                "min": -10.10933366910679,
+                "offset": -128,
+                "scale": 0.0789791692898968
+            }
+        ],
+        "depthwise_conv2d_11/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 9.087533950805664,
+                "min": -9.15908933624508,
+                "offset": -128,
+                "scale": 0.07155538543941468
+            }
+        ],
+        "depthwise_conv2d_12/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 15.605137825012207,
+                "min": -15.728012925996556,
+                "offset": -128,
+                "scale": 0.12287510098434809
+            }
+        ],
+        "depthwise_conv2d_2/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 3.427678346633911,
+                "min": -3.454667939914493,
+                "offset": -128,
+                "scale": 0.02698959328058198
+            }
+        ],
+        "depthwise_conv2d_3/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.5131171941757202,
+                "min": -1.525031502791277,
+                "offset": -128,
+                "scale": 0.011914308615556852
+            }
+        ],
+        "depthwise_conv2d_4/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 2.322603940963745,
+                "min": -2.340892160971334,
+                "offset": -128,
+                "scale": 0.018288220007588545
+            }
+        ],
+        "depthwise_conv2d_5/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 10.348688125610352,
+                "min": -10.430173858882874,
+                "offset": -128,
+                "scale": 0.08148573327252245
+            }
+        ],
+        "depthwise_conv2d_6/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 9.675719261169434,
+                "min": -9.751906027005413,
+                "offset": -128,
+                "scale": 0.07618676583597979
+            }
+        ],
+        "depthwise_conv2d_7/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 11.672470092773438,
+                "min": -11.764379306102363,
+                "offset": -128,
+                "scale": 0.09190921332892471
+            }
+        ],
+        "depthwise_conv2d_8/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 10.235599517822266,
+                "min": -10.316194789616143,
+                "offset": -128,
+                "scale": 0.0805952717938761
+            }
+        ],
+        "depthwise_conv2d_9/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 12.697174072265625,
+                "min": -12.797151820866143,
+                "offset": -128,
+                "scale": 0.09997774860051672
+            }
+        ]
+    },
+    "version": "0.5.0"
+}

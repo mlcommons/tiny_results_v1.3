@@ -1,0 +1,1815 @@
+Logging initialized. Writing output to sessions\20250803_211111\log.txt
+Initializing SerialDevice on port: COM31 at 921600 baud
+SerialDevice entering port COM31, entry_count (before increment) = 0
+Retrieving name from DUT ...
+Device name retrieved: STMicroelectronics
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+Device model retrieved: ic01
+SerialDevice exiting port COM31, entry_count (before decrement) = 1
+SerialDevice entering port COM31, entry_count (before increment) = 0
+No loop count specified.  Using full set (200 test files)
+0803.211113 ulp-mlperf: Loading file emu_s_002009.bin segment 0
+0803.211114 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211114 ulp-mlperf: Performance results for window 1:
+0803.211114 ulp-mlperf:   # Inferences :             1
+0803.211114 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211114 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211114 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.004, 0.0, 0.621, 0.0, 0.371, 0.0, 0.0]
+0803.211114 ulp-mlperf: Loading file taxi_s_001241.bin segment 0
+0803.211114 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211114 ulp-mlperf: Performance results for window 2:
+0803.211114 ulp-mlperf:   # Inferences :             1
+0803.211114 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211114 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211114 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211114 ulp-mlperf: Loading file accentor_s_001031.bin segment 0
+0803.211114 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211114 ulp-mlperf: Performance results for window 3:
+0803.211114 ulp-mlperf:   # Inferences :             1
+0803.211114 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211114 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211114 ulp-mlperf:   m-results    : [0.004, 0.0, 0.098, 0.324, 0.07, 0.051, 0.457, 0.0, 0.0, 0.0]
+0803.211114 ulp-mlperf: Loading file mongrel_s_000686.bin segment 0
+0803.211114 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211114 ulp-mlperf: Performance results for window 4:
+0803.211114 ulp-mlperf:   # Inferences :             1
+0803.211114 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211114 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211114 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.148, 0.0, 0.832, 0.004, 0.012, 0.0, 0.0]
+0803.211114 ulp-mlperf: Loading file stealth_bomber_s_002204.bin segment 0
+0803.211115 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211115 ulp-mlperf: Performance results for window 5:
+0803.211115 ulp-mlperf:   # Inferences :             1
+0803.211115 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211115 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211115 ulp-mlperf:   m-results    : [0.906, 0.0, 0.0, 0.0, 0.023, 0.0, 0.059, 0.008, 0.0, 0.0]
+0803.211115 ulp-mlperf: Loading file dama_dama_s_000007.bin segment 0
+0803.211115 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211115 ulp-mlperf: Performance results for window 6:
+0803.211115 ulp-mlperf:   # Inferences :             1
+0803.211115 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211115 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211115 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.992, 0.004, 0.0, 0.0, 0.0, 0.0]
+0803.211115 ulp-mlperf: Loading file blenheim_spaniel_s_000355.bin segment 0
+0803.211115 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211115 ulp-mlperf: Performance results for window 7:
+0803.211115 ulp-mlperf:   # Inferences :             1
+0803.211115 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211115 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211115 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0]
+0803.211115 ulp-mlperf: Loading file muntjac_s_001495.bin segment 0
+0803.211115 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211115 ulp-mlperf: Performance results for window 8:
+0803.211115 ulp-mlperf:   # Inferences :             1
+0803.211115 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211115 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211115 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.77, 0.0, 0.0, 0.23, 0.0, 0.0]
+0803.211115 ulp-mlperf: Loading file station_wagon_s_002096.bin segment 0
+0803.211116 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211116 ulp-mlperf: Performance results for window 9:
+0803.211116 ulp-mlperf:   # Inferences :             1
+0803.211116 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211116 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211116 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211116 ulp-mlperf: Loading file alley_cat_s_001902.bin segment 0
+0803.211116 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211116 ulp-mlperf: Performance results for window 10:
+0803.211116 ulp-mlperf:   # Inferences :             1
+0803.211116 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211116 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211116 ulp-mlperf:   m-results    : [0.016, 0.004, 0.016, 0.059, 0.0, 0.0, 0.902, 0.0, 0.0, 0.0]
+0803.211116 ulp-mlperf: Loading file fighter_aircraft_s_001537.bin segment 0
+0803.211116 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211116 ulp-mlperf: Performance results for window 11:
+0803.211116 ulp-mlperf:   # Inferences :             1
+0803.211116 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211116 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211116 ulp-mlperf:   m-results    : [0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211116 ulp-mlperf: Loading file puppy_s_000654.bin segment 0
+0803.211116 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211117 ulp-mlperf: Performance results for window 12:
+0803.211117 ulp-mlperf:   # Inferences :             1
+0803.211117 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211117 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211117 ulp-mlperf:   m-results    : [0.0, 0.004, 0.0, 0.082, 0.0, 0.906, 0.004, 0.0, 0.0, 0.004]
+0803.211117 ulp-mlperf: Loading file tennessee_walker_s_000353.bin segment 0
+0803.211117 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211117 ulp-mlperf: Performance results for window 13:
+0803.211117 ulp-mlperf:   # Inferences :             1
+0803.211117 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211117 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211117 ulp-mlperf:   m-results    : [0.023, 0.016, 0.0, 0.004, 0.023, 0.027, 0.0, 0.895, 0.0, 0.012]
+0803.211117 ulp-mlperf: Loading file american_elk_s_001535.bin segment 0
+0803.211117 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211117 ulp-mlperf: Performance results for window 14:
+0803.211117 ulp-mlperf:   # Inferences :             1
+0803.211117 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211117 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211117 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.973, 0.0, 0.0, 0.027, 0.0, 0.0]
+0803.211117 ulp-mlperf: Loading file trailer_truck_s_000002.bin segment 0
+0803.211117 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211117 ulp-mlperf: Performance results for window 15:
+0803.211117 ulp-mlperf:   # Inferences :             1
+0803.211117 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211117 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211117 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211117 ulp-mlperf: Loading file tomcat_s_000123.bin segment 0
+0803.211118 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211118 ulp-mlperf: Performance results for window 16:
+0803.211118 ulp-mlperf:   # Inferences :             1
+0803.211118 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211118 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211118 ulp-mlperf:   m-results    : [0.0, 0.0, 0.043, 0.953, 0.0, 0.0, 0.004, 0.0, 0.0, 0.0]
+0803.211118 ulp-mlperf: Loading file ostrich_s_000571.bin segment 0
+0803.211118 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211118 ulp-mlperf: Performance results for window 17:
+0803.211118 ulp-mlperf:   # Inferences :             1
+0803.211118 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211118 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211118 ulp-mlperf:   m-results    : [0.043, 0.012, 0.418, 0.09, 0.016, 0.004, 0.176, 0.09, 0.0, 0.148]
+0803.211118 ulp-mlperf: Loading file pekingese_s_001557.bin segment 0
+0803.211118 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211118 ulp-mlperf: Performance results for window 18:
+0803.211118 ulp-mlperf:   # Inferences :             1
+0803.211118 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211118 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211118 ulp-mlperf:   m-results    : [0.004, 0.004, 0.008, 0.48, 0.0, 0.48, 0.02, 0.0, 0.0, 0.008]
+0803.211118 ulp-mlperf: Loading file rana_cascadae_s_000003.bin segment 0
+0803.211118 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211119 ulp-mlperf: Performance results for window 19:
+0803.211119 ulp-mlperf:   # Inferences :             1
+0803.211119 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211119 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211119 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.004, 0.0, 0.992, 0.0, 0.0, 0.0]
+0803.211119 ulp-mlperf: Loading file wapiti_s_001247.bin segment 0
+0803.211119 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211119 ulp-mlperf: Performance results for window 20:
+0803.211119 ulp-mlperf:   # Inferences :             1
+0803.211119 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211119 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211119 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211119 ulp-mlperf: Loading file cervus_elaphus_s_000997.bin segment 0
+0803.211119 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211119 ulp-mlperf: Performance results for window 21:
+0803.211119 ulp-mlperf:   # Inferences :             1
+0803.211119 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211119 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211119 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211119 ulp-mlperf: Loading file convertible_s_000457.bin segment 0
+0803.211119 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211119 ulp-mlperf: Performance results for window 22:
+0803.211119 ulp-mlperf:   # Inferences :             1
+0803.211119 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211119 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211119 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211119 ulp-mlperf: Loading file convertible_s_000890.bin segment 0
+0803.211120 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211120 ulp-mlperf: Performance results for window 23:
+0803.211120 ulp-mlperf:   # Inferences :             1
+0803.211120 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211120 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211120 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211120 ulp-mlperf: Loading file merchant_ship_s_001766.bin segment 0
+0803.211120 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211120 ulp-mlperf: Performance results for window 24:
+0803.211120 ulp-mlperf:   # Inferences :             1
+0803.211120 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211120 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211120 ulp-mlperf:   m-results    : [0.094, 0.0, 0.035, 0.0, 0.133, 0.0, 0.0, 0.0, 0.738, 0.004]
+0803.211120 ulp-mlperf: Loading file king_charles_spaniel_s_000003.bin segment 0
+0803.211120 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211120 ulp-mlperf: Performance results for window 25:
+0803.211120 ulp-mlperf:   # Inferences :             1
+0803.211120 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211120 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211120 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.184, 0.0, 0.512, 0.0, 0.305, 0.0, 0.0]
+0803.211120 ulp-mlperf: Loading file tipper_truck_s_001753.bin segment 0
+0803.211120 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211120 ulp-mlperf: Performance results for window 26:
+0803.211120 ulp-mlperf:   # Inferences :             1
+0803.211120 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211120 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211120 ulp-mlperf:   m-results    : [0.0, 0.023, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.977]
+0803.211121 ulp-mlperf: Loading file passenger_ship_s_002208.bin segment 0
+0803.211121 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211121 ulp-mlperf: Performance results for window 27:
+0803.211121 ulp-mlperf:   # Inferences :             1
+0803.211121 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211121 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211121 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211121 ulp-mlperf: Loading file cervus_elaphus_s_001039.bin segment 0
+0803.211121 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211121 ulp-mlperf: Performance results for window 28:
+0803.211121 ulp-mlperf:   # Inferences :             1
+0803.211121 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211121 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211121 ulp-mlperf:   m-results    : [0.0, 0.0, 0.004, 0.0, 0.984, 0.0, 0.012, 0.0, 0.0, 0.0]
+0803.211121 ulp-mlperf: Loading file arabian_s_001271.bin segment 0
+0803.211121 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211121 ulp-mlperf: Performance results for window 29:
+0803.211121 ulp-mlperf:   # Inferences :             1
+0803.211121 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211121 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211121 ulp-mlperf:   m-results    : [0.012, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.988, 0.0, 0.0]
+0803.211121 ulp-mlperf: Loading file arabian_s_002049.bin segment 0
+0803.211121 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211122 ulp-mlperf: Performance results for window 30:
+0803.211122 ulp-mlperf:   # Inferences :             1
+0803.211122 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211122 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211122 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.004, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211122 ulp-mlperf: Loading file cock_s_000054.bin segment 0
+0803.211122 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211122 ulp-mlperf: Performance results for window 31:
+0803.211122 ulp-mlperf:   # Inferences :             1
+0803.211122 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211122 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211122 ulp-mlperf:   m-results    : [0.0, 0.0, 0.234, 0.098, 0.0, 0.461, 0.0, 0.195, 0.0, 0.008]
+0803.211122 ulp-mlperf: Loading file muntjac_s_000528.bin segment 0
+0803.211122 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211122 ulp-mlperf: Performance results for window 32:
+0803.211122 ulp-mlperf:   # Inferences :             1
+0803.211122 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211122 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211122 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.004, 0.992, 0.0, 0.004, 0.0, 0.0, 0.0]
+0803.211122 ulp-mlperf: Loading file police_cruiser_s_000784.bin segment 0
+0803.211122 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211122 ulp-mlperf: Performance results for window 33:
+0803.211122 ulp-mlperf:   # Inferences :             1
+0803.211122 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211122 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211122 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211122 ulp-mlperf: Loading file bullfrog_s_000013.bin segment 0
+0803.211123 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211123 ulp-mlperf: Performance results for window 34:
+0803.211123 ulp-mlperf:   # Inferences :             1
+0803.211123 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211123 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211123 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.035, 0.004, 0.0, 0.957, 0.0, 0.0, 0.0]
+0803.211123 ulp-mlperf: Loading file truck_s_001115.bin segment 0
+0803.211123 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211123 ulp-mlperf: Performance results for window 35:
+0803.211123 ulp-mlperf:   # Inferences :             1
+0803.211123 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211123 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211123 ulp-mlperf:   m-results    : [0.109, 0.004, 0.016, 0.0, 0.0, 0.0, 0.152, 0.0, 0.0, 0.719]
+0803.211123 ulp-mlperf: Loading file rhea_americana_s_000047.bin segment 0
+0803.211123 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211123 ulp-mlperf: Performance results for window 36:
+0803.211123 ulp-mlperf:   # Inferences :             1
+0803.211123 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211123 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211123 ulp-mlperf:   m-results    : [0.0, 0.0, 0.012, 0.0, 0.0, 0.0, 0.984, 0.0, 0.0, 0.0]
+0803.211123 ulp-mlperf: Loading file biplane_s_000032.bin segment 0
+0803.211123 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211124 ulp-mlperf: Performance results for window 37:
+0803.211124 ulp-mlperf:   # Inferences :             1
+0803.211124 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211124 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211124 ulp-mlperf:   m-results    : [0.914, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.004, 0.012, 0.07]
+0803.211124 ulp-mlperf: Loading file station_wagon_s_002543.bin segment 0
+0803.211124 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211124 ulp-mlperf: Performance results for window 38:
+0803.211124 ulp-mlperf:   # Inferences :             1
+0803.211124 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211124 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211124 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211124 ulp-mlperf: Loading file stag_s_000985.bin segment 0
+0803.211124 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211124 ulp-mlperf: Performance results for window 39:
+0803.211124 ulp-mlperf:   # Inferences :             1
+0803.211124 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211124 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211124 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211124 ulp-mlperf: Loading file walking_horse_s_001755.bin segment 0
+0803.211124 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211124 ulp-mlperf: Performance results for window 40:
+0803.211124 ulp-mlperf:   # Inferences :             1
+0803.211124 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211124 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211124 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.004, 0.0, 0.996, 0.0, 0.0]
+0803.211124 ulp-mlperf: Loading file freighter_s_001090.bin segment 0
+0803.211125 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211125 ulp-mlperf: Performance results for window 41:
+0803.211125 ulp-mlperf:   # Inferences :             1
+0803.211125 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211125 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211125 ulp-mlperf:   m-results    : [0.004, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211125 ulp-mlperf: Loading file lorry_s_002019.bin segment 0
+0803.211125 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211125 ulp-mlperf: Performance results for window 42:
+0803.211125 ulp-mlperf:   # Inferences :             1
+0803.211125 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211125 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211125 ulp-mlperf:   m-results    : [0.004, 0.008, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.004, 0.984]
+0803.211125 ulp-mlperf: Loading file iceboat_s_000293.bin segment 0
+0803.211125 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211125 ulp-mlperf: Performance results for window 43:
+0803.211125 ulp-mlperf:   # Inferences :             1
+0803.211125 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211125 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211125 ulp-mlperf:   m-results    : [0.027, 0.0, 0.004, 0.0, 0.0, 0.0, 0.0, 0.0, 0.969, 0.0]
+0803.211125 ulp-mlperf: Loading file stealth_fighter_s_000397.bin segment 0
+0803.211125 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211125 ulp-mlperf: Performance results for window 44:
+0803.211125 ulp-mlperf:   # Inferences :             1
+0803.211125 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211125 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211125 ulp-mlperf:   m-results    : [0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211125 ulp-mlperf: Loading file rana_temporaria_s_001366.bin segment 0
+0803.211126 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211126 ulp-mlperf: Performance results for window 45:
+0803.211126 ulp-mlperf:   # Inferences :             1
+0803.211126 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211126 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211126 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211126 ulp-mlperf: Loading file pekingese_s_002210.bin segment 0
+0803.211126 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211126 ulp-mlperf: Performance results for window 46:
+0803.211126 ulp-mlperf:   # Inferences :             1
+0803.211126 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211126 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211126 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.129, 0.0, 0.867, 0.0, 0.0, 0.004, 0.0]
+0803.211126 ulp-mlperf: Loading file auto_s_001172.bin segment 0
+0803.211126 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211126 ulp-mlperf: Performance results for window 47:
+0803.211126 ulp-mlperf:   # Inferences :             1
+0803.211126 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211126 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211126 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211126 ulp-mlperf: Loading file sambar_s_000303.bin segment 0
+0803.211126 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211127 ulp-mlperf: Performance results for window 48:
+0803.211127 ulp-mlperf:   # Inferences :             1
+0803.211127 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211127 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211127 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211127 ulp-mlperf: Loading file bird_s_000558.bin segment 0
+0803.211127 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211127 ulp-mlperf: Performance results for window 49:
+0803.211127 ulp-mlperf:   # Inferences :             1
+0803.211127 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211127 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211127 ulp-mlperf:   m-results    : [0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211127 ulp-mlperf: Loading file stud_mare_s_000978.bin segment 0
+0803.211127 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211127 ulp-mlperf: Performance results for window 50:
+0803.211127 ulp-mlperf:   # Inferences :             1
+0803.211127 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211127 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211127 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211127 ulp-mlperf: Loading file freighter_s_000063.bin segment 0
+0803.211127 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211127 ulp-mlperf: Performance results for window 51:
+0803.211127 ulp-mlperf:   # Inferences :             1
+0803.211127 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211127 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211127 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211127 ulp-mlperf: Loading file passenger_ship_s_001728.bin segment 0
+0803.211128 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211128 ulp-mlperf: Performance results for window 52:
+0803.211128 ulp-mlperf:   # Inferences :             1
+0803.211128 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211128 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211128 ulp-mlperf:   m-results    : [0.004, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211128 ulp-mlperf: Loading file bufo_bufo_s_000332.bin segment 0
+0803.211128 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211128 ulp-mlperf: Performance results for window 53:
+0803.211128 ulp-mlperf:   # Inferences :             1
+0803.211128 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211128 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211128 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211128 ulp-mlperf: Loading file house_cat_s_000190.bin segment 0
+0803.211128 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211128 ulp-mlperf: Performance results for window 54:
+0803.211128 ulp-mlperf:   # Inferences :             1
+0803.211128 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211128 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211128 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.25, 0.0, 0.496, 0.0, 0.25, 0.0, 0.0]
+0803.211128 ulp-mlperf: Loading file wagon_s_001634.bin segment 0
+0803.211128 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211128 ulp-mlperf: Performance results for window 55:
+0803.211128 ulp-mlperf:   # Inferences :             1
+0803.211128 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211128 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211128 ulp-mlperf:   m-results    : [0.0, 0.004, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211129 ulp-mlperf: Loading file japanese_spaniel_s_000006.bin segment 0
+0803.211129 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211129 ulp-mlperf: Performance results for window 56:
+0803.211129 ulp-mlperf:   # Inferences :             1
+0803.211129 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211129 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211129 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0]
+0803.211129 ulp-mlperf: Loading file house_cat_s_000385.bin segment 0
+0803.211129 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211129 ulp-mlperf: Performance results for window 57:
+0803.211129 ulp-mlperf:   # Inferences :             1
+0803.211129 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211129 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211129 ulp-mlperf:   m-results    : [0.805, 0.0, 0.004, 0.172, 0.0, 0.0, 0.0, 0.02, 0.0, 0.0]
+0803.211129 ulp-mlperf: Loading file ostrich_s_002220.bin segment 0
+0803.211129 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211129 ulp-mlperf: Performance results for window 58:
+0803.211129 ulp-mlperf:   # Inferences :             1
+0803.211129 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211129 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211129 ulp-mlperf:   m-results    : [0.02, 0.0, 0.367, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.613]
+0803.211129 ulp-mlperf: Loading file tennessee_walker_s_000914.bin segment 0
+0803.211129 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211130 ulp-mlperf: Performance results for window 59:
+0803.211130 ulp-mlperf:   # Inferences :             1
+0803.211130 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211130 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211130 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.199, 0.012, 0.0, 0.789, 0.0, 0.0]
+0803.211130 ulp-mlperf: Loading file domestic_dog_s_000447.bin segment 0
+0803.211130 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211130 ulp-mlperf: Performance results for window 60:
+0803.211130 ulp-mlperf:   # Inferences :             1
+0803.211130 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211130 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211130 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.203, 0.676, 0.121, 0.0, 0.0, 0.0, 0.0]
+0803.211130 ulp-mlperf: Loading file japanese_spaniel_s_000025.bin segment 0
+0803.211130 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211130 ulp-mlperf: Performance results for window 61:
+0803.211130 ulp-mlperf:   # Inferences :             1
+0803.211130 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211130 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211130 ulp-mlperf:   m-results    : [0.0, 0.0, 0.793, 0.027, 0.0, 0.141, 0.0, 0.031, 0.0, 0.004]
+0803.211130 ulp-mlperf: Loading file stealth_fighter_s_000807.bin segment 0
+0803.211130 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211130 ulp-mlperf: Performance results for window 62:
+0803.211130 ulp-mlperf:   # Inferences :             1
+0803.211130 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211130 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211130 ulp-mlperf:   m-results    : [0.652, 0.0, 0.0, 0.0, 0.195, 0.0, 0.141, 0.0, 0.012, 0.0]
+0803.211130 ulp-mlperf: Loading file stud_mare_s_000611.bin segment 0
+0803.211131 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211131 ulp-mlperf: Performance results for window 63:
+0803.211131 ulp-mlperf:   # Inferences :             1
+0803.211131 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211131 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211131 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211131 ulp-mlperf: Loading file crapaud_s_001521.bin segment 0
+0803.211131 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211131 ulp-mlperf: Performance results for window 64:
+0803.211131 ulp-mlperf:   # Inferences :             1
+0803.211131 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211131 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211131 ulp-mlperf:   m-results    : [0.0, 0.0, 0.004, 0.199, 0.0, 0.0, 0.793, 0.0, 0.0, 0.0]
+0803.211131 ulp-mlperf: Loading file arabian_s_001976.bin segment 0
+0803.211131 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211131 ulp-mlperf: Performance results for window 65:
+0803.211131 ulp-mlperf:   # Inferences :             1
+0803.211131 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211131 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211131 ulp-mlperf:   m-results    : [0.0, 0.797, 0.0, 0.0, 0.0, 0.0, 0.0, 0.199, 0.0, 0.0]
+0803.211131 ulp-mlperf: Loading file dump_truck_s_000692.bin segment 0
+0803.211131 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211132 ulp-mlperf: Performance results for window 66:
+0803.211132 ulp-mlperf:   # Inferences :             1
+0803.211132 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211132 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211132 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211132 ulp-mlperf: Loading file truck_s_000064.bin segment 0
+0803.211132 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211132 ulp-mlperf: Performance results for window 67:
+0803.211132 ulp-mlperf:   # Inferences :             1
+0803.211132 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211132 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211132 ulp-mlperf:   m-results    : [0.0, 0.008, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.992]
+0803.211132 ulp-mlperf: Loading file gelding_s_000561.bin segment 0
+0803.211132 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211132 ulp-mlperf: Performance results for window 68:
+0803.211132 ulp-mlperf:   # Inferences :             1
+0803.211132 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211132 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211132 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211132 ulp-mlperf: Loading file rana_temporaria_s_000299.bin segment 0
+0803.211132 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211132 ulp-mlperf: Performance results for window 69:
+0803.211132 ulp-mlperf:   # Inferences :             1
+0803.211132 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211132 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211132 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211132 ulp-mlperf: Loading file barking_frog_s_000042.bin segment 0
+0803.211132 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211133 ulp-mlperf: Performance results for window 70:
+0803.211133 ulp-mlperf:   # Inferences :             1
+0803.211133 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211133 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211133 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.98, 0.0, 0.0, 0.016]
+0803.211133 ulp-mlperf: Loading file coupe_s_001831.bin segment 0
+0803.211133 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211133 ulp-mlperf: Performance results for window 71:
+0803.211133 ulp-mlperf:   # Inferences :             1
+0803.211133 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211133 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211133 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.004]
+0803.211133 ulp-mlperf: Loading file domestic_cat_s_001925.bin segment 0
+0803.211133 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211133 ulp-mlperf: Performance results for window 72:
+0803.211133 ulp-mlperf:   # Inferences :             1
+0803.211133 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211133 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211133 ulp-mlperf:   m-results    : [0.0, 0.0, 0.004, 0.406, 0.012, 0.0, 0.574, 0.0, 0.0, 0.0]
+0803.211133 ulp-mlperf: Loading file dredger_s_001602.bin segment 0
+0803.211133 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211133 ulp-mlperf: Performance results for window 73:
+0803.211133 ulp-mlperf:   # Inferences :             1
+0803.211133 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211133 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211133 ulp-mlperf:   m-results    : [0.023, 0.0, 0.008, 0.0, 0.012, 0.0, 0.0, 0.0, 0.957, 0.0]
+0803.211133 ulp-mlperf: Loading file wagon_s_001104.bin segment 0
+0803.211134 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211134 ulp-mlperf: Performance results for window 74:
+0803.211134 ulp-mlperf:   # Inferences :             1
+0803.211134 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211134 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211134 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211134 ulp-mlperf: Loading file appaloosa_s_001590.bin segment 0
+0803.211134 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211134 ulp-mlperf: Performance results for window 75:
+0803.211134 ulp-mlperf:   # Inferences :             1
+0803.211134 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211134 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211134 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211134 ulp-mlperf: Loading file pontoon_s_000606.bin segment 0
+0803.211134 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211134 ulp-mlperf: Performance results for window 76:
+0803.211134 ulp-mlperf:   # Inferences :             1
+0803.211134 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211134 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211134 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211134 ulp-mlperf: Loading file tabby_s_001714.bin segment 0
+0803.211134 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211134 ulp-mlperf: Performance results for window 77:
+0803.211134 ulp-mlperf:   # Inferences :             1
+0803.211134 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211134 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211134 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211135 ulp-mlperf: Loading file liberty_ship_s_000312.bin segment 0
+0803.211135 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211135 ulp-mlperf: Performance results for window 78:
+0803.211135 ulp-mlperf:   # Inferences :             1
+0803.211135 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211135 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211135 ulp-mlperf:   m-results    : [0.008, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.988, 0.0]
+0803.211135 ulp-mlperf: Loading file fawn_s_001630.bin segment 0
+0803.211135 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211135 ulp-mlperf: Performance results for window 79:
+0803.211135 ulp-mlperf:   # Inferences :             1
+0803.211135 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211135 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211135 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211135 ulp-mlperf: Loading file propeller_plane_s_000183.bin segment 0
+0803.211135 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211135 ulp-mlperf: Performance results for window 80:
+0803.211135 ulp-mlperf:   # Inferences :             1
+0803.211135 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211135 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211135 ulp-mlperf:   m-results    : [0.973, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.027, 0.0]
+0803.211135 ulp-mlperf: Loading file domestic_cat_s_001793.bin segment 0
+0803.211135 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211136 ulp-mlperf: Performance results for window 81:
+0803.211136 ulp-mlperf:   # Inferences :             1
+0803.211136 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211136 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211136 ulp-mlperf:   m-results    : [0.0, 0.0, 0.012, 0.148, 0.004, 0.824, 0.0, 0.012, 0.0, 0.0]
+0803.211136 ulp-mlperf: Loading file domestic_cat_s_000360.bin segment 0
+0803.211136 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211136 ulp-mlperf: Performance results for window 82:
+0803.211136 ulp-mlperf:   # Inferences :             1
+0803.211136 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211136 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211136 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211136 ulp-mlperf: Loading file maltese_dog_s_000318.bin segment 0
+0803.211136 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211136 ulp-mlperf: Performance results for window 83:
+0803.211136 ulp-mlperf:   # Inferences :             1
+0803.211136 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211136 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211136 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.457, 0.0, 0.543, 0.0, 0.0, 0.0, 0.0]
+0803.211136 ulp-mlperf: Loading file mouser_s_000320.bin segment 0
+0803.211136 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211136 ulp-mlperf: Performance results for window 84:
+0803.211136 ulp-mlperf:   # Inferences :             1
+0803.211136 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211136 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211136 ulp-mlperf:   m-results    : [0.0, 0.0, 0.012, 0.453, 0.004, 0.0, 0.535, 0.0, 0.0, 0.0]
+0803.211136 ulp-mlperf: Loading file lapdog_s_001872.bin segment 0
+0803.211137 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211137 ulp-mlperf: Performance results for window 85:
+0803.211137 ulp-mlperf:   # Inferences :             1
+0803.211137 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211137 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211137 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0]
+0803.211137 ulp-mlperf: Loading file cassowary_s_001156.bin segment 0
+0803.211137 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211137 ulp-mlperf: Performance results for window 86:
+0803.211137 ulp-mlperf:   # Inferences :             1
+0803.211137 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211137 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211137 ulp-mlperf:   m-results    : [0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211137 ulp-mlperf: Loading file tipper_truck_s_001239.bin segment 0
+0803.211137 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211137 ulp-mlperf: Performance results for window 87:
+0803.211137 ulp-mlperf:   # Inferences :             1
+0803.211137 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211137 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211137 ulp-mlperf:   m-results    : [0.0, 0.004, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211137 ulp-mlperf: Loading file felis_catus_s_000404.bin segment 0
+0803.211137 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211137 ulp-mlperf: Performance results for window 88:
+0803.211137 ulp-mlperf:   # Inferences :             1
+0803.211137 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211137 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211137 ulp-mlperf:   m-results    : [0.0, 0.0, 0.246, 0.695, 0.039, 0.012, 0.004, 0.0, 0.0, 0.0]
+0803.211137 ulp-mlperf: Loading file estate_car_s_000363.bin segment 0
+0803.211138 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211138 ulp-mlperf: Performance results for window 89:
+0803.211138 ulp-mlperf:   # Inferences :             1
+0803.211138 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211138 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211138 ulp-mlperf:   m-results    : [0.0, 0.992, 0.0, 0.0, 0.0, 0.0, 0.008, 0.0, 0.0, 0.0]
+0803.211138 ulp-mlperf: Loading file broodmare_s_000816.bin segment 0
+0803.211138 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211138 ulp-mlperf: Performance results for window 90:
+0803.211138 ulp-mlperf:   # Inferences :             1
+0803.211138 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211138 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211138 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211138 ulp-mlperf: Loading file dawn_horse_s_001180.bin segment 0
+0803.211138 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211138 ulp-mlperf: Performance results for window 91:
+0803.211138 ulp-mlperf:   # Inferences :             1
+0803.211138 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211138 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211138 ulp-mlperf:   m-results    : [0.0, 0.0, 0.875, 0.004, 0.0, 0.0, 0.078, 0.039, 0.0, 0.0]
+0803.211138 ulp-mlperf: Loading file cat_s_001955.bin segment 0
+0803.211139 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211139 ulp-mlperf: Performance results for window 92:
+0803.211139 ulp-mlperf:   # Inferences :             1
+0803.211139 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211139 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211139 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211139 ulp-mlperf: Loading file pekingese_s_000793.bin segment 0
+0803.211139 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211139 ulp-mlperf: Performance results for window 93:
+0803.211139 ulp-mlperf:   # Inferences :             1
+0803.211139 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211139 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211139 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.027, 0.0, 0.969, 0.004, 0.004, 0.0, 0.0]
+0803.211139 ulp-mlperf: Loading file felis_catus_s_000115.bin segment 0
+0803.211139 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211139 ulp-mlperf: Performance results for window 94:
+0803.211139 ulp-mlperf:   # Inferences :             1
+0803.211139 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211139 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211139 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211139 ulp-mlperf: Loading file green_frog_s_001434.bin segment 0
+0803.211139 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211140 ulp-mlperf: Performance results for window 95:
+0803.211140 ulp-mlperf:   # Inferences :             1
+0803.211140 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211140 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211140 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211140 ulp-mlperf: Loading file puppy_s_002012.bin segment 0
+0803.211140 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211140 ulp-mlperf: Performance results for window 96:
+0803.211140 ulp-mlperf:   # Inferences :             1
+0803.211140 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211140 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211140 ulp-mlperf:   m-results    : [0.0, 0.0, 0.113, 0.016, 0.016, 0.223, 0.625, 0.004, 0.0, 0.0]
+0803.211140 ulp-mlperf: Loading file bird_s_000229.bin segment 0
+0803.211140 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211140 ulp-mlperf: Performance results for window 97:
+0803.211140 ulp-mlperf:   # Inferences :             1
+0803.211140 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211140 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211140 ulp-mlperf:   m-results    : [0.043, 0.0, 0.672, 0.0, 0.0, 0.0, 0.0, 0.0, 0.285, 0.0]
+0803.211140 ulp-mlperf: Loading file anthus_pratensis_s_000055.bin segment 0
+0803.211140 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211140 ulp-mlperf: Performance results for window 98:
+0803.211140 ulp-mlperf:   # Inferences :             1
+0803.211140 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211140 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211140 ulp-mlperf:   m-results    : [0.0, 0.0, 0.992, 0.0, 0.008, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211140 ulp-mlperf: Loading file dog_s_000740.bin segment 0
+0803.211140 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211141 ulp-mlperf: Performance results for window 99:
+0803.211141 ulp-mlperf:   # Inferences :             1
+0803.211141 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211141 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211141 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.02, 0.0, 0.98, 0.0, 0.0, 0.0, 0.0]
+0803.211141 ulp-mlperf: Loading file passenger_ship_s_001606.bin segment 0
+0803.211141 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211141 ulp-mlperf: Performance results for window 100:
+0803.211141 ulp-mlperf:   # Inferences :             1
+0803.211141 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211141 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211141 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211141 ulp-mlperf: Loading file attack_aircraft_s_000571.bin segment 0
+0803.211141 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211141 ulp-mlperf: Performance results for window 101:
+0803.211141 ulp-mlperf:   # Inferences :             1
+0803.211141 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211141 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211141 ulp-mlperf:   m-results    : [0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211141 ulp-mlperf: Loading file quarter_horse_s_000500.bin segment 0
+0803.211141 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211141 ulp-mlperf: Performance results for window 102:
+0803.211141 ulp-mlperf:   # Inferences :             1
+0803.211141 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211141 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211141 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211141 ulp-mlperf: Loading file trucking_rig_s_001395.bin segment 0
+0803.211142 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211142 ulp-mlperf: Performance results for window 103:
+0803.211142 ulp-mlperf:   # Inferences :             1
+0803.211142 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211142 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211142 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.004, 0.0, 0.996]
+0803.211142 ulp-mlperf: Loading file stealth_bomber_s_001550.bin segment 0
+0803.211142 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211142 ulp-mlperf: Performance results for window 104:
+0803.211142 ulp-mlperf:   # Inferences :             1
+0803.211142 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211142 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211142 ulp-mlperf:   m-results    : [0.004, 0.133, 0.004, 0.527, 0.266, 0.0, 0.004, 0.0, 0.055, 0.0]
+0803.211142 ulp-mlperf: Loading file leopard_frog_s_001170.bin segment 0
+0803.211142 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211142 ulp-mlperf: Performance results for window 105:
+0803.211142 ulp-mlperf:   # Inferences :             1
+0803.211142 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211142 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211142 ulp-mlperf:   m-results    : [0.008, 0.004, 0.035, 0.07, 0.332, 0.0, 0.555, 0.0, 0.0, 0.0]
+0803.211142 ulp-mlperf: Loading file coupe_s_000456.bin segment 0
+0803.211142 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211143 ulp-mlperf: Performance results for window 106:
+0803.211143 ulp-mlperf:   # Inferences :             1
+0803.211143 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211143 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211143 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211143 ulp-mlperf: Loading file pipit_s_001762.bin segment 0
+0803.211143 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211143 ulp-mlperf: Performance results for window 107:
+0803.211143 ulp-mlperf:   # Inferences :             1
+0803.211143 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211143 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211143 ulp-mlperf:   m-results    : [0.098, 0.008, 0.453, 0.113, 0.191, 0.0, 0.082, 0.0, 0.047, 0.004]
+0803.211143 ulp-mlperf: Loading file bullfrog_s_000196.bin segment 0
+0803.211143 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211143 ulp-mlperf: Performance results for window 108:
+0803.211143 ulp-mlperf:   # Inferences :             1
+0803.211143 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211143 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211143 ulp-mlperf:   m-results    : [0.0, 0.0, 0.004, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211143 ulp-mlperf: Loading file twinjet_s_000024.bin segment 0
+0803.211143 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211143 ulp-mlperf: Performance results for window 109:
+0803.211143 ulp-mlperf:   # Inferences :             1
+0803.211143 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211143 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211143 ulp-mlperf:   m-results    : [0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211143 ulp-mlperf: Loading file camion_s_001422.bin segment 0
+0803.211143 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211144 ulp-mlperf: Performance results for window 110:
+0803.211144 ulp-mlperf:   # Inferences :             1
+0803.211144 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211144 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211144 ulp-mlperf:   m-results    : [0.004, 0.195, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.02, 0.781]
+0803.211144 ulp-mlperf: Loading file fire_engine_s_001608.bin segment 0
+0803.211144 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211144 ulp-mlperf: Performance results for window 111:
+0803.211144 ulp-mlperf:   # Inferences :             1
+0803.211144 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211144 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211144 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211144 ulp-mlperf: Loading file fire_truck_s_000774.bin segment 0
+0803.211144 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211144 ulp-mlperf: Performance results for window 112:
+0803.211144 ulp-mlperf:   # Inferences :             1
+0803.211144 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211144 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211144 ulp-mlperf:   m-results    : [0.0, 0.887, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.113]
+0803.211144 ulp-mlperf: Loading file mutt_s_000099.bin segment 0
+0803.211144 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211144 ulp-mlperf: Performance results for window 113:
+0803.211144 ulp-mlperf:   # Inferences :             1
+0803.211144 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211144 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211144 ulp-mlperf:   m-results    : [0.004, 0.0, 0.0, 0.027, 0.0, 0.953, 0.0, 0.012, 0.0, 0.008]
+0803.211144 ulp-mlperf: Loading file nandu_s_001738.bin segment 0
+0803.211145 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211145 ulp-mlperf: Performance results for window 114:
+0803.211145 ulp-mlperf:   # Inferences :             1
+0803.211145 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211145 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211145 ulp-mlperf:   m-results    : [0.0, 0.0, 0.77, 0.008, 0.059, 0.0, 0.164, 0.0, 0.0, 0.0]
+0803.211145 ulp-mlperf: Loading file police_cruiser_s_000113.bin segment 0
+0803.211145 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211145 ulp-mlperf: Performance results for window 115:
+0803.211145 ulp-mlperf:   # Inferences :             1
+0803.211145 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211145 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211145 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211145 ulp-mlperf: Loading file monoplane_s_000012.bin segment 0
+0803.211145 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211145 ulp-mlperf: Performance results for window 116:
+0803.211145 ulp-mlperf:   # Inferences :             1
+0803.211145 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211145 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211145 ulp-mlperf:   m-results    : [0.297, 0.074, 0.004, 0.148, 0.004, 0.012, 0.0, 0.039, 0.211, 0.211]
+0803.211145 ulp-mlperf: Loading file bufo_viridis_s_000198.bin segment 0
+0803.211145 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211145 ulp-mlperf: Performance results for window 117:
+0803.211145 ulp-mlperf:   # Inferences :             1
+0803.211145 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211145 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211145 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.004, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211145 ulp-mlperf: Loading file sea_boat_s_001161.bin segment 0
+0803.211146 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211146 ulp-mlperf: Performance results for window 118:
+0803.211146 ulp-mlperf:   # Inferences :             1
+0803.211146 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211146 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211146 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211146 ulp-mlperf: Loading file fighter_aircraft_s_000386.bin segment 0
+0803.211146 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211146 ulp-mlperf: Performance results for window 119:
+0803.211146 ulp-mlperf:   # Inferences :             1
+0803.211146 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211146 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211146 ulp-mlperf:   m-results    : [0.562, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.398, 0.02, 0.02]
+0803.211146 ulp-mlperf: Loading file mule_deer_s_000451.bin segment 0
+0803.211146 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211146 ulp-mlperf: Performance results for window 120:
+0803.211146 ulp-mlperf:   # Inferences :             1
+0803.211146 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211146 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211146 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211146 ulp-mlperf: Loading file deer_s_001711.bin segment 0
+0803.211146 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211147 ulp-mlperf: Performance results for window 121:
+0803.211147 ulp-mlperf:   # Inferences :             1
+0803.211147 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211147 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211147 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211147 ulp-mlperf: Loading file stealth_fighter_s_000584.bin segment 0
+0803.211147 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211147 ulp-mlperf: Performance results for window 122:
+0803.211147 ulp-mlperf:   # Inferences :             1
+0803.211147 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211147 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211147 ulp-mlperf:   m-results    : [0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211147 ulp-mlperf: Loading file songbird_s_001048.bin segment 0
+0803.211147 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211147 ulp-mlperf: Performance results for window 123:
+0803.211147 ulp-mlperf:   # Inferences :             1
+0803.211147 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211147 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211147 ulp-mlperf:   m-results    : [0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211147 ulp-mlperf: Loading file fighter_aircraft_s_001370.bin segment 0
+0803.211147 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211147 ulp-mlperf: Performance results for window 124:
+0803.211147 ulp-mlperf:   # Inferences :             1
+0803.211147 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211147 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211147 ulp-mlperf:   m-results    : [0.996, 0.0, 0.004, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211147 ulp-mlperf: Loading file laundry_truck_s_000491.bin segment 0
+0803.211148 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211148 ulp-mlperf: Performance results for window 125:
+0803.211148 ulp-mlperf:   # Inferences :             1
+0803.211148 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211148 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211148 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211148 ulp-mlperf: Loading file leopard_frog_s_000216.bin segment 0
+0803.211148 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211148 ulp-mlperf: Performance results for window 126:
+0803.211148 ulp-mlperf:   # Inferences :             1
+0803.211148 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211148 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211148 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211148 ulp-mlperf: Loading file pickerel_frog_s_000341.bin segment 0
+0803.211148 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211148 ulp-mlperf: Performance results for window 127:
+0803.211148 ulp-mlperf:   # Inferences :             1
+0803.211148 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211148 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211148 ulp-mlperf:   m-results    : [0.0, 0.004, 0.004, 0.004, 0.0, 0.0, 0.957, 0.0, 0.0, 0.031]
+0803.211148 ulp-mlperf: Loading file stealth_fighter_s_000883.bin segment 0
+0803.211148 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211149 ulp-mlperf: Performance results for window 128:
+0803.211149 ulp-mlperf:   # Inferences :             1
+0803.211149 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211149 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211149 ulp-mlperf:   m-results    : [0.926, 0.016, 0.043, 0.004, 0.004, 0.008, 0.0, 0.0, 0.0, 0.0]
+0803.211149 ulp-mlperf: Loading file dumper_s_000309.bin segment 0
+0803.211149 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211149 ulp-mlperf: Performance results for window 129:
+0803.211149 ulp-mlperf:   # Inferences :             1
+0803.211149 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211149 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211149 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211149 ulp-mlperf: Loading file biplane_s_001810.bin segment 0
+0803.211149 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211149 ulp-mlperf: Performance results for window 130:
+0803.211149 ulp-mlperf:   # Inferences :             1
+0803.211149 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211149 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211149 ulp-mlperf:   m-results    : [0.918, 0.0, 0.082, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211149 ulp-mlperf: Loading file tabby_cat_s_002739.bin segment 0
+0803.211149 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211149 ulp-mlperf: Performance results for window 131:
+0803.211149 ulp-mlperf:   # Inferences :             1
+0803.211149 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211149 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211149 ulp-mlperf:   m-results    : [0.0, 0.0, 0.012, 0.836, 0.0, 0.0, 0.148, 0.0, 0.0, 0.0]
+0803.211149 ulp-mlperf: Loading file cervus_elaphus_s_000038.bin segment 0
+0803.211149 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211150 ulp-mlperf: Performance results for window 132:
+0803.211150 ulp-mlperf:   # Inferences :             1
+0803.211150 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211150 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211150 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211150 ulp-mlperf: Loading file moving_van_s_001436.bin segment 0
+0803.211150 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211150 ulp-mlperf: Performance results for window 133:
+0803.211150 ulp-mlperf:   # Inferences :             1
+0803.211150 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211150 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211150 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211150 ulp-mlperf: Loading file saddle_horse_s_002074.bin segment 0
+0803.211150 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211150 ulp-mlperf: Performance results for window 134:
+0803.211150 ulp-mlperf:   # Inferences :             1
+0803.211150 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211150 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211150 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211150 ulp-mlperf: Loading file sea_boat_s_002032.bin segment 0
+0803.211150 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211150 ulp-mlperf: Performance results for window 135:
+0803.211150 ulp-mlperf:   # Inferences :             1
+0803.211150 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211150 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211150 ulp-mlperf:   m-results    : [0.0, 0.008, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.988, 0.0]
+0803.211150 ulp-mlperf: Loading file camion_s_000130.bin segment 0
+0803.211151 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211151 ulp-mlperf: Performance results for window 136:
+0803.211151 ulp-mlperf:   # Inferences :             1
+0803.211151 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211151 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211151 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211151 ulp-mlperf: Loading file bookmobile_s_001012.bin segment 0
+0803.211151 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211151 ulp-mlperf: Performance results for window 137:
+0803.211151 ulp-mlperf:   # Inferences :             1
+0803.211151 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211151 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211151 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211151 ulp-mlperf: Loading file wagon_s_001640.bin segment 0
+0803.211151 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211151 ulp-mlperf: Performance results for window 138:
+0803.211151 ulp-mlperf:   # Inferences :             1
+0803.211151 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211151 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211151 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211151 ulp-mlperf: Loading file fighter_s_000532.bin segment 0
+0803.211151 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211151 ulp-mlperf: Performance results for window 139:
+0803.211151 ulp-mlperf:   # Inferences :             1
+0803.211151 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211151 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211151 ulp-mlperf:   m-results    : [0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211151 ulp-mlperf: Loading file stealth_bomber_s_001916.bin segment 0
+0803.211152 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211152 ulp-mlperf: Performance results for window 140:
+0803.211152 ulp-mlperf:   # Inferences :             1
+0803.211152 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211152 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211152 ulp-mlperf:   m-results    : [0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211152 ulp-mlperf: Loading file toad_s_000408.bin segment 0
+0803.211152 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211152 ulp-mlperf: Performance results for window 141:
+0803.211152 ulp-mlperf:   # Inferences :             1
+0803.211152 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211152 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211152 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211152 ulp-mlperf: Loading file barge_s_000524.bin segment 0
+0803.211152 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211152 ulp-mlperf: Performance results for window 142:
+0803.211152 ulp-mlperf:   # Inferences :             1
+0803.211152 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211152 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211152 ulp-mlperf:   m-results    : [0.707, 0.004, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.18, 0.105]
+0803.211152 ulp-mlperf: Loading file lippizan_s_000005.bin segment 0
+0803.211152 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211153 ulp-mlperf: Performance results for window 143:
+0803.211153 ulp-mlperf:   # Inferences :             1
+0803.211153 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211153 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211153 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.023, 0.0, 0.324, 0.0, 0.648, 0.0, 0.0]
+0803.211153 ulp-mlperf: Loading file fighter_aircraft_s_001361.bin segment 0
+0803.211153 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211153 ulp-mlperf: Performance results for window 144:
+0803.211153 ulp-mlperf:   # Inferences :             1
+0803.211153 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211153 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211153 ulp-mlperf:   m-results    : [0.992, 0.0, 0.004, 0.0, 0.004, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211153 ulp-mlperf: Loading file shooting_brake_s_000841.bin segment 0
+0803.211153 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211153 ulp-mlperf: Performance results for window 145:
+0803.211153 ulp-mlperf:   # Inferences :             1
+0803.211153 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211153 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211153 ulp-mlperf:   m-results    : [0.0, 0.887, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.113]
+0803.211153 ulp-mlperf: Loading file lapdog_s_000619.bin segment 0
+0803.211153 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211153 ulp-mlperf: Performance results for window 146:
+0803.211153 ulp-mlperf:   # Inferences :             1
+0803.211153 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211153 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211153 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.398, 0.035, 0.562, 0.0, 0.0, 0.0, 0.0]
+0803.211153 ulp-mlperf: Loading file tomcat_s_001536.bin segment 0
+0803.211154 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211154 ulp-mlperf: Performance results for window 147:
+0803.211154 ulp-mlperf:   # Inferences :             1
+0803.211154 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211154 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211154 ulp-mlperf:   m-results    : [0.0, 0.0, 0.004, 0.941, 0.0, 0.051, 0.0, 0.0, 0.0, 0.0]
+0803.211154 ulp-mlperf: Loading file moose_s_001207.bin segment 0
+0803.211154 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211154 ulp-mlperf: Performance results for window 148:
+0803.211154 ulp-mlperf:   # Inferences :             1
+0803.211154 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211154 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211154 ulp-mlperf:   m-results    : [0.0, 0.0, 0.004, 0.449, 0.16, 0.316, 0.008, 0.066, 0.0, 0.0]
+0803.211154 ulp-mlperf: Loading file lipizzan_s_000018.bin segment 0
+0803.211154 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211154 ulp-mlperf: Performance results for window 149:
+0803.211154 ulp-mlperf:   # Inferences :             1
+0803.211154 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211154 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211154 ulp-mlperf:   m-results    : [0.0, 0.004, 0.0, 0.0, 0.0, 0.031, 0.0, 0.855, 0.016, 0.09]
+0803.211154 ulp-mlperf: Loading file pekinese_s_002105.bin segment 0
+0803.211154 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211154 ulp-mlperf: Performance results for window 150:
+0803.211154 ulp-mlperf:   # Inferences :             1
+0803.211154 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211154 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211154 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.008, 0.031, 0.961, 0.0, 0.0, 0.0, 0.0]
+0803.211154 ulp-mlperf: Loading file american_elk_s_000126.bin segment 0
+0803.211155 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211155 ulp-mlperf: Performance results for window 151:
+0803.211155 ulp-mlperf:   # Inferences :             1
+0803.211155 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211155 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211155 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.98, 0.0, 0.0, 0.016, 0.0, 0.0]
+0803.211155 ulp-mlperf: Loading file bufo_bufo_s_000866.bin segment 0
+0803.211155 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211155 ulp-mlperf: Performance results for window 152:
+0803.211155 ulp-mlperf:   # Inferences :             1
+0803.211155 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211155 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211155 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211155 ulp-mlperf: Loading file cow_pony_s_001233.bin segment 0
+0803.211155 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211155 ulp-mlperf: Performance results for window 153:
+0803.211155 ulp-mlperf:   # Inferences :             1
+0803.211155 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211155 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211155 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211155 ulp-mlperf: Loading file puppy_s_001496.bin segment 0
+0803.211156 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211156 ulp-mlperf: Performance results for window 154:
+0803.211156 ulp-mlperf:   # Inferences :             1
+0803.211156 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211156 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211156 ulp-mlperf:   m-results    : [0.0, 0.0, 0.02, 0.223, 0.008, 0.738, 0.008, 0.0, 0.0, 0.0]
+0803.211156 ulp-mlperf: Loading file car_s_000026.bin segment 0
+0803.211156 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211156 ulp-mlperf: Performance results for window 155:
+0803.211156 ulp-mlperf:   # Inferences :             1
+0803.211156 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211156 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211156 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211156 ulp-mlperf: Loading file stealth_fighter_s_000138.bin segment 0
+0803.211156 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211156 ulp-mlperf: Performance results for window 156:
+0803.211156 ulp-mlperf:   # Inferences :             1
+0803.211156 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211156 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211156 ulp-mlperf:   m-results    : [0.516, 0.0, 0.438, 0.027, 0.004, 0.0, 0.0, 0.0, 0.016, 0.0]
+0803.211156 ulp-mlperf: Loading file cat_s_000839.bin segment 0
+0803.211156 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211157 ulp-mlperf: Performance results for window 157:
+0803.211157 ulp-mlperf:   # Inferences :             1
+0803.211157 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211157 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211157 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.977, 0.008, 0.012, 0.0, 0.0, 0.0, 0.0]
+0803.211157 ulp-mlperf: Loading file lorry_s_000755.bin segment 0
+0803.211157 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211157 ulp-mlperf: Performance results for window 158:
+0803.211157 ulp-mlperf:   # Inferences :             1
+0803.211157 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211157 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211157 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211157 ulp-mlperf: Loading file canis_familiaris_s_000642.bin segment 0
+0803.211157 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211157 ulp-mlperf: Performance results for window 159:
+0803.211157 ulp-mlperf:   # Inferences :             1
+0803.211157 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211157 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211157 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.809, 0.0, 0.086, 0.0, 0.102, 0.0, 0.0]
+0803.211157 ulp-mlperf: Loading file pleasure_boat_s_000131.bin segment 0
+0803.211157 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211157 ulp-mlperf: Performance results for window 160:
+0803.211157 ulp-mlperf:   # Inferences :             1
+0803.211157 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211157 ulp-mlperf:   Throughput   :      9.116 inf./sec.
+0803.211157 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211157 ulp-mlperf: Loading file tank_ship_s_000912.bin segment 0
+0803.211157 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211158 ulp-mlperf: Performance results for window 161:
+0803.211158 ulp-mlperf:   # Inferences :             1
+0803.211158 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211158 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211158 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211158 ulp-mlperf: Loading file rangifer_caribou_s_000175.bin segment 0
+0803.211158 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211158 ulp-mlperf: Performance results for window 162:
+0803.211158 ulp-mlperf:   # Inferences :             1
+0803.211158 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211158 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211158 ulp-mlperf:   m-results    : [0.227, 0.0, 0.379, 0.0, 0.379, 0.0, 0.0, 0.004, 0.008, 0.0]
+0803.211158 ulp-mlperf: Loading file convertible_s_001561.bin segment 0
+0803.211158 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211158 ulp-mlperf: Performance results for window 163:
+0803.211158 ulp-mlperf:   # Inferences :             1
+0803.211158 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211158 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211158 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211158 ulp-mlperf: Loading file english_toy_spaniel_s_000590.bin segment 0
+0803.211158 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211158 ulp-mlperf: Performance results for window 164:
+0803.211158 ulp-mlperf:   # Inferences :             1
+0803.211158 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211158 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211158 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.332, 0.0, 0.664, 0.0, 0.0, 0.0, 0.0]
+0803.211158 ulp-mlperf: Loading file arabian_s_000443.bin segment 0
+0803.211159 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211159 ulp-mlperf: Performance results for window 165:
+0803.211159 ulp-mlperf:   # Inferences :             1
+0803.211159 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211159 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211159 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0]
+0803.211159 ulp-mlperf: Loading file spadefoot_s_000290.bin segment 0
+0803.211159 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211159 ulp-mlperf: Performance results for window 166:
+0803.211159 ulp-mlperf:   # Inferences :             1
+0803.211159 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211159 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211159 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211159 ulp-mlperf: Loading file jetliner_s_000162.bin segment 0
+0803.211159 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211159 ulp-mlperf: Performance results for window 167:
+0803.211159 ulp-mlperf:   # Inferences :             1
+0803.211159 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211159 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211159 ulp-mlperf:   m-results    : [0.004, 0.633, 0.023, 0.0, 0.0, 0.0, 0.0, 0.0, 0.32, 0.016]
+0803.211159 ulp-mlperf: Loading file bufo_viridis_s_001212.bin segment 0
+0803.211159 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211200 ulp-mlperf: Performance results for window 168:
+0803.211200 ulp-mlperf:   # Inferences :             1
+0803.211200 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211200 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211200 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.008, 0.07, 0.0, 0.918, 0.004, 0.0, 0.0]
+0803.211200 ulp-mlperf: Loading file ship_s_001663.bin segment 0
+0803.211200 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211200 ulp-mlperf: Performance results for window 169:
+0803.211200 ulp-mlperf:   # Inferences :             1
+0803.211200 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211200 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211200 ulp-mlperf:   m-results    : [0.176, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.82, 0.0]
+0803.211200 ulp-mlperf: Loading file saddle_horse_s_001679.bin segment 0
+0803.211200 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211200 ulp-mlperf: Performance results for window 170:
+0803.211200 ulp-mlperf:   # Inferences :             1
+0803.211200 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211200 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211200 ulp-mlperf:   m-results    : [0.004, 0.0, 0.008, 0.008, 0.023, 0.008, 0.0, 0.953, 0.0, 0.0]
+0803.211200 ulp-mlperf: Loading file true_cat_s_000915.bin segment 0
+0803.211200 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211200 ulp-mlperf: Performance results for window 171:
+0803.211200 ulp-mlperf:   # Inferences :             1
+0803.211200 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211200 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211200 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211200 ulp-mlperf: Loading file domestic_cat_s_000055.bin segment 0
+0803.211200 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211201 ulp-mlperf: Performance results for window 172:
+0803.211201 ulp-mlperf:   # Inferences :             1
+0803.211201 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211201 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211201 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.996, 0.0, 0.004, 0.0, 0.0, 0.0, 0.0]
+0803.211201 ulp-mlperf: Loading file tabby_s_001166.bin segment 0
+0803.211201 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211201 ulp-mlperf: Performance results for window 173:
+0803.211201 ulp-mlperf:   # Inferences :             1
+0803.211201 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211201 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211201 ulp-mlperf:   m-results    : [0.012, 0.0, 0.0, 0.98, 0.0, 0.004, 0.0, 0.0, 0.0, 0.008]
+0803.211201 ulp-mlperf: Loading file felis_catus_s_000018.bin segment 0
+0803.211201 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211201 ulp-mlperf: Performance results for window 174:
+0803.211201 ulp-mlperf:   # Inferences :             1
+0803.211201 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211201 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211201 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.988, 0.004, 0.004, 0.0, 0.004, 0.0, 0.0]
+0803.211201 ulp-mlperf: Loading file shooting_brake_s_000220.bin segment 0
+0803.211201 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211201 ulp-mlperf: Performance results for window 175:
+0803.211201 ulp-mlperf:   # Inferences :             1
+0803.211201 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211201 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211201 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211201 ulp-mlperf: Loading file speedboat_s_001945.bin segment 0
+0803.211202 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211202 ulp-mlperf: Performance results for window 176:
+0803.211202 ulp-mlperf:   # Inferences :             1
+0803.211202 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211202 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211202 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211202 ulp-mlperf: Loading file toad_s_001102.bin segment 0
+0803.211202 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211202 ulp-mlperf: Performance results for window 177:
+0803.211202 ulp-mlperf:   # Inferences :             1
+0803.211202 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211202 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211202 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0]
+0803.211202 ulp-mlperf: Loading file wagtail_s_001938.bin segment 0
+0803.211202 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211202 ulp-mlperf: Performance results for window 178:
+0803.211202 ulp-mlperf:   # Inferences :             1
+0803.211202 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211202 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211202 ulp-mlperf:   m-results    : [0.02, 0.0, 0.98, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211202 ulp-mlperf: Loading file emu_s_000057.bin segment 0
+0803.211202 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211202 ulp-mlperf: Performance results for window 179:
+0803.211202 ulp-mlperf:   # Inferences :             1
+0803.211202 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211202 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211202 ulp-mlperf:   m-results    : [0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211202 ulp-mlperf: Loading file fallow_deer_s_001050.bin segment 0
+0803.211203 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211203 ulp-mlperf: Performance results for window 180:
+0803.211203 ulp-mlperf:   # Inferences :             1
+0803.211203 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211203 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211203 ulp-mlperf:   m-results    : [0.023, 0.0, 0.297, 0.062, 0.418, 0.0, 0.09, 0.105, 0.0, 0.0]
+0803.211203 ulp-mlperf: Loading file prunella_modularis_s_000006.bin segment 0
+0803.211203 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211203 ulp-mlperf: Performance results for window 181:
+0803.211203 ulp-mlperf:   # Inferences :             1
+0803.211203 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211203 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211203 ulp-mlperf:   m-results    : [0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211203 ulp-mlperf: Loading file nandu_s_001936.bin segment 0
+0803.211203 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211203 ulp-mlperf: Performance results for window 182:
+0803.211203 ulp-mlperf:   # Inferences :             1
+0803.211203 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211203 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211203 ulp-mlperf:   m-results    : [0.0, 0.0, 0.594, 0.047, 0.0, 0.062, 0.0, 0.297, 0.0, 0.0]
+0803.211203 ulp-mlperf: Loading file ostrich_s_001177.bin segment 0
+0803.211203 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211204 ulp-mlperf: Performance results for window 183:
+0803.211204 ulp-mlperf:   # Inferences :             1
+0803.211204 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211204 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211204 ulp-mlperf:   m-results    : [0.0, 0.0, 0.008, 0.0, 0.988, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211204 ulp-mlperf: Loading file felis_domesticus_s_000682.bin segment 0
+0803.211204 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211204 ulp-mlperf: Performance results for window 184:
+0803.211204 ulp-mlperf:   # Inferences :             1
+0803.211204 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211204 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211204 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.984, 0.004, 0.004, 0.004, 0.0, 0.0, 0.0]
+0803.211204 ulp-mlperf: Loading file american_elk_s_000045.bin segment 0
+0803.211204 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211204 ulp-mlperf: Performance results for window 185:
+0803.211204 ulp-mlperf:   # Inferences :             1
+0803.211204 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211204 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211204 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211204 ulp-mlperf: Loading file leopard_frog_s_000567.bin segment 0
+0803.211204 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211204 ulp-mlperf: Performance results for window 186:
+0803.211204 ulp-mlperf:   # Inferences :             1
+0803.211204 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211204 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211204 ulp-mlperf:   m-results    : [0.0, 0.0, 0.027, 0.0, 0.0, 0.0, 0.973, 0.0, 0.0, 0.0]
+0803.211204 ulp-mlperf: Loading file garbage_truck_s_001000.bin segment 0
+0803.211205 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211205 ulp-mlperf: Performance results for window 187:
+0803.211205 ulp-mlperf:   # Inferences :             1
+0803.211205 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211205 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211205 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+0803.211205 ulp-mlperf: Loading file broodmare_s_000497.bin segment 0
+0803.211205 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211205 ulp-mlperf: Performance results for window 188:
+0803.211205 ulp-mlperf:   # Inferences :             1
+0803.211205 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211205 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211205 ulp-mlperf:   m-results    : [0.0, 0.0, 0.148, 0.0, 0.0, 0.0, 0.012, 0.836, 0.0, 0.0]
+0803.211205 ulp-mlperf: Loading file guard_boat_s_000976.bin segment 0
+0803.211205 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211205 ulp-mlperf: Performance results for window 189:
+0803.211205 ulp-mlperf:   # Inferences :             1
+0803.211205 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211205 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211205 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211205 ulp-mlperf: Loading file elk_s_000296.bin segment 0
+0803.211205 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211205 ulp-mlperf: Performance results for window 190:
+0803.211205 ulp-mlperf:   # Inferences :             1
+0803.211205 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211205 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211205 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211205 ulp-mlperf: Loading file sparrow_s_000417.bin segment 0
+0803.211206 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211206 ulp-mlperf: Performance results for window 191:
+0803.211206 ulp-mlperf:   # Inferences :             1
+0803.211206 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211206 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211206 ulp-mlperf:   m-results    : [0.0, 0.0, 0.992, 0.0, 0.0, 0.004, 0.0, 0.0, 0.0, 0.0]
+0803.211206 ulp-mlperf: Loading file tipper_truck_s_000230.bin segment 0
+0803.211206 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211206 ulp-mlperf: Performance results for window 192:
+0803.211206 ulp-mlperf:   # Inferences :             1
+0803.211206 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211206 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211206 ulp-mlperf:   m-results    : [0.0, 0.133, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.867]
+0803.211206 ulp-mlperf: Loading file mule_deer_s_000821.bin segment 0
+0803.211206 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211206 ulp-mlperf: Performance results for window 193:
+0803.211206 ulp-mlperf:   # Inferences :             1
+0803.211206 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211206 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211206 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211206 ulp-mlperf: Loading file wagon_s_001295.bin segment 0
+0803.211206 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211207 ulp-mlperf: Performance results for window 194:
+0803.211207 ulp-mlperf:   # Inferences :             1
+0803.211207 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211207 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211207 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211207 ulp-mlperf: Loading file pilot_boat_s_000430.bin segment 0
+0803.211207 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211207 ulp-mlperf: Performance results for window 195:
+0803.211207 ulp-mlperf:   # Inferences :             1
+0803.211207 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211207 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211207 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996, 0.0]
+0803.211207 ulp-mlperf: Loading file nandu_s_001279.bin segment 0
+0803.211207 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211207 ulp-mlperf: Performance results for window 196:
+0803.211207 ulp-mlperf:   # Inferences :             1
+0803.211207 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211207 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211207 ulp-mlperf:   m-results    : [0.195, 0.031, 0.77, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211207 ulp-mlperf: Loading file coupe_s_000299.bin segment 0
+0803.211207 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211207 ulp-mlperf: Performance results for window 197:
+0803.211207 ulp-mlperf:   # Inferences :             1
+0803.211207 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211207 ulp-mlperf:   Throughput   :      9.115 inf./sec.
+0803.211207 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.211207 ulp-mlperf: Loading file gunboat_s_000431.bin segment 0
+0803.211208 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211208 ulp-mlperf: Performance results for window 198:
+0803.211208 ulp-mlperf:   # Inferences :             1
+0803.211208 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211208 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211208 ulp-mlperf:   m-results    : [0.051, 0.004, 0.012, 0.0, 0.0, 0.0, 0.0, 0.0, 0.824, 0.105]
+0803.211208 ulp-mlperf: Loading file alytes_obstetricans_s_000125.bin segment 0
+0803.211208 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211208 ulp-mlperf: Performance results for window 199:
+0803.211208 ulp-mlperf:   # Inferences :             1
+0803.211208 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211208 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211208 ulp-mlperf:   m-results    : [0.0, 0.0, 0.016, 0.008, 0.004, 0.0, 0.973, 0.0, 0.0, 0.0]
+0803.211208 ulp-mlperf: Loading file truck_s_001161.bin segment 0
+0803.211208 ulp-mlperf: Load complete.
+Running inference with 0/1 (warmup/measured) iterations ...
+done
+0803.211208 ulp-mlperf: Performance results for window 200:
+0803.211208 ulp-mlperf:   # Inferences :             1
+0803.211208 ulp-mlperf:   Runtime      :      0.110 sec.
+0803.211208 ulp-mlperf:   Throughput   :      9.114 inf./sec.
+0803.211208 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.996]
+SerialDevice exiting port COM31, entry_count (before decrement) = 1
+--------------------
+0803.211208 ulp-mlperf: Top 1% = 87.0
+0803.211208 ulp-mlperf: AUC = 0.988
+Session logged in file sessions\20250803_211111\log.txt

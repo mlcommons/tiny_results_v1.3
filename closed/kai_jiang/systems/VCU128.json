@@ -1,0 +1,38 @@
+{
+	"Submitter": "Kai_Jiang",
+	"Division": "closed",
+	"Status": "rdi",
+
+	"Board Name": "VCU128",
+	"Board Memory capacity (not including SoC, processor, or accelerator)": "",
+	"Board Memory type": "",
+	"Board storage capacity": "",
+	"Board storage type": "",
+	"SoC Name": "",
+	"SoC Memory capacity (not including processor or accelerator)": "368KB",
+	"SoC Memory type": "SRAM",
+	"SoC storage capacity": "192KB",
+	"SoC storage type": "SRAM",
+	"Processor(s) Name": "RISC-V",
+	"Processor(s) Frequencies": "50MHz",
+	"Processor memory type and capacity": "",
+	"Processor storage type and capacity": "",
+	"Accelerator": "ANPU",
+	"Accelerator(s) Frequencies": "320MHz",
+	"Accelerator memory type and capacity": "SRAM 882KB",
+	"Accelerator storage type and capacity": "882KB",
+	"Hardware Notes": "",
+
+	"Software": "N/A",
+	"Software Libraries": "self-developed",
+	"Operating System ": "bare-metal",
+	"Other Software Stack": "",
+	"Software Notes": "",
+
+	"Quantization Method": "Uniform symmetric quantization",
+	"Training framework (open division)": "",
+	"ML Model Compiler(s)": "",
+	"General Compiler(s)": "",
+	"Other Software": "",
+	"Training and Quantization Notes": ""
+}

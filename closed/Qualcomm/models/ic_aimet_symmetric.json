@@ -1,0 +1,267 @@
+{
+    "activation_encodings": {
+        "model/activation/Relu;model/batch_normalization/FusedBatchNormV3;model/conv2d/BiasAdd/ReadVariableOp/resource;model/conv2d/BiasAdd;model/conv2d_2/Conv2D;model/conv2d/Conv2D1": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 6.485191822052002,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.025432124792360792
+            }
+        ],
+        "model/activation_1/Relu;model/batch_normalization_1/FusedBatchNormV3;model/conv2d_1/BiasAdd/ReadVariableOp/resource;model/conv2d_1/BiasAdd;model/conv2d_2/Conv2D;model/conv2d_1/Conv2D1": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 10.51471996307373,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.04123419593362247
+            }
+        ],
+        "model/activation_2/Relu;model/add/add": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 10.235182762145996,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.04013797161625881
+            }
+        ],
+        "model/activation_3/Relu;model/batch_normalization_3/FusedBatchNormV3;model/conv2d_3/BiasAdd/ReadVariableOp/resource;model/conv2d_3/BiasAdd;model/conv2d_5/Conv2D;model/conv2d_3/Conv2D1": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 7.705626010894775,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.030218141219195197
+            }
+        ],
+        "model/activation_4/Relu;model/add_1/add": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 13.026691436767578,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.05108506445791207
+            }
+        ],
+        "model/activation_5/Relu;model/batch_normalization_5/FusedBatchNormV3;model/conv2d_6/BiasAdd/ReadVariableOp/resource;model/conv2d_6/BiasAdd;model/conv2d_8/Conv2D;model/conv2d_6/Conv2D1": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 4.6799092292785645,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.018352585212857115
+            }
+        ],
+        "model/activation_6/Relu;model/add_2/add": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 21.583066940307617,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.08463947819728478
+            }
+        ],
+        "model/average_pooling2d/AvgPool": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 4.22849702835083,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.016582341287650314
+            }
+        ],
+        "model/batch_normalization_2/FusedBatchNormV3;model/conv2d_2/BiasAdd/ReadVariableOp/resource;model/conv2d_2/BiasAdd;model/conv2d_2/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 10.008506774902344,
+                "min": -10.08731460571289,
+                "offset": -128,
+                "scale": 0.07880714266907934
+            }
+        ],
+        "model/batch_normalization_4/FusedBatchNormV3;model/conv2d_4/BiasAdd/ReadVariableOp/resource;model/conv2d_4/BiasAdd;model/conv2d_5/Conv2D;model/conv2d_4/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 10.51756763458252,
+                "min": -10.600382804870605,
+                "offset": -128,
+                "scale": 0.08281549191942401
+            }
+        ],
+        "model/conv2d_5/BiasAdd;model/conv2d_5/Conv2D;model/conv2d_5/BiasAdd/ReadVariableOp/resource1": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 4.659365653991699,
+                "min": -4.696053504943848,
+                "offset": -128,
+                "scale": 0.036687918270335476
+            }
+        ],
+        "model/batch_normalization_6/FusedBatchNormV3;model/conv2d_7/BiasAdd/ReadVariableOp/resource;model/conv2d_7/BiasAdd;model/conv2d_8/Conv2D;model/conv2d_7/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 21.84140968322754,
+                "min": -22.01338768005371,
+                "offset": -128,
+                "scale": 0.1719795975030637
+            }
+        ],
+        "model/conv2d_8/BiasAdd;model/conv2d_8/Conv2D;model/conv2d_8/BiasAdd/ReadVariableOp/resource1": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 11.12939453125,
+                "min": -11.21702766418457,
+                "offset": -128,
+                "scale": 0.08763302821739047
+            }
+        ],
+        "model/dense/MatMul;model/dense/BiasAdd": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 25.960281372070312,
+                "min": -26.164691925048828,
+                "offset": -128,
+                "scale": 0.2044116599887025
+            }
+        ],
+        "Identity": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 25.960281372070312,
+                "min": -26.164691925048828,
+                "offset": -128,
+                "scale": 0.2044116599887025
+            }
+        ],
+        "input_1": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 255.95819091796875,
+                "min": -257.9736328125,
+                "offset": -128,
+                "scale": 2.0154189165900736
+            }
+        ]
+    },
+    "param_encodings": {
+        "model/conv2d/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.02124442346394062,
+                "min": -0.021411703899502754,
+                "offset": -128.0,
+                "scale": 0.00016727893083703284
+            }
+        ],
+        "model/conv2d_1/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.9573573470115662,
+                "min": -0.9648955464363098,
+                "offset": -128,
+                "scale": 0.007538246640972063
+            }
+        ],
+        "model/conv2d_2/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.5185422301292419,
+                "min": -0.5226252675056458,
+                "offset": -128,
+                "scale": 0.004083009794646619
+            }
+        ],
+        "model/conv2d_3/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.421296089887619,
+                "min": -0.4246133863925934,
+                "offset": -128,
+                "scale": 0.0033172920638439704
+            }
+        ],
+        "model/conv2d_4/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.7296528816223145,
+                "min": -0.7353981733322144,
+                "offset": -128,
+                "scale": 0.005745298254723643
+            }
+        ],
+        "model/conv2d_5/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.5963300466537476,
+                "min": -0.6010255813598633,
+                "offset": -128,
+                "scale": 0.0046955122667200425
+            }
+        ],
+        "model/conv2d_6/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.18053822219371796,
+                "min": -0.18195979297161102,
+                "offset": -128,
+                "scale": 0.0014215608437856038
+            }
+        ],
+        "model/conv2d_7/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.7148383855819702,
+                "min": -1.728340983390808,
+                "offset": -128,
+                "scale": 0.013502664192050111
+            }
+        ],
+        "model/conv2d_8/Conv2D": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.6803929209709167,
+                "min": -0.6857503056526184,
+                "offset": -128,
+                "scale": 0.005357424418131511
+            }
+        ],
+        "model/dense/MatMul": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 3.8907761573791504,
+                "min": -3.9214119911193848,
+                "offset": -128,
+                "scale": 0.030636031954896215
+            }
+        ]
+    },
+    "version": "0.5.0"
+}

@@ -1,0 +1,2 @@
+0801.124509 ulp-mlperf: Top 1% = 79.1
+0801.124509 ulp-mlperf: AUC = 0.873

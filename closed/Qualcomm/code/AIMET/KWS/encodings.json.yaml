@@ -1,0 +1,368 @@
+activation_encodings:
+  activation/Relu:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - &id001 !!python/object/apply:numpy.dtype
+      args:
+      - f8
+      - false
+      - true
+      state: !!python/tuple
+      - 3
+      - <
+      - null
+      - null
+      - null
+      - -1
+      - -1
+      - 0
+    - !!binary |
+      AAAAIFmvOkA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      Q0NDQyPKuj8=
+  activation_1/Relu:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAwKImOUA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      o6KiouI/uT8=
+  activation_2/Relu:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAQO+FNEA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      ysnJyYmatD8=
+  activation_3/Relu:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAQPafMkA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      6ejo6Kiysj8=
+  activation_4/Relu:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAgIRULEA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      dXV1dfVwrD8=
+  activation_5/Relu:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAgI6mLUA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      09LS0lLErT8=
+  activation_6/Relu:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAApHIkA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      Y2NjY2NZoj8=
+  activation_7/Relu:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAYGsfJ0A=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AgICAqI2pz8=
+  activation_8/Relu:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAA4OiHOEA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      aWlpaYmguD8=
+  average_pooling2d/AvgPool:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAYMdrEEA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAAAAAAA=
+    offset: 0
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      pKOjo0N8kD8=
+  dense/BiasAdd:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      fn19/TARLkA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      QUFBYb6/OcA=
+    offset: -161
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      FBQUFKR4xD8=
+  input_1:0:
+  - bitwidth: 8
+    is_symmetric: 'False'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      HB0d3fMEOUA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      ubi4+HnWXsA=
+    offset: -212
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      8vHx8Xme4j8=
+param_encodings:
+  conv2d/Conv2D/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAAHKazD8=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      o9FoNBrUzL8=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      pNFoNBrUXD8=
+  conv2d_1/Conv2D/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAYJs/4z8=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      g8FgMGhm478=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      hMFgMGhmcz8=
+  conv2d_2/Conv2D/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAwJ6V4z8=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      j8fj8Ri9478=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      kMfj8Ri9cz8=
+  conv2d_3/Conv2D/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAQLb65D8=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      BAKBQAAl5b8=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      BAKBQAAldT8=
+  conv2d_4/Conv2D/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAQEKy9j8=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      JBKJRALg9r8=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      JBKJRALghj8=
+  dense/MatMul/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAIA268T8=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      i8Viscjd8b8=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      jMViscjdgT8=
+  depthwise_conv2d/depthwise/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAwN1dBEA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      uVwul+uGBMA=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      uVwul+uGlD8=
+  depthwise_conv2d_1/depthwise/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAA4N9F/z8=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      m81ms+mE/78=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      nM1ms+mEjz8=
+  depthwise_conv2d_2/depthwise/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAICQd+T8=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      Op1Op8NP+b8=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      Op1Op8NPiT8=
+  depthwise_conv2d_3/depthwise/ReadVariableOp:0:
+  - bitwidth: 8
+    is_symmetric: 'True'
+    max: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      AAAAwGLPAEA=
+    min: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      VSqVSkXxAMA=
+    offset: -128
+    scale: !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      VCqVSkXxkD8=
+version: 0.5.0

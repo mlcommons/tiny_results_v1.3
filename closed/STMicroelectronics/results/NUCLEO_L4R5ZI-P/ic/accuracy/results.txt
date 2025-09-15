@@ -1,0 +1,2 @@
+0726.005452 ulp-mlperf: Top 1% = 87.0
+0726.005452 ulp-mlperf: AUC = 0.988

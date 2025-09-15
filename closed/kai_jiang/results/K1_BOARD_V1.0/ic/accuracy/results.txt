@@ -1,0 +1,2 @@
+0801.193051 ulp-mlperf: Top 1% = 86.5
+0801.193051 ulp-mlperf: AUC = 0.988

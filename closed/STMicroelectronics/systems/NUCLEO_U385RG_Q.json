@@ -1,0 +1,39 @@
+{
+	"Submitter": "STMicroelectronics",
+	"Division": "Closed",
+	"Status": "Available",
+
+	"Board Name": "NUCLEO-U385RG-Q",
+	"Board Memory capacity (not including SoC, processor, or accelerator)": "",
+	"Board Memory type": "",
+	"Board storage capacity": "",
+	"Board storage type": "",
+	"SoC Name": "STM32U385RGT6Q",
+	"SoC Memory capacity (not including processor or accelerator)": "256KB",
+	"SoC Memory type": "RAM",
+	"SoC storage capacity": "1MB",
+	"SoC storage type": "Flash",
+	"Processor(s) Name": "Arm Cortex-M33 32-bit RISC core",
+	"Processor(s) Frequencies": "96 MHz",
+	"Processor memory type and capacity": "256KB RAM",
+	"Processor storage type and capacity": "1MB FLASH",
+	"Accelerator": "",
+	"Accelerator(s) Frequencies": "",
+	"Accelerator memory type and capacity": "",
+	"Accelerator storage type and capacity": "",
+	"Hardware Notes": "Operating at 1.8V / SMPS",
+
+	"Inference Framework": "X-CUBE-AI v10.2",
+	"Software Libraries": "X-CUBE-AI v10.2",
+	"Operating System ": "bare metal",
+	"Other Software Stack": "",
+	"Software Notes": "",
+
+
+	"Quantization Method": "TensorFlow Int8 Quantization",
+	"Training framework (open division)": "",
+	"ML Model Compiler(s)": "X-CUBE-AI v10.2",
+	"General Compiler(s)": "GNU Tools for STM32 12.3.rel1.20240926-1715) 12.3.1 20230626",
+	"Other Software": "",
+	"Training and Quantization Notes": ""
+}

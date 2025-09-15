@@ -1,0 +1,2 @@
+0725.180656 ulp-mlperf: Top 1% = 87.0
+0725.180656 ulp-mlperf: AUC = 0.988

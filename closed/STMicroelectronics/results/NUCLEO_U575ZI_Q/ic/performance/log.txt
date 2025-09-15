@@ -1,0 +1,85 @@
+Logging initialized. Writing output to sessions\20250803_210913\log.txt
+Initializing SerialDevice on port: COM31 at 921600 baud
+SerialDevice entering port COM31, entry_count (before increment) = 0
+Retrieving name from DUT ...
+Device name retrieved: STMicroelectronics
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+Device model retrieved: ic01
+SerialDevice exiting port COM31, entry_count (before decrement) = 1
+SerialDevice entering port COM31, entry_count (before increment) = 0
+0803.210915 ulp-mlperf: Loading file emu_s_002009.bin segment 0
+0803.210915 ulp-mlperf: Load complete.
+Running inference with 1/100 (warmup/measured) iterations ...
+done
+0803.210926 ulp-mlperf: Performance results for window 1:
+0803.210926 ulp-mlperf:   # Inferences :           100
+0803.210926 ulp-mlperf:   Runtime      :     10.950 sec.
+0803.210926 ulp-mlperf:   Throughput   :      9.133 inf./sec.
+0803.210926 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.004, 0.0, 0.621, 0.0, 0.371, 0.0, 0.0]
+0803.210926 ulp-mlperf: Loading file taxi_s_001241.bin segment 0
+0803.210926 ulp-mlperf: Load complete.
+Running inference with 1/100 (warmup/measured) iterations ...
+done
+0803.210937 ulp-mlperf: Performance results for window 2:
+0803.210937 ulp-mlperf:   # Inferences :           100
+0803.210937 ulp-mlperf:   Runtime      :     10.949 sec.
+0803.210937 ulp-mlperf:   Throughput   :      9.133 inf./sec.
+0803.210937 ulp-mlperf:   m-results    : [0.0, 0.996, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0803.210937 ulp-mlperf: Loading file accentor_s_001031.bin segment 0
+0803.210937 ulp-mlperf: Load complete.
+Running inference with 1/100 (warmup/measured) iterations ...
+done
+0803.210948 ulp-mlperf: Performance results for window 3:
+0803.210948 ulp-mlperf:   # Inferences :           100
+0803.210948 ulp-mlperf:   Runtime      :     10.950 sec.
+0803.210948 ulp-mlperf:   Throughput   :      9.133 inf./sec.
+0803.210948 ulp-mlperf:   m-results    : [0.004, 0.0, 0.098, 0.324, 0.07, 0.051, 0.457, 0.0, 0.0, 0.0]
+0803.210948 ulp-mlperf: Loading file mongrel_s_000686.bin segment 0
+0803.210948 ulp-mlperf: Load complete.
+Running inference with 1/100 (warmup/measured) iterations ...
+done
+0803.210959 ulp-mlperf: Performance results for window 4:
+0803.210959 ulp-mlperf:   # Inferences :           100
+0803.210959 ulp-mlperf:   Runtime      :     10.950 sec.
+0803.210959 ulp-mlperf:   Throughput   :      9.133 inf./sec.
+0803.210959 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.148, 0.0, 0.832, 0.004, 0.012, 0.0, 0.0]
+0803.210959 ulp-mlperf: Loading file stealth_bomber_s_002204.bin segment 0
+0803.210959 ulp-mlperf: Load complete.
+Running inference with 1/100 (warmup/measured) iterations ...
+done
+0803.211010 ulp-mlperf: Performance results for window 5:
+0803.211010 ulp-mlperf:   # Inferences :           100
+0803.211010 ulp-mlperf:   Runtime      :     10.950 sec.
+0803.211010 ulp-mlperf:   Throughput   :      9.133 inf./sec.
+0803.211010 ulp-mlperf:   m-results    : [0.906, 0.0, 0.0, 0.0, 0.023, 0.0, 0.059, 0.008, 0.0, 0.0]
+SerialDevice exiting port COM31, entry_count (before decrement) = 1
+--------------------
+Performance results for window 1
+# Inferences : 100
+Runtime: 10.949628 sec.
+Throughput: 9.132730353944444 inf./sec.
+Runtime requirements have been met.
+Performance results for window 2
+# Inferences : 100
+Runtime: 10.948959 sec.
+Throughput: 9.13328837928793 inf./sec.
+Runtime requirements have been met.
+Performance results for window 3
+# Inferences : 100
+Runtime: 10.94963 sec.
+Throughput: 9.132728685809473 inf./sec.
+Runtime requirements have been met.
+Performance results for window 4
+# Inferences : 100
+Runtime: 10.949632 sec.
+Throughput: 9.132727017675116 inf./sec.
+Runtime requirements have been met.
+Performance results for window 5
+# Inferences : 100
+Runtime: 10.949633 sec.
+Throughput: 9.132726183608163 inf./sec.
+Runtime requirements have been met.
+0803.211010 ulp-mlperf: ---------------------------------------------------------
+0803.211010 ulp-mlperf: Median throughput is      9.133 inf./sec.
+0803.211010 ulp-mlperf: ---------------------------------------------------------
+Session logged in file sessions\20250803_210913\log.txt

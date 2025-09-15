@@ -1,0 +1,2 @@
+0725.174400 ulp-mlperf: Top 1% = 77.8
+0725.174400 ulp-mlperf: AUC = 0.862

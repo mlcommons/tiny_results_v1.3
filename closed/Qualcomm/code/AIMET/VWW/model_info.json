@@ -1,0 +1,16 @@
+{
+	"type":"tf",
+	"name":"vww",
+	"qc_modify":"FALSE",
+	"usage":"tinyML",
+	"model_name":"model.ckpt",
+	"location":"",
+	"version":"1",
+	"accuracy":"",
+	"input_node":["input_1"],
+	"input_dimension":[[1,96,96,3]],
+	"output_node":["dense/Softmax"],
+	"output_dimension":[],
+	"download_link":"",
+	"comments":""
+}

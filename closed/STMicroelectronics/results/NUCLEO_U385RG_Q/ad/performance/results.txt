@@ -1,0 +1,28 @@
+Performance results for window 1
+    # Inferences : 2000
+    Runtime: 10.819502 sec.
+    Throughput: 184.8513914965772 inf./sec.
+    Runtime requirements have been met.
+Performance results for window 2
+    # Inferences : 2000
+    Runtime: 10.819502 sec.
+    Throughput: 184.8513914965772 inf./sec.
+    Runtime requirements have been met.
+Performance results for window 3
+    # Inferences : 2000
+    Runtime: 10.819502 sec.
+    Throughput: 184.8513914965772 inf./sec.
+    Runtime requirements have been met.
+Performance results for window 4
+    # Inferences : 2000
+    Runtime: 10.819502 sec.
+    Throughput: 184.8513914965772 inf./sec.
+    Runtime requirements have been met.
+Performance results for window 5
+    # Inferences : 2000
+    Runtime: 10.819502 sec.
+    Throughput: 184.8513914965772 inf./sec.
+    Runtime requirements have been met.
+0725.142227 ulp-mlperf: ---------------------------------------------------------
+0725.142227 ulp-mlperf: Median throughput is    184.851 inf./sec.
+0725.142227 ulp-mlperf: ---------------------------------------------------------

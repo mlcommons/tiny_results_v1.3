@@ -1,0 +1,80 @@
+Logging initialized. Writing output to sessions\20250802_113913\log.txt
+Initializing SerialDevice on port: COM17 at 921600 baud
+SerialDevice entering port COM17, entry_count (before increment) = 0
+Retrieving name from DUT ...
+Device name retrieved: unspecified
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+Device model retrieved: kws01
+SerialDevice exiting port COM17, entry_count (before decrement) = 1
+SerialDevice entering port COM17, entry_count (before increment) = 0
+0802.113915 ulp-mlperf: Loading file tst_000000_Stop_7.bin segment 0
+0802.113915 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0802.113921 ulp-mlperf: Performance results for window 1:
+0802.113921 ulp-mlperf:   # Inferences :         10000
+0802.113921 ulp-mlperf:   Runtime      :      5.765 sec.
+0802.113921 ulp-mlperf:   Throughput   :   1734.669 inf./sec.
+0802.113921 ulp-mlperf:   m-results    : [0.0, 0.0, 0.005, 0.0, 0.0, 0.0, 0.001, 0.971, 0.0, 0.0, 0.0, 0.022]
+0802.113921 ulp-mlperf: Loading file tst_000001_Left_2.bin segment 0
+0802.113921 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0802.113927 ulp-mlperf: Performance results for window 2:
+0802.113927 ulp-mlperf:   # Inferences :         10000
+0802.113927 ulp-mlperf:   Runtime      :      5.782 sec.
+0802.113927 ulp-mlperf:   Throughput   :   1729.445 inf./sec.
+0802.113927 ulp-mlperf:   m-results    : [0.0, 0.0, 0.987, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.001, 0.0, 0.011]
+0802.113927 ulp-mlperf: Loading file tst_000002_Right_6.bin segment 0
+0802.113927 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0802.113933 ulp-mlperf: Performance results for window 3:
+0802.113933 ulp-mlperf:   # Inferences :         10000
+0802.113933 ulp-mlperf:   Runtime      :      5.770 sec.
+0802.113933 ulp-mlperf:   Throughput   :   1733.114 inf./sec.
+0802.113933 ulp-mlperf:   m-results    : [0.0, 0.0, 0.001, 0.0, 0.0, 0.0, 0.999, 0.0, 0.0, 0.0, 0.0, 0.001]
+0802.113933 ulp-mlperf: Loading file tst_000003_Up_8.bin segment 0
+0802.113933 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0802.113939 ulp-mlperf: Performance results for window 4:
+0802.113939 ulp-mlperf:   # Inferences :         10000
+0802.113939 ulp-mlperf:   Runtime      :      5.762 sec.
+0802.113939 ulp-mlperf:   Throughput   :   1735.518 inf./sec.
+0802.113939 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+0802.113939 ulp-mlperf: Loading file tst_000004_On_5.bin segment 0
+0802.113939 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0802.113944 ulp-mlperf: Performance results for window 5:
+0802.113944 ulp-mlperf:   # Inferences :         10000
+0802.113944 ulp-mlperf:   Runtime      :      5.748 sec.
+0802.113944 ulp-mlperf:   Throughput   :   1739.630 inf./sec.
+0802.113944 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+SerialDevice exiting port COM17, entry_count (before decrement) = 1
+--------------------
+Performance results for window 1
+# Inferences : 10000
+Runtime: 5.76479 sec.
+Throughput: 1734.6685655505232 inf./sec.
+Performance results for window 2
+# Inferences : 10000
+Runtime: 5.782202 sec.
+Throughput: 1729.4449415637848 inf./sec.
+Performance results for window 3
+# Inferences : 10000
+Runtime: 5.769961 sec.
+Throughput: 1733.1139673214427 inf./sec.
+Performance results for window 4
+# Inferences : 10000
+Runtime: 5.76197 sec.
+Throughput: 1735.5175400080182 inf./sec.
+Performance results for window 5
+# Inferences : 10000
+Runtime: 5.748349 sec.
+Throughput: 1739.6299354823445 inf./sec.
+0802.113944 ulp-mlperf: ---------------------------------------------------------
+0802.113944 ulp-mlperf: Median throughput is   1734.669 inf./sec.
+0802.113944 ulp-mlperf: ---------------------------------------------------------
+Session logged in file sessions\20250802_113913\log.txt

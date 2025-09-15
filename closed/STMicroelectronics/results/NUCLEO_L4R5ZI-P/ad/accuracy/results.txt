@@ -1,0 +1,2 @@
+0725.211938 ulp-mlperf: Top 1% = 77.8
+0725.211938 ulp-mlperf: AUC = 0.862

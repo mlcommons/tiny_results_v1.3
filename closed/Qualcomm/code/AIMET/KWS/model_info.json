@@ -1,0 +1,16 @@
+{
+	"type":"tf",
+	"name":"kws",
+	"qc_modify":"FALSE",
+	"usage":"tiny",
+	"model_name":"model.ckpt",
+	"location":"",
+	"version":"1",
+	"accuracy":"",
+	"input_node":["input_1"],
+	"input_dimension":[[1,49,10,1]],
+	"output_node":["dense/Softmax"],
+	"output_dimension":[],
+	"download_link":"",
+	"comments":""
+}

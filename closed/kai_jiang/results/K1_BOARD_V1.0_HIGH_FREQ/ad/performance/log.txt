@@ -1,0 +1,80 @@
+Logging initialized. Writing output to sessions\20250801_135453\log.txt
+Initializing SerialDevice on port: COM17 at 921600 baud
+SerialDevice entering port COM17, entry_count (before increment) = 0
+Retrieving name from DUT ...
+Device name retrieved: unspecified
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+Device model retrieved: ad01
+SerialDevice exiting port COM17, entry_count (before decrement) = 1
+SerialDevice entering port COM17, entry_count (before increment) = 0
+0801.135455 ulp-mlperf: Loading file normal_id_01_00000003_hist_librosa.bin segment 0
+0801.135455 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0801.135458 ulp-mlperf: Performance results for window 1:
+0801.135458 ulp-mlperf:   # Inferences :         10000
+0801.135458 ulp-mlperf:   Runtime      :      3.142 sec.
+0801.135458 ulp-mlperf:   Throughput   :   3183.086 inf./sec.
+0801.135458 ulp-mlperf:   m-results    : [12.574]
+0801.135458 ulp-mlperf: Loading file normal_id_01_00000013_hist_librosa.bin segment 0
+0801.135458 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0801.135501 ulp-mlperf: Performance results for window 2:
+0801.135501 ulp-mlperf:   # Inferences :         10000
+0801.135501 ulp-mlperf:   Runtime      :      3.162 sec.
+0801.135501 ulp-mlperf:   Throughput   :   3162.525 inf./sec.
+0801.135501 ulp-mlperf:   m-results    : [11.125]
+0801.135501 ulp-mlperf: Loading file normal_id_01_00000023_hist_librosa.bin segment 0
+0801.135502 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0801.135505 ulp-mlperf: Performance results for window 3:
+0801.135505 ulp-mlperf:   # Inferences :         10000
+0801.135505 ulp-mlperf:   Runtime      :      3.201 sec.
+0801.135505 ulp-mlperf:   Throughput   :   3124.431 inf./sec.
+0801.135505 ulp-mlperf:   m-results    : [11.371]
+0801.135505 ulp-mlperf: Loading file normal_id_01_00000033_hist_librosa.bin segment 0
+0801.135505 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0801.135508 ulp-mlperf: Performance results for window 4:
+0801.135508 ulp-mlperf:   # Inferences :         10000
+0801.135508 ulp-mlperf:   Runtime      :      3.162 sec.
+0801.135508 ulp-mlperf:   Throughput   :   3162.454 inf./sec.
+0801.135508 ulp-mlperf:   m-results    : [10.339]
+0801.135508 ulp-mlperf: Loading file normal_id_01_00000043_hist_librosa.bin segment 0
+0801.135508 ulp-mlperf: Load complete.
+Running inference with 10/10000 (warmup/measured) iterations ...
+done
+0801.135512 ulp-mlperf: Performance results for window 5:
+0801.135512 ulp-mlperf:   # Inferences :         10000
+0801.135512 ulp-mlperf:   Runtime      :      3.111 sec.
+0801.135512 ulp-mlperf:   Throughput   :   3214.601 inf./sec.
+0801.135512 ulp-mlperf:   m-results    : [11.795]
+SerialDevice exiting port COM17, entry_count (before decrement) = 1
+--------------------
+Performance results for window 1
+# Inferences : 10000
+Runtime: 3.141605 sec.
+Throughput: 3183.0863523581097 inf./sec.
+Performance results for window 2
+# Inferences : 10000
+Runtime: 3.16203 sec.
+Throughput: 3162.5253397342844 inf./sec.
+Performance results for window 3
+# Inferences : 10000
+Runtime: 3.200583 sec.
+Throughput: 3124.430767769497 inf./sec.
+Performance results for window 4
+# Inferences : 10000
+Runtime: 3.162101 sec.
+Throughput: 3162.454330206404 inf./sec.
+Performance results for window 5
+# Inferences : 10000
+Runtime: 3.110806 sec.
+Throughput: 3214.6009747955995 inf./sec.
+0801.135512 ulp-mlperf: ---------------------------------------------------------
+0801.135512 ulp-mlperf: Median throughput is   3162.525 inf./sec.
+0801.135512 ulp-mlperf: ---------------------------------------------------------
+Session logged in file sessions\20250801_135453\log.txt

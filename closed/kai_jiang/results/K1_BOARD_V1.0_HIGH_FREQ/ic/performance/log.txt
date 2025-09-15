@@ -1,0 +1,80 @@
+Logging initialized. Writing output to sessions\20250802_114839\log.txt
+Initializing SerialDevice on port: COM17 at 921600 baud
+SerialDevice entering port COM17, entry_count (before increment) = 0
+Retrieving name from DUT ...
+Device name retrieved: unspecified
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+Device model retrieved: ic01
+SerialDevice exiting port COM17, entry_count (before decrement) = 1
+SerialDevice entering port COM17, entry_count (before increment) = 0
+0802.114841 ulp-mlperf: Loading file emu_s_002009.bin segment 0
+0802.114841 ulp-mlperf: Load complete.
+Running inference with 5/10000 (warmup/measured) iterations ...
+done
+0802.114851 ulp-mlperf: Performance results for window 1:
+0802.114851 ulp-mlperf:   # Inferences :         10000
+0802.114851 ulp-mlperf:   Runtime      :      9.767 sec.
+0802.114851 ulp-mlperf:   Throughput   :   1023.826 inf./sec.
+0802.114851 ulp-mlperf:   m-results    : [0.002, 0.003, 0.0, 0.004, 0.0, 0.574, 0.0, 0.41, 0.0, 0.006]
+0802.114851 ulp-mlperf: Loading file taxi_s_001241.bin segment 0
+0802.114851 ulp-mlperf: Load complete.
+Running inference with 5/10000 (warmup/measured) iterations ...
+done
+0802.114901 ulp-mlperf: Performance results for window 2:
+0802.114901 ulp-mlperf:   # Inferences :         10000
+0802.114901 ulp-mlperf:   Runtime      :      9.773 sec.
+0802.114901 ulp-mlperf:   Throughput   :   1023.279 inf./sec.
+0802.114901 ulp-mlperf:   m-results    : [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+0802.114901 ulp-mlperf: Loading file accentor_s_001031.bin segment 0
+0802.114901 ulp-mlperf: Load complete.
+Running inference with 5/10000 (warmup/measured) iterations ...
+done
+0802.114911 ulp-mlperf: Performance results for window 3:
+0802.114911 ulp-mlperf:   # Inferences :         10000
+0802.114911 ulp-mlperf:   Runtime      :      9.765 sec.
+0802.114911 ulp-mlperf:   Throughput   :   1024.095 inf./sec.
+0802.114911 ulp-mlperf:   m-results    : [0.002, 0.0, 0.053, 0.397, 0.087, 0.062, 0.397, 0.001, 0.0, 0.0]
+0802.114911 ulp-mlperf: Loading file mongrel_s_000686.bin segment 0
+0802.114911 ulp-mlperf: Load complete.
+Running inference with 5/10000 (warmup/measured) iterations ...
+done
+0802.114921 ulp-mlperf: Performance results for window 4:
+0802.114921 ulp-mlperf:   # Inferences :         10000
+0802.114921 ulp-mlperf:   Runtime      :      9.787 sec.
+0802.114921 ulp-mlperf:   Throughput   :   1021.761 inf./sec.
+0802.114921 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.134, 0.001, 0.856, 0.005, 0.004, 0.0, 0.0]
+0802.114921 ulp-mlperf: Loading file stealth_bomber_s_002204.bin segment 0
+0802.114921 ulp-mlperf: Load complete.
+Running inference with 5/10000 (warmup/measured) iterations ...
+done
+0802.114931 ulp-mlperf: Performance results for window 5:
+0802.114931 ulp-mlperf:   # Inferences :         10000
+0802.114931 ulp-mlperf:   Runtime      :      9.780 sec.
+0802.114931 ulp-mlperf:   Throughput   :   1022.534 inf./sec.
+0802.114931 ulp-mlperf:   m-results    : [0.785, 0.0, 0.003, 0.003, 0.063, 0.003, 0.123, 0.019, 0.001, 0.001]
+SerialDevice exiting port COM17, entry_count (before decrement) = 1
+--------------------
+Performance results for window 1
+# Inferences : 10000
+Runtime: 9.767285 sec.
+Throughput: 1023.8259659670011 inf./sec.
+Performance results for window 2
+# Inferences : 10000
+Runtime: 9.772502 sec.
+Throughput: 1023.2794017335582 inf./sec.
+Performance results for window 3
+# Inferences : 10000
+Runtime: 9.764716 sec.
+Throughput: 1024.0953244313505 inf./sec.
+Performance results for window 4
+# Inferences : 10000
+Runtime: 9.787029 sec.
+Throughput: 1021.7605363180185 inf./sec.
+Performance results for window 5
+# Inferences : 10000
+Runtime: 9.779623 sec.
+Throughput: 1022.534304236472 inf./sec.
+0802.114931 ulp-mlperf: ---------------------------------------------------------
+0802.114931 ulp-mlperf: Median throughput is   1023.279 inf./sec.
+0802.114931 ulp-mlperf: ---------------------------------------------------------
+Session logged in file sessions\20250802_114839\log.txt

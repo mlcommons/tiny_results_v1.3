@@ -1,0 +1,2 @@
+0813.204716 ulp-mlperf: Top 1% = 78.0
+0813.204716 ulp-mlperf: AUC = 0.860

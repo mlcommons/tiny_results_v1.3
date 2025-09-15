@@ -1,0 +1,2 @@
+0726.023345 ulp-mlperf: Top 1% = 85.2
+0726.023345 ulp-mlperf: AUC = 0.936

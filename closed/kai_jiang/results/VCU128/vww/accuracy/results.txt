@@ -1,0 +1,2 @@
+0802.183108 ulp-mlperf: Top 1% = 84.9
+0802.183108 ulp-mlperf: AUC = 0.957

@@ -1,0 +1,38 @@
+{
+	"Submitter": "Kai_Jiang",
+	"Division": "closed",
+	"Status": "rdi",
+
+	"Board Name": "K1_BOARD_V1.0",
+	"Board Memory capacity (not including SoC, processor, or accelerator)": "4GB",
+	"Board Memory type": "LPDDR4x",
+	"Board storage capacity": "16GB",
+	"Board storage type": "eMMC",
+	"SoC Name": "K1 Octa-Core RISC-V",
+	"SoC Memory capacity (not including processor or accelerator)": "256KB",
+	"SoC Memory type": "SRAM",
+	"SoC storage capacity": "128KB",
+	"SoC storage type": "ROM",
+	"Processor(s) Name": "RISC-V 64GCVB Core",
+	"Processor(s) Frequencies": "614.4MHz",
+	"Processor memory type and capacity": "32K I-Cache + 32K D-Cache + 512K L2-Cache + 512K TCM",
+	"Processor storage type and capacity": "",
+	"Accelerator": "",
+	"Accelerator(s) Frequencies": "",
+	"Accelerator memory type and capacity": "",
+	"Accelerator storage type and capacity": "",
+	"Hardware Notes": "",
+
+	"Software": "N/A",
+	"Software Libraries": "self-developed",
+	"Operating System ": "linux",
+	"Other Software Stack": "",
+	"Software Notes": "",
+
+	"Quantization Method": "Uniform symmetric quantization",
+	"Training framework (open division)": "",
+	"ML Model Compiler(s)": "",
+	"General Compiler(s)": "",
+	"Other Software": "",
+	"Training and Quantization Notes": ""
+}

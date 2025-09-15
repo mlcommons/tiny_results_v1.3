@@ -1,0 +1,34 @@
+Power Edition Output
+Energy data for trial 0
+  Elapsed time  : 10.844999999999999
+  Inferences    : 110
+  Power         : 5.2585 mW.
+  Total Energy  : 57027.998 uJ
+  Energy/Inf    : 518.436 uJ/inf
+Energy data for trial 1
+  Elapsed time  : 10.843999999999994
+  Inferences    : 110
+  Power         : 5.2633 mW.
+  Total Energy  : 57075.591 uJ
+  Energy/Inf    : 518.869 uJ/inf
+Energy data for trial 2
+  Elapsed time  : 10.844999999999999
+  Inferences    : 110
+  Power         : 5.2667 mW.
+  Total Energy  : 57117.170 uJ
+  Energy/Inf    : 519.247 uJ/inf
+Energy data for trial 3
+  Elapsed time  : 10.843999999999994
+  Inferences    : 110
+  Power         : 5.2644 mW.
+  Total Energy  : 57087.368 uJ
+  Energy/Inf    : 518.976 uJ/inf
+Energy data for trial 4
+  Elapsed time  : 10.844999999999999
+  Inferences    : 110
+  Power         : 5.2698 mW.
+  Total Energy  : 57151.252 uJ
+  Energy/Inf    : 519.557 uJ/inf
+---------------------------------------------------------
+Median energy cost is 518.9761 uJ/inf.
+---------------------------------------------------------

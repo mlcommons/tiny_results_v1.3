@@ -1,0 +1,2 @@
+0725.165243 ulp-mlperf: Top 1% = 90.2
+0725.165243 ulp-mlperf: AUC = 0.995

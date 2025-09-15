@@ -1,0 +1,2 @@
+0802.114208 ulp-mlperf: Top 1% = 90.7
+0802.114208 ulp-mlperf: AUC = 0.996

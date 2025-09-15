@@ -1,0 +1,237 @@
+{
+    "activation_encodings": {
+        "activation/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 22.760761260986328,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.0892578872979856
+            }
+        ],
+        "activation_1/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 23.004423141479492,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.0902134240842333
+            }
+        ],
+        "activation_2/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 16.34988784790039,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.0641172072466682
+            }
+        ],
+        "activation_3/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 16.759824752807617,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.06572480295218673
+            }
+        ],
+        "activation_4/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 13.33458423614502,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.052292487200568706
+            }
+        ],
+        "activation_5/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 13.179086685180664,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.051682692883061425
+            }
+        ],
+        "activation_6/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 8.017006874084473,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.03143924264346852
+            }
+        ],
+        "activation_7/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 11.09465217590332,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.04350843990550322
+            }
+        ],
+        "activation_8/Relu": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 18.775253295898438,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.07362844429764093
+            }
+        ],
+        "average_pooling2d/AvgPool": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 3.715298891067505,
+                "min": 0.0,
+                "offset": 0,
+                "scale": 0.014569799572813744
+            }
+        ],
+        "dense/BiasAdd": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 23.8314208984375,
+                "min": -24.019069881889763,
+                "offset": -128,
+                "scale": 0.18764898345226377
+            }
+        ],
+        "dense/Softmax": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 23.8314208984375,
+                "min": -24.019069881889763,
+                "offset": -128,
+                "scale": 0.18764898345226377
+            }
+        ],
+        "input_1": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "False",
+                "max": 25.726926586674708,
+                "min": -123.37230704064463,
+                "offset": -211.0,
+                "scale": 0.5847028769698798
+            }
+        ]
+    },
+    "param_encodings": {
+        "conv2d/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.2234632968902588,
+                "min": -0.22522285040907972,
+                "offset": -128,
+                "scale": 0.0017595535188209355
+            }
+        ],
+        "conv2d_1/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.6015145182609558,
+                "min": -0.6062508530504122,
+                "offset": -128,
+                "scale": 0.004736334789456346
+            }
+        ],
+        "conv2d_2/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.6120141744613647,
+                "min": -0.616833183709092,
+                "offset": -128,
+                "scale": 0.004819009247727282
+            }
+        ],
+        "conv2d_3/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 0.6556044816970825,
+                "min": -0.6607667217104454,
+                "offset": -128,
+                "scale": 0.0051622400133628545
+            }
+        ],
+        "conv2d_4/kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.418520212173462,
+                "min": -1.4296896626630167,
+                "offset": -128,
+                "scale": 0.011169450489554818
+            }
+        ],
+        "dense/kernel/transpose": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.1079226732254028,
+                "min": -1.1166464738019808,
+                "offset": -128,
+                "scale": 0.008723800576577977
+            }
+        ],
+        "depthwise_conv2d/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 2.545833110809326,
+                "min": -2.5658790408156986,
+                "offset": -128,
+                "scale": 0.020045930006372645
+            }
+        ],
+        "depthwise_conv2d_1/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.9545592069625854,
+                "min": -1.9699494369386688,
+                "offset": -128,
+                "scale": 0.015390229976083351
+            }
+        ],
+        "depthwise_conv2d_2/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 1.5696145296096802,
+                "min": -1.5819736991341657,
+                "offset": -128,
+                "scale": 0.01235916952448567
+            }
+        ],
+        "depthwise_conv2d_3/depthwise_kernel": [
+            {
+                "bitwidth": 8,
+                "is_symmetric": "True",
+                "max": 2.1012625694274902,
+                "min": -2.1178079439899116,
+                "offset": -128,
+                "scale": 0.01654537456242118
+            }
+        ]
+    },
+    "version": "0.5.0"
+}

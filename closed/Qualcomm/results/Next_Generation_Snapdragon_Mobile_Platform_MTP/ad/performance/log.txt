@@ -1,0 +1,63 @@
+Logging initialized. Writing output to sessions\20250809_004135\log.txt
+Initializing SerialDevice on port: COM16 at 115200 baud
+SerialDevice entering port COM16, entry_count (before increment) = 0
+WARNING: Failed to get name.
+Retrying _get_name (1/3)...
+WARNING: Failed to get name.
+Retrying _get_name (2/3)...
+WARNING: Failed to get name.
+Device model retrieved: ad01
+Device model retrieved: ad01
+SerialDevice exiting port COM16, entry_count (before decrement) = 1
+SerialDevice entering port COM16, entry_count (before increment) = 0
+0809.004139 ulp-mlperf: Loading file normal_id_01_00000003_hist_librosa.bin segment 0
+0809.004147 ulp-mlperf: Load complete.
+Running inference with 10/150000 (warmup/measured) iterations ...
+done
+0809.004157 ulp-mlperf: Performance results for window 1:
+0809.004157 ulp-mlperf:   # Inferences :        150000
+0809.004157 ulp-mlperf:   Runtime      :     10.253 sec.
+0809.004157 ulp-mlperf:   Throughput   :  14629.321 inf./sec.
+0809.004157 ulp-mlperf:   m-results    : [53.592]
+0809.004157 ulp-mlperf: Loading file normal_id_01_00000013_hist_librosa.bin segment 0
+0809.004205 ulp-mlperf: Load complete.
+Running inference with 10/150000 (warmup/measured) iterations ...
+done
+0809.004216 ulp-mlperf: Performance results for window 2:
+0809.004216 ulp-mlperf:   # Inferences :        150000
+0809.004216 ulp-mlperf:   Runtime      :     10.259 sec.
+0809.004216 ulp-mlperf:   Throughput   :  14621.002 inf./sec.
+0809.004216 ulp-mlperf:   m-results    : [24.2]
+0809.004216 ulp-mlperf: Loading file normal_id_01_00000023_hist_librosa.bin segment 0
+0809.004224 ulp-mlperf: Load complete.
+Running inference with 10/150000 (warmup/measured) iterations ...
+done
+0809.004234 ulp-mlperf: Performance results for window 3:
+0809.004234 ulp-mlperf:   # Inferences :        150000
+0809.004234 ulp-mlperf:   Runtime      :     10.256 sec.
+0809.004234 ulp-mlperf:   Throughput   :  14625.742 inf./sec.
+0809.004234 ulp-mlperf:   m-results    : [38.892]
+0809.004235 ulp-mlperf: Loading file normal_id_01_00000033_hist_librosa.bin segment 0
+0809.004242 ulp-mlperf: Load complete.
+Running inference with 10/150000 (warmup/measured) iterations ...
+done
+0809.004253 ulp-mlperf: Performance results for window 4:
+0809.004253 ulp-mlperf:   # Inferences :        150000
+0809.004253 ulp-mlperf:   Runtime      :     10.261 sec.
+0809.004253 ulp-mlperf:   Throughput   :  14618.746 inf./sec.
+0809.004253 ulp-mlperf:   m-results    : [35.822]
+0809.004253 ulp-mlperf: Loading file normal_id_01_00000043_hist_librosa.bin segment 0
+0809.004301 ulp-mlperf: Load complete.
+Running inference with 10/150000 (warmup/measured) iterations ...
+done
+0809.004312 ulp-mlperf: Performance results for window 5:
+0809.004312 ulp-mlperf:   # Inferences :        150000
+0809.004312 ulp-mlperf:   Runtime      :     10.256 sec.
+0809.004312 ulp-mlperf:   Throughput   :  14624.973 inf./sec.
+0809.004312 ulp-mlperf:   m-results    : [49.268]
+SerialDevice exiting port COM16, entry_count (before decrement) = 1
+[{'file': 'normal_id_01_00000003_hist_librosa.bin', 'classes': '2', 'class': '0', 'bytes_to_send': '2560', 'stride': '512', 'total_length': 1, 'infer': {'start_time': 336040230, 'end_time': 346293611, 'results': [53.592], 'elapsed_time': 10253381, 'total_inferences': 1, 'iterations': 150000, 'warmups': 10, 'throughput': 14629.320806473495}, 'mode': 'p'}, {'file': 'normal_id_01_00000013_hist_librosa.bin', 'classes': '2', 'class': '0', 'bytes_to_send': '2560', 'stride': '512', 'total_length': 1, 'infer': {'start_time': 354307438, 'end_time': 364566653, 'results': [24.2], 'elapsed_time': 10259215, 'total_inferences': 1, 'iterations': 150000, 'warmups': 10, 'throughput': 14621.001704321434}, 'mode': 'p'}, {'file': 'normal_id_01_00000023_hist_librosa.bin', 'classes': '2', 'class': '0', 'bytes_to_send': '2560', 'stride': '512', 'total_length': 1, 'infer': {'start_time': 373110653, 'end_time': 383366543, 'results': [38.892], 'elapsed_time': 10255890, 'total_inferences': 1, 'iterations': 150000, 'warmups': 10, 'throughput': 14625.741890757408}, 'mode': 'p'}, {'file': 'normal_id_01_00000033_hist_librosa.bin', 'classes': '2', 'class': '0', 'bytes_to_send': '2560', 'stride': '512', 'total_length': 1, 'infer': {'start_time': 391718809, 'end_time': 401979607, 'results': [35.822], 'elapsed_time': 10260798, 'total_inferences': 1, 'iterations': 150000, 'warmups': 10, 'throughput': 14618.746027355768}, 'mode': 'p'}, {'file': 'normal_id_01_00000043_hist_librosa.bin', 'classes': '2', 'class': '0', 'bytes_to_send': '2560', 'stride': '512', 'total_length': 1, 'infer': {'start_time': 410467480, 'end_time': 420723909, 'results': [49.268], 'elapsed_time': 10256429, 'total_inferences': 1, 'iterations': 150000, 'warmups': 10, 'throughput': 14624.973272861344}, 'mode': 'p'}]
+0809.004312 ulp-mlperf: ---------------------------------------------------------
+0809.004312 ulp-mlperf: Median throughput is  14624.973 inf./sec.
+0809.004312 ulp-mlperf: ---------------------------------------------------------
+Session logged in file sessions\20250809_004135\log.txt

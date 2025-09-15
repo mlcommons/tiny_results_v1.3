@@ -1,0 +1,10726 @@
+name: "input_1"
+op: "Placeholder"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: -1
+      }
+      dim {
+        size: 49
+      }
+      dim {
+        size: 10
+      }
+      dim {
+        size: 1
+      }
+    }
+  }
+}
+name: "conv2d/kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\n\000\000\000\004\000\000\000\001\000\000\000@\000\000\000"
+    }
+  }
+}
+name: "conv2d/kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.04803844541311264
+    }
+  }
+}
+name: "conv2d/kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.04803844541311264
+    }
+  }
+}
+name: "conv2d/kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "conv2d/kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "conv2d/kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "conv2d/kernel/Initializer/random_uniform/max"
+input: "conv2d/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/kernel"
+    }
+  }
+}
+name: "conv2d/kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "conv2d/kernel/Initializer/random_uniform/RandomUniform"
+input: "conv2d/kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/kernel"
+    }
+  }
+}
+name: "conv2d/kernel/Initializer/random_uniform"
+op: "Add"
+input: "conv2d/kernel/Initializer/random_uniform/mul"
+input: "conv2d/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/kernel"
+    }
+  }
+}
+name: "conv2d/kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 10
+      }
+      dim {
+        size: 4
+      }
+      dim {
+        size: 1
+      }
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d/kernel"
+  }
+}
+name: "conv2d/kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d/kernel"
+name: "conv2d/kernel/Assign"
+op: "AssignVariableOp"
+input: "conv2d/kernel"
+input: "conv2d/kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d/kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "conv2d/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d/bias"
+  }
+}
+name: "conv2d/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d/bias"
+name: "conv2d/bias/Assign"
+op: "AssignVariableOp"
+input: "conv2d/bias"
+input: "conv2d/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d/dilation_rate"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "conv2d/Conv2D/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d/Conv2D"
+op: "Conv2D"
+input: "input_1"
+input: "conv2d/Conv2D/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "dilations"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "explicit_paddings"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "SAME"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 2
+      i: 2
+      i: 1
+    }
+  }
+}
+attr {
+  key: "use_cudnn_on_gpu"
+  value {
+    b: true
+  }
+}
+name: "conv2d/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d/BiasAdd"
+op: "BiasAdd"
+input: "conv2d/Conv2D"
+input: "conv2d/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "batch_normalization/gamma/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization/gamma"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization/gamma"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization/gamma"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization/gamma"
+  }
+}
+name: "batch_normalization/gamma/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization/gamma"
+name: "batch_normalization/gamma/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization/gamma"
+input: "batch_normalization/gamma/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/gamma/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/beta/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization/beta"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization/beta"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization/beta"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization/beta"
+  }
+}
+name: "batch_normalization/beta/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization/beta"
+name: "batch_normalization/beta/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization/beta"
+input: "batch_normalization/beta/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/beta/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/moving_mean/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization/moving_mean"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization/moving_mean"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization/moving_mean"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization/moving_mean"
+  }
+}
+name: "batch_normalization/moving_mean/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization/moving_mean"
+name: "batch_normalization/moving_mean/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization/moving_mean"
+input: "batch_normalization/moving_mean/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/moving_mean/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/moving_variance/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization/moving_variance"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization/moving_variance"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization/moving_variance"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization/moving_variance"
+  }
+}
+name: "batch_normalization/moving_variance/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization/moving_variance"
+name: "batch_normalization/moving_variance/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization/moving_variance"
+input: "batch_normalization/moving_variance/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/moving_variance/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/FusedBatchNormV3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/FusedBatchNormV3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization/FusedBatchNormV3"
+op: "FusedBatchNormV3"
+input: "conv2d/BiasAdd"
+input: "batch_normalization/ReadVariableOp"
+input: "batch_normalization/ReadVariableOp_1"
+input: "batch_normalization/FusedBatchNormV3/ReadVariableOp"
+input: "batch_normalization/FusedBatchNormV3/ReadVariableOp_1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "U"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "epsilon"
+  value {
+    f: 0.0010000000474974513
+  }
+}
+attr {
+  key: "is_training"
+  value {
+    b: false
+  }
+}
+name: "batch_normalization/Const"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.9900000095367432
+    }
+  }
+}
+name: "activation/Relu"
+op: "Relu"
+input: "batch_normalization/FusedBatchNormV3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "dropout/Identity"
+op: "Identity"
+input: "activation/Relu"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\003\000\000\000\003\000\000\000@\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.10127393901348114
+    }
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.10127393901348114
+    }
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/max"
+input: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/RandomUniform"
+input: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform"
+op: "Add"
+input: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/mul"
+input: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 3
+      }
+      dim {
+        size: 3
+      }
+      dim {
+        size: 64
+      }
+      dim {
+        size: 1
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "depthwise_conv2d/depthwise_kernel"
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d/depthwise_kernel"
+name: "depthwise_conv2d/depthwise_kernel/Assign"
+op: "AssignVariableOp"
+input: "depthwise_conv2d/depthwise_kernel"
+input: "depthwise_conv2d/depthwise_kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d/depthwise_kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d/depthwise_kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "depthwise_conv2d/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "depthwise_conv2d/bias"
+  }
+}
+name: "depthwise_conv2d/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d/bias"
+name: "depthwise_conv2d/bias/Assign"
+op: "AssignVariableOp"
+input: "depthwise_conv2d/bias"
+input: "depthwise_conv2d/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d/depthwise/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d/depthwise_kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d/depthwise/Shape"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\003\000\000\000\003\000\000\000@\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d/depthwise/dilation_rate"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d/depthwise"
+op: "DepthwiseConv2dNative"
+input: "dropout/Identity"
+input: "depthwise_conv2d/depthwise/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "dilations"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "SAME"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+name: "depthwise_conv2d/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d/BiasAdd"
+op: "BiasAdd"
+input: "depthwise_conv2d/depthwise"
+input: "depthwise_conv2d/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "batch_normalization_1/gamma/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_1/gamma"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_1/gamma"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_1/gamma"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_1/gamma"
+  }
+}
+name: "batch_normalization_1/gamma/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/gamma"
+name: "batch_normalization_1/gamma/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_1/gamma"
+input: "batch_normalization_1/gamma/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/gamma/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_1/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/beta/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_1/beta"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_1/beta"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_1/beta"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_1/beta"
+  }
+}
+name: "batch_normalization_1/beta/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/beta"
+name: "batch_normalization_1/beta/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_1/beta"
+input: "batch_normalization_1/beta/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/beta/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_1/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/moving_mean/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_1/moving_mean"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_1/moving_mean"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_1/moving_mean"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_1/moving_mean"
+  }
+}
+name: "batch_normalization_1/moving_mean/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/moving_mean"
+name: "batch_normalization_1/moving_mean/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_1/moving_mean"
+input: "batch_normalization_1/moving_mean/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/moving_mean/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_1/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/moving_variance/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_1/moving_variance"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_1/moving_variance"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_1/moving_variance"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_1/moving_variance"
+  }
+}
+name: "batch_normalization_1/moving_variance/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/moving_variance"
+name: "batch_normalization_1/moving_variance/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_1/moving_variance"
+input: "batch_normalization_1/moving_variance/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/moving_variance/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_1/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_1/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_1/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/FusedBatchNormV3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_1/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/FusedBatchNormV3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_1/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_1/FusedBatchNormV3"
+op: "FusedBatchNormV3"
+input: "depthwise_conv2d/BiasAdd"
+input: "batch_normalization_1/ReadVariableOp"
+input: "batch_normalization_1/ReadVariableOp_1"
+input: "batch_normalization_1/FusedBatchNormV3/ReadVariableOp"
+input: "batch_normalization_1/FusedBatchNormV3/ReadVariableOp_1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "U"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "epsilon"
+  value {
+    f: 0.0010000000474974513
+  }
+}
+attr {
+  key: "is_training"
+  value {
+    b: false
+  }
+}
+name: "batch_normalization_1/Const"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.9900000095367432
+    }
+  }
+}
+name: "activation_1/Relu"
+op: "Relu"
+input: "batch_normalization_1/FusedBatchNormV3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_1/kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000@\000\000\000@\000\000\000"
+    }
+  }
+}
+name: "conv2d_1/kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.21650634706020355
+    }
+  }
+}
+name: "conv2d_1/kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.21650634706020355
+    }
+  }
+}
+name: "conv2d_1/kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "conv2d_1/kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "conv2d_1/kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "conv2d_1/kernel/Initializer/random_uniform/max"
+input: "conv2d_1/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/kernel"
+    }
+  }
+}
+name: "conv2d_1/kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "conv2d_1/kernel/Initializer/random_uniform/RandomUniform"
+input: "conv2d_1/kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/kernel"
+    }
+  }
+}
+name: "conv2d_1/kernel/Initializer/random_uniform"
+op: "Add"
+input: "conv2d_1/kernel/Initializer/random_uniform/mul"
+input: "conv2d_1/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/kernel"
+    }
+  }
+}
+name: "conv2d_1/kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 1
+      }
+      dim {
+        size: 1
+      }
+      dim {
+        size: 64
+      }
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d_1/kernel"
+  }
+}
+name: "conv2d_1/kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d_1/kernel"
+name: "conv2d_1/kernel/Assign"
+op: "AssignVariableOp"
+input: "conv2d_1/kernel"
+input: "conv2d_1/kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_1/kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_1/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_1/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "conv2d_1/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_1/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d_1/bias"
+  }
+}
+name: "conv2d_1/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d_1/bias"
+name: "conv2d_1/bias/Assign"
+op: "AssignVariableOp"
+input: "conv2d_1/bias"
+input: "conv2d_1/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_1/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_1/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_1/dilation_rate"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "conv2d_1/Conv2D/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_1/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_1/Conv2D"
+op: "Conv2D"
+input: "activation_1/Relu"
+input: "conv2d_1/Conv2D/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "dilations"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "explicit_paddings"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "SAME"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "use_cudnn_on_gpu"
+  value {
+    b: true
+  }
+}
+name: "conv2d_1/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_1/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_1/BiasAdd"
+op: "BiasAdd"
+input: "conv2d_1/Conv2D"
+input: "conv2d_1/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "batch_normalization_2/gamma/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_2/gamma"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_2/gamma"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_2/gamma"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_2/gamma"
+  }
+}
+name: "batch_normalization_2/gamma/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/gamma"
+name: "batch_normalization_2/gamma/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_2/gamma"
+input: "batch_normalization_2/gamma/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/gamma/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_2/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/beta/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_2/beta"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_2/beta"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_2/beta"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_2/beta"
+  }
+}
+name: "batch_normalization_2/beta/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/beta"
+name: "batch_normalization_2/beta/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_2/beta"
+input: "batch_normalization_2/beta/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/beta/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_2/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/moving_mean/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_2/moving_mean"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_2/moving_mean"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_2/moving_mean"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_2/moving_mean"
+  }
+}
+name: "batch_normalization_2/moving_mean/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/moving_mean"
+name: "batch_normalization_2/moving_mean/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_2/moving_mean"
+input: "batch_normalization_2/moving_mean/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/moving_mean/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_2/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/moving_variance/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_2/moving_variance"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_2/moving_variance"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_2/moving_variance"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_2/moving_variance"
+  }
+}
+name: "batch_normalization_2/moving_variance/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/moving_variance"
+name: "batch_normalization_2/moving_variance/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_2/moving_variance"
+input: "batch_normalization_2/moving_variance/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/moving_variance/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_2/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_2/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_2/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/FusedBatchNormV3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_2/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/FusedBatchNormV3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_2/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_2/FusedBatchNormV3"
+op: "FusedBatchNormV3"
+input: "conv2d_1/BiasAdd"
+input: "batch_normalization_2/ReadVariableOp"
+input: "batch_normalization_2/ReadVariableOp_1"
+input: "batch_normalization_2/FusedBatchNormV3/ReadVariableOp"
+input: "batch_normalization_2/FusedBatchNormV3/ReadVariableOp_1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "U"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "epsilon"
+  value {
+    f: 0.0010000000474974513
+  }
+}
+attr {
+  key: "is_training"
+  value {
+    b: false
+  }
+}
+name: "batch_normalization_2/Const"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.9900000095367432
+    }
+  }
+}
+name: "activation_2/Relu"
+op: "Relu"
+input: "batch_normalization_2/FusedBatchNormV3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\003\000\000\000\003\000\000\000@\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.10127393901348114
+    }
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.10127393901348114
+    }
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/max"
+input: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/RandomUniform"
+input: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform"
+op: "Add"
+input: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/mul"
+input: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 3
+      }
+      dim {
+        size: 3
+      }
+      dim {
+        size: 64
+      }
+      dim {
+        size: 1
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "depthwise_conv2d_1/depthwise_kernel"
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_1/depthwise_kernel"
+name: "depthwise_conv2d_1/depthwise_kernel/Assign"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_1/depthwise_kernel"
+input: "depthwise_conv2d_1/depthwise_kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_1/depthwise_kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_1/depthwise_kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_1/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "depthwise_conv2d_1/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_1/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "depthwise_conv2d_1/bias"
+  }
+}
+name: "depthwise_conv2d_1/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_1/bias"
+name: "depthwise_conv2d_1/bias/Assign"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_1/bias"
+input: "depthwise_conv2d_1/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_1/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_1/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_1/depthwise/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_1/depthwise_kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_1/depthwise/Shape"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\003\000\000\000\003\000\000\000@\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d_1/depthwise/dilation_rate"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d_1/depthwise"
+op: "DepthwiseConv2dNative"
+input: "activation_2/Relu"
+input: "depthwise_conv2d_1/depthwise/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "dilations"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "SAME"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+name: "depthwise_conv2d_1/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_1/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_1/BiasAdd"
+op: "BiasAdd"
+input: "depthwise_conv2d_1/depthwise"
+input: "depthwise_conv2d_1/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "batch_normalization_3/gamma/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_3/gamma"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_3/gamma"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_3/gamma"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_3/gamma"
+  }
+}
+name: "batch_normalization_3/gamma/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/gamma"
+name: "batch_normalization_3/gamma/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_3/gamma"
+input: "batch_normalization_3/gamma/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/gamma/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_3/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/beta/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_3/beta"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_3/beta"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_3/beta"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_3/beta"
+  }
+}
+name: "batch_normalization_3/beta/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/beta"
+name: "batch_normalization_3/beta/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_3/beta"
+input: "batch_normalization_3/beta/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/beta/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_3/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/moving_mean/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_3/moving_mean"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_3/moving_mean"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_3/moving_mean"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_3/moving_mean"
+  }
+}
+name: "batch_normalization_3/moving_mean/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/moving_mean"
+name: "batch_normalization_3/moving_mean/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_3/moving_mean"
+input: "batch_normalization_3/moving_mean/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/moving_mean/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_3/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/moving_variance/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_3/moving_variance"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_3/moving_variance"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_3/moving_variance"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_3/moving_variance"
+  }
+}
+name: "batch_normalization_3/moving_variance/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/moving_variance"
+name: "batch_normalization_3/moving_variance/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_3/moving_variance"
+input: "batch_normalization_3/moving_variance/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/moving_variance/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_3/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_3/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_3/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/FusedBatchNormV3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_3/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/FusedBatchNormV3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_3/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_3/FusedBatchNormV3"
+op: "FusedBatchNormV3"
+input: "depthwise_conv2d_1/BiasAdd"
+input: "batch_normalization_3/ReadVariableOp"
+input: "batch_normalization_3/ReadVariableOp_1"
+input: "batch_normalization_3/FusedBatchNormV3/ReadVariableOp"
+input: "batch_normalization_3/FusedBatchNormV3/ReadVariableOp_1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "U"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "epsilon"
+  value {
+    f: 0.0010000000474974513
+  }
+}
+attr {
+  key: "is_training"
+  value {
+    b: false
+  }
+}
+name: "batch_normalization_3/Const"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.9900000095367432
+    }
+  }
+}
+name: "activation_3/Relu"
+op: "Relu"
+input: "batch_normalization_3/FusedBatchNormV3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_2/kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000@\000\000\000@\000\000\000"
+    }
+  }
+}
+name: "conv2d_2/kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.21650634706020355
+    }
+  }
+}
+name: "conv2d_2/kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.21650634706020355
+    }
+  }
+}
+name: "conv2d_2/kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "conv2d_2/kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "conv2d_2/kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "conv2d_2/kernel/Initializer/random_uniform/max"
+input: "conv2d_2/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/kernel"
+    }
+  }
+}
+name: "conv2d_2/kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "conv2d_2/kernel/Initializer/random_uniform/RandomUniform"
+input: "conv2d_2/kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/kernel"
+    }
+  }
+}
+name: "conv2d_2/kernel/Initializer/random_uniform"
+op: "Add"
+input: "conv2d_2/kernel/Initializer/random_uniform/mul"
+input: "conv2d_2/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/kernel"
+    }
+  }
+}
+name: "conv2d_2/kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 1
+      }
+      dim {
+        size: 1
+      }
+      dim {
+        size: 64
+      }
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d_2/kernel"
+  }
+}
+name: "conv2d_2/kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d_2/kernel"
+name: "conv2d_2/kernel/Assign"
+op: "AssignVariableOp"
+input: "conv2d_2/kernel"
+input: "conv2d_2/kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_2/kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_2/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_2/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "conv2d_2/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_2/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d_2/bias"
+  }
+}
+name: "conv2d_2/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d_2/bias"
+name: "conv2d_2/bias/Assign"
+op: "AssignVariableOp"
+input: "conv2d_2/bias"
+input: "conv2d_2/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_2/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_2/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_2/dilation_rate"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "conv2d_2/Conv2D/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_2/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_2/Conv2D"
+op: "Conv2D"
+input: "activation_3/Relu"
+input: "conv2d_2/Conv2D/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "dilations"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "explicit_paddings"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "SAME"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "use_cudnn_on_gpu"
+  value {
+    b: true
+  }
+}
+name: "conv2d_2/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_2/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_2/BiasAdd"
+op: "BiasAdd"
+input: "conv2d_2/Conv2D"
+input: "conv2d_2/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "batch_normalization_4/gamma/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_4/gamma"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_4/gamma"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_4/gamma"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_4/gamma"
+  }
+}
+name: "batch_normalization_4/gamma/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/gamma"
+name: "batch_normalization_4/gamma/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_4/gamma"
+input: "batch_normalization_4/gamma/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/gamma/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_4/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/beta/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_4/beta"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_4/beta"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_4/beta"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_4/beta"
+  }
+}
+name: "batch_normalization_4/beta/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/beta"
+name: "batch_normalization_4/beta/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_4/beta"
+input: "batch_normalization_4/beta/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/beta/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_4/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/moving_mean/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_4/moving_mean"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_4/moving_mean"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_4/moving_mean"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_4/moving_mean"
+  }
+}
+name: "batch_normalization_4/moving_mean/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/moving_mean"
+name: "batch_normalization_4/moving_mean/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_4/moving_mean"
+input: "batch_normalization_4/moving_mean/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/moving_mean/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_4/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/moving_variance/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_4/moving_variance"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_4/moving_variance"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_4/moving_variance"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_4/moving_variance"
+  }
+}
+name: "batch_normalization_4/moving_variance/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/moving_variance"
+name: "batch_normalization_4/moving_variance/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_4/moving_variance"
+input: "batch_normalization_4/moving_variance/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/moving_variance/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_4/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_4/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_4/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/FusedBatchNormV3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_4/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/FusedBatchNormV3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_4/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_4/FusedBatchNormV3"
+op: "FusedBatchNormV3"
+input: "conv2d_2/BiasAdd"
+input: "batch_normalization_4/ReadVariableOp"
+input: "batch_normalization_4/ReadVariableOp_1"
+input: "batch_normalization_4/FusedBatchNormV3/ReadVariableOp"
+input: "batch_normalization_4/FusedBatchNormV3/ReadVariableOp_1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "U"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "epsilon"
+  value {
+    f: 0.0010000000474974513
+  }
+}
+attr {
+  key: "is_training"
+  value {
+    b: false
+  }
+}
+name: "batch_normalization_4/Const"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.9900000095367432
+    }
+  }
+}
+name: "activation_4/Relu"
+op: "Relu"
+input: "batch_normalization_4/FusedBatchNormV3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\003\000\000\000\003\000\000\000@\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.10127393901348114
+    }
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.10127393901348114
+    }
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/max"
+input: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/RandomUniform"
+input: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform"
+op: "Add"
+input: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/mul"
+input: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 3
+      }
+      dim {
+        size: 3
+      }
+      dim {
+        size: 64
+      }
+      dim {
+        size: 1
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "depthwise_conv2d_2/depthwise_kernel"
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_2/depthwise_kernel"
+name: "depthwise_conv2d_2/depthwise_kernel/Assign"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_2/depthwise_kernel"
+input: "depthwise_conv2d_2/depthwise_kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_2/depthwise_kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_2/depthwise_kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_2/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "depthwise_conv2d_2/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_2/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "depthwise_conv2d_2/bias"
+  }
+}
+name: "depthwise_conv2d_2/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_2/bias"
+name: "depthwise_conv2d_2/bias/Assign"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_2/bias"
+input: "depthwise_conv2d_2/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_2/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_2/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_2/depthwise/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_2/depthwise_kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_2/depthwise/Shape"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\003\000\000\000\003\000\000\000@\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d_2/depthwise/dilation_rate"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d_2/depthwise"
+op: "DepthwiseConv2dNative"
+input: "activation_4/Relu"
+input: "depthwise_conv2d_2/depthwise/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "dilations"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "SAME"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+name: "depthwise_conv2d_2/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_2/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_2/BiasAdd"
+op: "BiasAdd"
+input: "depthwise_conv2d_2/depthwise"
+input: "depthwise_conv2d_2/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "batch_normalization_5/gamma/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_5/gamma"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_5/gamma"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_5/gamma"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_5/gamma"
+  }
+}
+name: "batch_normalization_5/gamma/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/gamma"
+name: "batch_normalization_5/gamma/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_5/gamma"
+input: "batch_normalization_5/gamma/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/gamma/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_5/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/beta/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_5/beta"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_5/beta"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_5/beta"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_5/beta"
+  }
+}
+name: "batch_normalization_5/beta/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/beta"
+name: "batch_normalization_5/beta/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_5/beta"
+input: "batch_normalization_5/beta/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/beta/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_5/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/moving_mean/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_5/moving_mean"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_5/moving_mean"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_5/moving_mean"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_5/moving_mean"
+  }
+}
+name: "batch_normalization_5/moving_mean/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/moving_mean"
+name: "batch_normalization_5/moving_mean/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_5/moving_mean"
+input: "batch_normalization_5/moving_mean/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/moving_mean/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_5/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/moving_variance/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_5/moving_variance"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_5/moving_variance"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_5/moving_variance"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_5/moving_variance"
+  }
+}
+name: "batch_normalization_5/moving_variance/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/moving_variance"
+name: "batch_normalization_5/moving_variance/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_5/moving_variance"
+input: "batch_normalization_5/moving_variance/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/moving_variance/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_5/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_5/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_5/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/FusedBatchNormV3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_5/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/FusedBatchNormV3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_5/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_5/FusedBatchNormV3"
+op: "FusedBatchNormV3"
+input: "depthwise_conv2d_2/BiasAdd"
+input: "batch_normalization_5/ReadVariableOp"
+input: "batch_normalization_5/ReadVariableOp_1"
+input: "batch_normalization_5/FusedBatchNormV3/ReadVariableOp"
+input: "batch_normalization_5/FusedBatchNormV3/ReadVariableOp_1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "U"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "epsilon"
+  value {
+    f: 0.0010000000474974513
+  }
+}
+attr {
+  key: "is_training"
+  value {
+    b: false
+  }
+}
+name: "batch_normalization_5/Const"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.9900000095367432
+    }
+  }
+}
+name: "activation_5/Relu"
+op: "Relu"
+input: "batch_normalization_5/FusedBatchNormV3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_3/kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000@\000\000\000@\000\000\000"
+    }
+  }
+}
+name: "conv2d_3/kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.21650634706020355
+    }
+  }
+}
+name: "conv2d_3/kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.21650634706020355
+    }
+  }
+}
+name: "conv2d_3/kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "conv2d_3/kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "conv2d_3/kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "conv2d_3/kernel/Initializer/random_uniform/max"
+input: "conv2d_3/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/kernel"
+    }
+  }
+}
+name: "conv2d_3/kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "conv2d_3/kernel/Initializer/random_uniform/RandomUniform"
+input: "conv2d_3/kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/kernel"
+    }
+  }
+}
+name: "conv2d_3/kernel/Initializer/random_uniform"
+op: "Add"
+input: "conv2d_3/kernel/Initializer/random_uniform/mul"
+input: "conv2d_3/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/kernel"
+    }
+  }
+}
+name: "conv2d_3/kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 1
+      }
+      dim {
+        size: 1
+      }
+      dim {
+        size: 64
+      }
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d_3/kernel"
+  }
+}
+name: "conv2d_3/kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d_3/kernel"
+name: "conv2d_3/kernel/Assign"
+op: "AssignVariableOp"
+input: "conv2d_3/kernel"
+input: "conv2d_3/kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_3/kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_3/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_3/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "conv2d_3/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_3/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d_3/bias"
+  }
+}
+name: "conv2d_3/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d_3/bias"
+name: "conv2d_3/bias/Assign"
+op: "AssignVariableOp"
+input: "conv2d_3/bias"
+input: "conv2d_3/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_3/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_3/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_3/dilation_rate"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "conv2d_3/Conv2D/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_3/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_3/Conv2D"
+op: "Conv2D"
+input: "activation_5/Relu"
+input: "conv2d_3/Conv2D/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "dilations"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "explicit_paddings"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "SAME"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "use_cudnn_on_gpu"
+  value {
+    b: true
+  }
+}
+name: "conv2d_3/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_3/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_3/BiasAdd"
+op: "BiasAdd"
+input: "conv2d_3/Conv2D"
+input: "conv2d_3/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "batch_normalization_6/gamma/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_6/gamma"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_6/gamma"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_6/gamma"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_6/gamma"
+  }
+}
+name: "batch_normalization_6/gamma/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/gamma"
+name: "batch_normalization_6/gamma/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_6/gamma"
+input: "batch_normalization_6/gamma/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/gamma/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_6/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/beta/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_6/beta"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_6/beta"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_6/beta"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_6/beta"
+  }
+}
+name: "batch_normalization_6/beta/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/beta"
+name: "batch_normalization_6/beta/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_6/beta"
+input: "batch_normalization_6/beta/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/beta/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_6/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/moving_mean/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_6/moving_mean"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_6/moving_mean"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_6/moving_mean"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_6/moving_mean"
+  }
+}
+name: "batch_normalization_6/moving_mean/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/moving_mean"
+name: "batch_normalization_6/moving_mean/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_6/moving_mean"
+input: "batch_normalization_6/moving_mean/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/moving_mean/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_6/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/moving_variance/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_6/moving_variance"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_6/moving_variance"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_6/moving_variance"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_6/moving_variance"
+  }
+}
+name: "batch_normalization_6/moving_variance/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/moving_variance"
+name: "batch_normalization_6/moving_variance/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_6/moving_variance"
+input: "batch_normalization_6/moving_variance/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/moving_variance/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_6/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_6/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_6/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/FusedBatchNormV3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_6/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/FusedBatchNormV3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_6/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_6/FusedBatchNormV3"
+op: "FusedBatchNormV3"
+input: "conv2d_3/BiasAdd"
+input: "batch_normalization_6/ReadVariableOp"
+input: "batch_normalization_6/ReadVariableOp_1"
+input: "batch_normalization_6/FusedBatchNormV3/ReadVariableOp"
+input: "batch_normalization_6/FusedBatchNormV3/ReadVariableOp_1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "U"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "epsilon"
+  value {
+    f: 0.0010000000474974513
+  }
+}
+attr {
+  key: "is_training"
+  value {
+    b: false
+  }
+}
+name: "batch_normalization_6/Const"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.9900000095367432
+    }
+  }
+}
+name: "activation_6/Relu"
+op: "Relu"
+input: "batch_normalization_6/FusedBatchNormV3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\003\000\000\000\003\000\000\000@\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.10127393901348114
+    }
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.10127393901348114
+    }
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/max"
+input: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/RandomUniform"
+input: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform"
+op: "Add"
+input: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/mul"
+input: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/depthwise_kernel"
+    }
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/depthwise_kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 3
+      }
+      dim {
+        size: 3
+      }
+      dim {
+        size: 64
+      }
+      dim {
+        size: 1
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "depthwise_conv2d_3/depthwise_kernel"
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_3/depthwise_kernel"
+name: "depthwise_conv2d_3/depthwise_kernel/Assign"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_3/depthwise_kernel"
+input: "depthwise_conv2d_3/depthwise_kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_3/depthwise_kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_3/depthwise_kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_3/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "depthwise_conv2d_3/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@depthwise_conv2d_3/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "depthwise_conv2d_3/bias"
+  }
+}
+name: "depthwise_conv2d_3/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_3/bias"
+name: "depthwise_conv2d_3/bias/Assign"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_3/bias"
+input: "depthwise_conv2d_3/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_3/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_3/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_3/depthwise/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_3/depthwise_kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_3/depthwise/Shape"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\003\000\000\000\003\000\000\000@\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d_3/depthwise/dilation_rate"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "depthwise_conv2d_3/depthwise"
+op: "DepthwiseConv2dNative"
+input: "activation_6/Relu"
+input: "depthwise_conv2d_3/depthwise/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "dilations"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "SAME"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+name: "depthwise_conv2d_3/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "depthwise_conv2d_3/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "depthwise_conv2d_3/BiasAdd"
+op: "BiasAdd"
+input: "depthwise_conv2d_3/depthwise"
+input: "depthwise_conv2d_3/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "batch_normalization_7/gamma/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_7/gamma"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_7/gamma"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_7/gamma"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_7/gamma"
+  }
+}
+name: "batch_normalization_7/gamma/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/gamma"
+name: "batch_normalization_7/gamma/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_7/gamma"
+input: "batch_normalization_7/gamma/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/gamma/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_7/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/beta/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_7/beta"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_7/beta"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_7/beta"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_7/beta"
+  }
+}
+name: "batch_normalization_7/beta/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/beta"
+name: "batch_normalization_7/beta/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_7/beta"
+input: "batch_normalization_7/beta/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/beta/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_7/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/moving_mean/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_7/moving_mean"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_7/moving_mean"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_7/moving_mean"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_7/moving_mean"
+  }
+}
+name: "batch_normalization_7/moving_mean/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/moving_mean"
+name: "batch_normalization_7/moving_mean/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_7/moving_mean"
+input: "batch_normalization_7/moving_mean/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/moving_mean/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_7/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/moving_variance/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_7/moving_variance"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_7/moving_variance"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_7/moving_variance"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_7/moving_variance"
+  }
+}
+name: "batch_normalization_7/moving_variance/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/moving_variance"
+name: "batch_normalization_7/moving_variance/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_7/moving_variance"
+input: "batch_normalization_7/moving_variance/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/moving_variance/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_7/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_7/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_7/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/FusedBatchNormV3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_7/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/FusedBatchNormV3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_7/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_7/FusedBatchNormV3"
+op: "FusedBatchNormV3"
+input: "depthwise_conv2d_3/BiasAdd"
+input: "batch_normalization_7/ReadVariableOp"
+input: "batch_normalization_7/ReadVariableOp_1"
+input: "batch_normalization_7/FusedBatchNormV3/ReadVariableOp"
+input: "batch_normalization_7/FusedBatchNormV3/ReadVariableOp_1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "U"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "epsilon"
+  value {
+    f: 0.0010000000474974513
+  }
+}
+attr {
+  key: "is_training"
+  value {
+    b: false
+  }
+}
+name: "batch_normalization_7/Const"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.9900000095367432
+    }
+  }
+}
+name: "activation_7/Relu"
+op: "Relu"
+input: "batch_normalization_7/FusedBatchNormV3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_4/kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 4
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000@\000\000\000@\000\000\000"
+    }
+  }
+}
+name: "conv2d_4/kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.21650634706020355
+    }
+  }
+}
+name: "conv2d_4/kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.21650634706020355
+    }
+  }
+}
+name: "conv2d_4/kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "conv2d_4/kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "conv2d_4/kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "conv2d_4/kernel/Initializer/random_uniform/max"
+input: "conv2d_4/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/kernel"
+    }
+  }
+}
+name: "conv2d_4/kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "conv2d_4/kernel/Initializer/random_uniform/RandomUniform"
+input: "conv2d_4/kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/kernel"
+    }
+  }
+}
+name: "conv2d_4/kernel/Initializer/random_uniform"
+op: "Add"
+input: "conv2d_4/kernel/Initializer/random_uniform/mul"
+input: "conv2d_4/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/kernel"
+    }
+  }
+}
+name: "conv2d_4/kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 1
+      }
+      dim {
+        size: 1
+      }
+      dim {
+        size: 64
+      }
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d_4/kernel"
+  }
+}
+name: "conv2d_4/kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d_4/kernel"
+name: "conv2d_4/kernel/Assign"
+op: "AssignVariableOp"
+input: "conv2d_4/kernel"
+input: "conv2d_4/kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_4/kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_4/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_4/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "conv2d_4/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@conv2d_4/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "conv2d_4/bias"
+  }
+}
+name: "conv2d_4/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "conv2d_4/bias"
+name: "conv2d_4/bias/Assign"
+op: "AssignVariableOp"
+input: "conv2d_4/bias"
+input: "conv2d_4/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_4/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_4/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_4/dilation_rate"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "\001\000\000\000\001\000\000\000"
+    }
+  }
+}
+name: "conv2d_4/Conv2D/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_4/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_4/Conv2D"
+op: "Conv2D"
+input: "activation_7/Relu"
+input: "conv2d_4/Conv2D/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "dilations"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "explicit_paddings"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "SAME"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 1
+      i: 1
+      i: 1
+    }
+  }
+}
+attr {
+  key: "use_cudnn_on_gpu"
+  value {
+    b: true
+  }
+}
+name: "conv2d_4/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "conv2d_4/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "conv2d_4/BiasAdd"
+op: "BiasAdd"
+input: "conv2d_4/Conv2D"
+input: "conv2d_4/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "batch_normalization_8/gamma/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_8/gamma"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_8/gamma"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_8/gamma"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_8/gamma"
+  }
+}
+name: "batch_normalization_8/gamma/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/gamma"
+name: "batch_normalization_8/gamma/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_8/gamma"
+input: "batch_normalization_8/gamma/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/gamma/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_8/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/beta/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_8/beta"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_8/beta"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_8/beta"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_8/beta"
+  }
+}
+name: "batch_normalization_8/beta/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/beta"
+name: "batch_normalization_8/beta/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_8/beta"
+input: "batch_normalization_8/beta/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/beta/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_8/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/moving_mean/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_8/moving_mean"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "batch_normalization_8/moving_mean"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_8/moving_mean"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_8/moving_mean"
+  }
+}
+name: "batch_normalization_8/moving_mean/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/moving_mean"
+name: "batch_normalization_8/moving_mean/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_8/moving_mean"
+input: "batch_normalization_8/moving_mean/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/moving_mean/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_8/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/moving_variance/Initializer/ones"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_8/moving_variance"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 64
+        }
+      }
+      float_val: 1.0
+    }
+  }
+}
+name: "batch_normalization_8/moving_variance"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@batch_normalization_8/moving_variance"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "batch_normalization_8/moving_variance"
+  }
+}
+name: "batch_normalization_8/moving_variance/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/moving_variance"
+name: "batch_normalization_8/moving_variance/Assign"
+op: "AssignVariableOp"
+input: "batch_normalization_8/moving_variance"
+input: "batch_normalization_8/moving_variance/Initializer/ones"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/moving_variance/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_8/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_8/gamma"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_8/beta"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/FusedBatchNormV3/ReadVariableOp"
+op: "ReadVariableOp"
+input: "batch_normalization_8/moving_mean"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/FusedBatchNormV3/ReadVariableOp_1"
+op: "ReadVariableOp"
+input: "batch_normalization_8/moving_variance"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "batch_normalization_8/FusedBatchNormV3"
+op: "FusedBatchNormV3"
+input: "conv2d_4/BiasAdd"
+input: "batch_normalization_8/ReadVariableOp"
+input: "batch_normalization_8/ReadVariableOp_1"
+input: "batch_normalization_8/FusedBatchNormV3/ReadVariableOp"
+input: "batch_normalization_8/FusedBatchNormV3/ReadVariableOp_1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "U"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "epsilon"
+  value {
+    f: 0.0010000000474974513
+  }
+}
+attr {
+  key: "is_training"
+  value {
+    b: false
+  }
+}
+name: "batch_normalization_8/Const"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.9900000095367432
+    }
+  }
+}
+name: "activation_8/Relu"
+op: "Relu"
+input: "batch_normalization_8/FusedBatchNormV3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "dropout_1/Identity"
+op: "Identity"
+input: "activation_8/Relu"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "average_pooling2d/AvgPool"
+op: "AvgPool"
+input: "dropout_1/Identity"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+attr {
+  key: "ksize"
+  value {
+    list {
+      i: 1
+      i: 24
+      i: 5
+      i: 1
+    }
+  }
+}
+attr {
+  key: "padding"
+  value {
+    s: "VALID"
+  }
+}
+attr {
+  key: "strides"
+  value {
+    list {
+      i: 1
+      i: 24
+      i: 5
+      i: 1
+    }
+  }
+}
+name: "flatten/Shape"
+op: "Shape"
+input: "average_pooling2d/AvgPool"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "out_type"
+  value {
+    type: DT_INT32
+  }
+}
+name: "flatten/strided_slice/stack"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 1
+        }
+      }
+      int_val: 0
+    }
+  }
+}
+name: "flatten/strided_slice/stack_1"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 1
+        }
+      }
+      int_val: 1
+    }
+  }
+}
+name: "flatten/strided_slice/stack_2"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 1
+        }
+      }
+      int_val: 1
+    }
+  }
+}
+name: "flatten/strided_slice"
+op: "StridedSlice"
+input: "flatten/Shape"
+input: "flatten/strided_slice/stack"
+input: "flatten/strided_slice/stack_1"
+input: "flatten/strided_slice/stack_2"
+attr {
+  key: "Index"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "begin_mask"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "ellipsis_mask"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "end_mask"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "new_axis_mask"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "shrink_axis_mask"
+  value {
+    i: 1
+  }
+}
+name: "flatten/Reshape/shape/1"
+op: "Const"
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+      }
+      int_val: -1
+    }
+  }
+}
+name: "flatten/Reshape/shape"
+op: "Pack"
+input: "flatten/strided_slice"
+input: "flatten/Reshape/shape/1"
+attr {
+  key: "N"
+  value {
+    i: 2
+  }
+}
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "axis"
+  value {
+    i: 0
+  }
+}
+name: "flatten/Reshape"
+op: "Reshape"
+input: "average_pooling2d/AvgPool"
+input: "flatten/Reshape/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "Tshape"
+  value {
+    type: DT_INT32
+  }
+}
+name: "dense/kernel/Initializer/random_uniform/shape"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_INT32
+      tensor_shape {
+        dim {
+          size: 2
+        }
+      }
+      tensor_content: "@\000\000\000\014\000\000\000"
+    }
+  }
+}
+name: "dense/kernel/Initializer/random_uniform/min"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: -0.28097572922706604
+    }
+  }
+}
+name: "dense/kernel/Initializer/random_uniform/max"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+      }
+      float_val: 0.28097572922706604
+    }
+  }
+}
+name: "dense/kernel/Initializer/random_uniform/RandomUniform"
+op: "RandomUniform"
+input: "dense/kernel/Initializer/random_uniform/shape"
+attr {
+  key: "T"
+  value {
+    type: DT_INT32
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/kernel"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "seed"
+  value {
+    i: 0
+  }
+}
+attr {
+  key: "seed2"
+  value {
+    i: 0
+  }
+}
+name: "dense/kernel/Initializer/random_uniform/sub"
+op: "Sub"
+input: "dense/kernel/Initializer/random_uniform/max"
+input: "dense/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/kernel"
+    }
+  }
+}
+name: "dense/kernel/Initializer/random_uniform/mul"
+op: "Mul"
+input: "dense/kernel/Initializer/random_uniform/RandomUniform"
+input: "dense/kernel/Initializer/random_uniform/sub"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/kernel"
+    }
+  }
+}
+name: "dense/kernel/Initializer/random_uniform"
+op: "Add"
+input: "dense/kernel/Initializer/random_uniform/mul"
+input: "dense/kernel/Initializer/random_uniform/min"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/kernel"
+    }
+  }
+}
+name: "dense/kernel"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/kernel"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 64
+      }
+      dim {
+        size: 12
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "dense/kernel"
+  }
+}
+name: "dense/kernel/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "dense/kernel"
+name: "dense/kernel/Assign"
+op: "AssignVariableOp"
+input: "dense/kernel"
+input: "dense/kernel/Initializer/random_uniform"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "dense/kernel/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "dense/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "dense/bias/Initializer/zeros"
+op: "Const"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/bias"
+    }
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 12
+        }
+      }
+      float_val: 0.0
+    }
+  }
+}
+name: "dense/bias"
+op: "VarHandleOp"
+attr {
+  key: "_class"
+  value {
+    list {
+      s: "loc:@dense/bias"
+    }
+  }
+}
+attr {
+  key: "container"
+  value {
+    s: ""
+  }
+}
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "shape"
+  value {
+    shape {
+      dim {
+        size: 12
+      }
+    }
+  }
+}
+attr {
+  key: "shared_name"
+  value {
+    s: "dense/bias"
+  }
+}
+name: "dense/bias/IsInitialized/VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "dense/bias"
+name: "dense/bias/Assign"
+op: "AssignVariableOp"
+input: "dense/bias"
+input: "dense/bias/Initializer/zeros"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "dense/bias/Read/ReadVariableOp"
+op: "ReadVariableOp"
+input: "dense/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "dense/MatMul/ReadVariableOp"
+op: "ReadVariableOp"
+input: "dense/kernel"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "dense/MatMul"
+op: "MatMul"
+input: "flatten/Reshape"
+input: "dense/MatMul/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "transpose_a"
+  value {
+    b: false
+  }
+}
+attr {
+  key: "transpose_b"
+  value {
+    b: false
+  }
+}
+name: "dense/BiasAdd/ReadVariableOp"
+op: "ReadVariableOp"
+input: "dense/bias"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "dense/BiasAdd"
+op: "BiasAdd"
+input: "dense/MatMul"
+input: "dense/BiasAdd/ReadVariableOp"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+attr {
+  key: "data_format"
+  value {
+    s: "NHWC"
+  }
+}
+name: "dense/Softmax"
+op: "Softmax"
+input: "dense/BiasAdd"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Const"
+op: "Const"
+device: "/device:CPU:0"
+attr {
+  key: "dtype"
+  value {
+    type: DT_STRING
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_STRING
+      tensor_shape {
+      }
+      string_val: "model"
+    }
+  }
+}
+name: "RestoreV2/tensor_names"
+op: "Const"
+device: "/device:CPU:0"
+attr {
+  key: "dtype"
+  value {
+    type: DT_STRING
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_STRING
+      tensor_shape {
+        dim {
+          size: 56
+        }
+      }
+      string_val: "layer_with_weights-0/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-0/kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-1/beta/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-1/gamma/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-1/moving_mean/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-1/moving_variance/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-10/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-10/depthwise_kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-11/beta/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-11/gamma/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-11/moving_mean/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-11/moving_variance/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-12/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-12/kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-13/beta/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-13/gamma/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-13/moving_mean/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-13/moving_variance/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-14/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-14/depthwise_kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-15/beta/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-15/gamma/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-15/moving_mean/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-15/moving_variance/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-16/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-16/kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-17/beta/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-17/gamma/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-17/moving_mean/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-17/moving_variance/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-18/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-18/kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-2/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-2/depthwise_kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-3/beta/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-3/gamma/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-3/moving_mean/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-3/moving_variance/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-4/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-4/kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-5/beta/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-5/gamma/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-5/moving_mean/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-5/moving_variance/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-6/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-6/depthwise_kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-7/beta/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-7/gamma/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-7/moving_mean/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-7/moving_variance/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-8/bias/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-8/kernel/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-9/beta/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-9/gamma/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-9/moving_mean/.ATTRIBUTES/VARIABLE_VALUE"
+      string_val: "layer_with_weights-9/moving_variance/.ATTRIBUTES/VARIABLE_VALUE"
+    }
+  }
+}
+name: "RestoreV2/shape_and_slices"
+op: "Const"
+device: "/device:CPU:0"
+attr {
+  key: "dtype"
+  value {
+    type: DT_STRING
+  }
+}
+attr {
+  key: "value"
+  value {
+    tensor {
+      dtype: DT_STRING
+      tensor_shape {
+        dim {
+          size: 56
+        }
+      }
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+      string_val: ""
+    }
+  }
+}
+name: "RestoreV2"
+op: "RestoreV2"
+input: "Const"
+input: "RestoreV2/tensor_names"
+input: "RestoreV2/shape_and_slices"
+device: "/device:CPU:0"
+attr {
+  key: "dtypes"
+  value {
+    list {
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+      type: DT_FLOAT
+    }
+  }
+}
+name: "Identity"
+op: "Identity"
+input: "RestoreV2"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp"
+op: "AssignVariableOp"
+input: "conv2d/bias"
+input: "Identity"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_1"
+op: "Identity"
+input: "RestoreV2:1"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_1"
+op: "AssignVariableOp"
+input: "conv2d/kernel"
+input: "Identity_1"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_2"
+op: "Identity"
+input: "RestoreV2:2"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_2"
+op: "AssignVariableOp"
+input: "batch_normalization/beta"
+input: "Identity_2"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_3"
+op: "Identity"
+input: "RestoreV2:3"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_3"
+op: "AssignVariableOp"
+input: "batch_normalization/gamma"
+input: "Identity_3"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_4"
+op: "Identity"
+input: "RestoreV2:4"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_4"
+op: "AssignVariableOp"
+input: "batch_normalization/moving_mean"
+input: "Identity_4"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_5"
+op: "Identity"
+input: "RestoreV2:5"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_5"
+op: "AssignVariableOp"
+input: "batch_normalization/moving_variance"
+input: "Identity_5"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_6"
+op: "Identity"
+input: "RestoreV2:6"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_6"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_2/bias"
+input: "Identity_6"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_7"
+op: "Identity"
+input: "RestoreV2:7"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_7"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_2/depthwise_kernel"
+input: "Identity_7"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_8"
+op: "Identity"
+input: "RestoreV2:8"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_8"
+op: "AssignVariableOp"
+input: "batch_normalization_5/beta"
+input: "Identity_8"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_9"
+op: "Identity"
+input: "RestoreV2:9"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_9"
+op: "AssignVariableOp"
+input: "batch_normalization_5/gamma"
+input: "Identity_9"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_10"
+op: "Identity"
+input: "RestoreV2:10"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_10"
+op: "AssignVariableOp"
+input: "batch_normalization_5/moving_mean"
+input: "Identity_10"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_11"
+op: "Identity"
+input: "RestoreV2:11"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_11"
+op: "AssignVariableOp"
+input: "batch_normalization_5/moving_variance"
+input: "Identity_11"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_12"
+op: "Identity"
+input: "RestoreV2:12"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_12"
+op: "AssignVariableOp"
+input: "conv2d_3/bias"
+input: "Identity_12"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_13"
+op: "Identity"
+input: "RestoreV2:13"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_13"
+op: "AssignVariableOp"
+input: "conv2d_3/kernel"
+input: "Identity_13"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_14"
+op: "Identity"
+input: "RestoreV2:14"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_14"
+op: "AssignVariableOp"
+input: "batch_normalization_6/beta"
+input: "Identity_14"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_15"
+op: "Identity"
+input: "RestoreV2:15"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_15"
+op: "AssignVariableOp"
+input: "batch_normalization_6/gamma"
+input: "Identity_15"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_16"
+op: "Identity"
+input: "RestoreV2:16"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_16"
+op: "AssignVariableOp"
+input: "batch_normalization_6/moving_mean"
+input: "Identity_16"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_17"
+op: "Identity"
+input: "RestoreV2:17"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_17"
+op: "AssignVariableOp"
+input: "batch_normalization_6/moving_variance"
+input: "Identity_17"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_18"
+op: "Identity"
+input: "RestoreV2:18"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_18"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_3/bias"
+input: "Identity_18"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_19"
+op: "Identity"
+input: "RestoreV2:19"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_19"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_3/depthwise_kernel"
+input: "Identity_19"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_20"
+op: "Identity"
+input: "RestoreV2:20"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_20"
+op: "AssignVariableOp"
+input: "batch_normalization_7/beta"
+input: "Identity_20"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_21"
+op: "Identity"
+input: "RestoreV2:21"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_21"
+op: "AssignVariableOp"
+input: "batch_normalization_7/gamma"
+input: "Identity_21"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_22"
+op: "Identity"
+input: "RestoreV2:22"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_22"
+op: "AssignVariableOp"
+input: "batch_normalization_7/moving_mean"
+input: "Identity_22"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_23"
+op: "Identity"
+input: "RestoreV2:23"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_23"
+op: "AssignVariableOp"
+input: "batch_normalization_7/moving_variance"
+input: "Identity_23"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_24"
+op: "Identity"
+input: "RestoreV2:24"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_24"
+op: "AssignVariableOp"
+input: "conv2d_4/bias"
+input: "Identity_24"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_25"
+op: "Identity"
+input: "RestoreV2:25"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_25"
+op: "AssignVariableOp"
+input: "conv2d_4/kernel"
+input: "Identity_25"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_26"
+op: "Identity"
+input: "RestoreV2:26"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_26"
+op: "AssignVariableOp"
+input: "batch_normalization_8/beta"
+input: "Identity_26"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_27"
+op: "Identity"
+input: "RestoreV2:27"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_27"
+op: "AssignVariableOp"
+input: "batch_normalization_8/gamma"
+input: "Identity_27"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_28"
+op: "Identity"
+input: "RestoreV2:28"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_28"
+op: "AssignVariableOp"
+input: "batch_normalization_8/moving_mean"
+input: "Identity_28"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_29"
+op: "Identity"
+input: "RestoreV2:29"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_29"
+op: "AssignVariableOp"
+input: "batch_normalization_8/moving_variance"
+input: "Identity_29"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_30"
+op: "Identity"
+input: "RestoreV2:30"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_30"
+op: "AssignVariableOp"
+input: "dense/bias"
+input: "Identity_30"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_31"
+op: "Identity"
+input: "RestoreV2:31"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_31"
+op: "AssignVariableOp"
+input: "dense/kernel"
+input: "Identity_31"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_32"
+op: "Identity"
+input: "RestoreV2:32"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_32"
+op: "AssignVariableOp"
+input: "depthwise_conv2d/bias"
+input: "Identity_32"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_33"
+op: "Identity"
+input: "RestoreV2:33"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_33"
+op: "AssignVariableOp"
+input: "depthwise_conv2d/depthwise_kernel"
+input: "Identity_33"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_34"
+op: "Identity"
+input: "RestoreV2:34"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_34"
+op: "AssignVariableOp"
+input: "batch_normalization_1/beta"
+input: "Identity_34"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_35"
+op: "Identity"
+input: "RestoreV2:35"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_35"
+op: "AssignVariableOp"
+input: "batch_normalization_1/gamma"
+input: "Identity_35"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_36"
+op: "Identity"
+input: "RestoreV2:36"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_36"
+op: "AssignVariableOp"
+input: "batch_normalization_1/moving_mean"
+input: "Identity_36"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_37"
+op: "Identity"
+input: "RestoreV2:37"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_37"
+op: "AssignVariableOp"
+input: "batch_normalization_1/moving_variance"
+input: "Identity_37"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_38"
+op: "Identity"
+input: "RestoreV2:38"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_38"
+op: "AssignVariableOp"
+input: "conv2d_1/bias"
+input: "Identity_38"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_39"
+op: "Identity"
+input: "RestoreV2:39"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_39"
+op: "AssignVariableOp"
+input: "conv2d_1/kernel"
+input: "Identity_39"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_40"
+op: "Identity"
+input: "RestoreV2:40"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_40"
+op: "AssignVariableOp"
+input: "batch_normalization_2/beta"
+input: "Identity_40"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_41"
+op: "Identity"
+input: "RestoreV2:41"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_41"
+op: "AssignVariableOp"
+input: "batch_normalization_2/gamma"
+input: "Identity_41"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_42"
+op: "Identity"
+input: "RestoreV2:42"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_42"
+op: "AssignVariableOp"
+input: "batch_normalization_2/moving_mean"
+input: "Identity_42"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_43"
+op: "Identity"
+input: "RestoreV2:43"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_43"
+op: "AssignVariableOp"
+input: "batch_normalization_2/moving_variance"
+input: "Identity_43"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_44"
+op: "Identity"
+input: "RestoreV2:44"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_44"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_1/bias"
+input: "Identity_44"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_45"
+op: "Identity"
+input: "RestoreV2:45"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_45"
+op: "AssignVariableOp"
+input: "depthwise_conv2d_1/depthwise_kernel"
+input: "Identity_45"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_46"
+op: "Identity"
+input: "RestoreV2:46"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_46"
+op: "AssignVariableOp"
+input: "batch_normalization_3/beta"
+input: "Identity_46"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_47"
+op: "Identity"
+input: "RestoreV2:47"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_47"
+op: "AssignVariableOp"
+input: "batch_normalization_3/gamma"
+input: "Identity_47"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_48"
+op: "Identity"
+input: "RestoreV2:48"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_48"
+op: "AssignVariableOp"
+input: "batch_normalization_3/moving_mean"
+input: "Identity_48"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_49"
+op: "Identity"
+input: "RestoreV2:49"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_49"
+op: "AssignVariableOp"
+input: "batch_normalization_3/moving_variance"
+input: "Identity_49"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_50"
+op: "Identity"
+input: "RestoreV2:50"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_50"
+op: "AssignVariableOp"
+input: "conv2d_2/bias"
+input: "Identity_50"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_51"
+op: "Identity"
+input: "RestoreV2:51"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_51"
+op: "AssignVariableOp"
+input: "conv2d_2/kernel"
+input: "Identity_51"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_52"
+op: "Identity"
+input: "RestoreV2:52"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_52"
+op: "AssignVariableOp"
+input: "batch_normalization_4/beta"
+input: "Identity_52"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_53"
+op: "Identity"
+input: "RestoreV2:53"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_53"
+op: "AssignVariableOp"
+input: "batch_normalization_4/gamma"
+input: "Identity_53"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_54"
+op: "Identity"
+input: "RestoreV2:54"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_54"
+op: "AssignVariableOp"
+input: "batch_normalization_4/moving_mean"
+input: "Identity_54"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "Identity_55"
+op: "Identity"
+input: "RestoreV2:55"
+attr {
+  key: "T"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "AssignVariableOp_55"
+op: "AssignVariableOp"
+input: "batch_normalization_4/moving_variance"
+input: "Identity_55"
+attr {
+  key: "dtype"
+  value {
+    type: DT_FLOAT
+  }
+}
+name: "VarIsInitializedOp"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/beta"
+name: "VarIsInitializedOp_1"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/gamma"
+name: "VarIsInitializedOp_2"
+op: "VarIsInitializedOp"
+input: "batch_normalization/gamma"
+name: "VarIsInitializedOp_3"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_1/bias"
+name: "VarIsInitializedOp_4"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/beta"
+name: "VarIsInitializedOp_5"
+op: "VarIsInitializedOp"
+input: "conv2d_2/bias"
+name: "VarIsInitializedOp_6"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_2/depthwise_kernel"
+name: "VarIsInitializedOp_7"
+op: "VarIsInitializedOp"
+input: "conv2d_3/bias"
+name: "VarIsInitializedOp_8"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_3/bias"
+name: "VarIsInitializedOp_9"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/gamma"
+name: "VarIsInitializedOp_10"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/gamma"
+name: "VarIsInitializedOp_11"
+op: "VarIsInitializedOp"
+input: "conv2d_1/kernel"
+name: "VarIsInitializedOp_12"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/moving_variance"
+name: "VarIsInitializedOp_13"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_1/depthwise_kernel"
+name: "VarIsInitializedOp_14"
+op: "VarIsInitializedOp"
+input: "conv2d/bias"
+name: "VarIsInitializedOp_15"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/moving_mean"
+name: "VarIsInitializedOp_16"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/gamma"
+name: "VarIsInitializedOp_17"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/beta"
+name: "VarIsInitializedOp_18"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_2/bias"
+name: "VarIsInitializedOp_19"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/moving_variance"
+name: "VarIsInitializedOp_20"
+op: "VarIsInitializedOp"
+input: "dense/bias"
+name: "VarIsInitializedOp_21"
+op: "VarIsInitializedOp"
+input: "batch_normalization/moving_mean"
+name: "VarIsInitializedOp_22"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/moving_mean"
+name: "VarIsInitializedOp_23"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/gamma"
+name: "VarIsInitializedOp_24"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/moving_variance"
+name: "VarIsInitializedOp_25"
+op: "VarIsInitializedOp"
+input: "conv2d_4/bias"
+name: "VarIsInitializedOp_26"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/moving_variance"
+name: "VarIsInitializedOp_27"
+op: "VarIsInitializedOp"
+input: "conv2d_1/bias"
+name: "VarIsInitializedOp_28"
+op: "VarIsInitializedOp"
+input: "conv2d/kernel"
+name: "VarIsInitializedOp_29"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/moving_mean"
+name: "VarIsInitializedOp_30"
+op: "VarIsInitializedOp"
+input: "batch_normalization/beta"
+name: "VarIsInitializedOp_31"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/beta"
+name: "VarIsInitializedOp_32"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/gamma"
+name: "VarIsInitializedOp_33"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/moving_mean"
+name: "VarIsInitializedOp_34"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/moving_variance"
+name: "VarIsInitializedOp_35"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_3/depthwise_kernel"
+name: "VarIsInitializedOp_36"
+op: "VarIsInitializedOp"
+input: "conv2d_4/kernel"
+name: "VarIsInitializedOp_37"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/moving_mean"
+name: "VarIsInitializedOp_38"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/gamma"
+name: "VarIsInitializedOp_39"
+op: "VarIsInitializedOp"
+input: "dense/kernel"
+name: "VarIsInitializedOp_40"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/beta"
+name: "VarIsInitializedOp_41"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/moving_mean"
+name: "VarIsInitializedOp_42"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/beta"
+name: "VarIsInitializedOp_43"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/moving_mean"
+name: "VarIsInitializedOp_44"
+op: "VarIsInitializedOp"
+input: "batch_normalization/moving_variance"
+name: "VarIsInitializedOp_45"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d/depthwise_kernel"
+name: "VarIsInitializedOp_46"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d/bias"
+name: "VarIsInitializedOp_47"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/moving_variance"
+name: "VarIsInitializedOp_48"
+op: "VarIsInitializedOp"
+input: "conv2d_2/kernel"
+name: "VarIsInitializedOp_49"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/moving_variance"
+name: "VarIsInitializedOp_50"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/beta"
+name: "VarIsInitializedOp_51"
+op: "VarIsInitializedOp"
+input: "conv2d_3/kernel"
+name: "VarIsInitializedOp_52"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/gamma"
+name: "VarIsInitializedOp_53"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/moving_mean"
+name: "VarIsInitializedOp_54"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/beta"
+name: "VarIsInitializedOp_55"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/moving_variance"
+name: "init"
+op: "NoOp"
+input: "^batch_normalization/beta/Assign"
+input: "^batch_normalization/gamma/Assign"
+input: "^batch_normalization/moving_mean/Assign"
+input: "^batch_normalization/moving_variance/Assign"
+input: "^batch_normalization_1/beta/Assign"
+input: "^batch_normalization_1/gamma/Assign"
+input: "^batch_normalization_1/moving_mean/Assign"
+input: "^batch_normalization_1/moving_variance/Assign"
+input: "^batch_normalization_2/beta/Assign"
+input: "^batch_normalization_2/gamma/Assign"
+input: "^batch_normalization_2/moving_mean/Assign"
+input: "^batch_normalization_2/moving_variance/Assign"
+input: "^batch_normalization_3/beta/Assign"
+input: "^batch_normalization_3/gamma/Assign"
+input: "^batch_normalization_3/moving_mean/Assign"
+input: "^batch_normalization_3/moving_variance/Assign"
+input: "^batch_normalization_4/beta/Assign"
+input: "^batch_normalization_4/gamma/Assign"
+input: "^batch_normalization_4/moving_mean/Assign"
+input: "^batch_normalization_4/moving_variance/Assign"
+input: "^batch_normalization_5/beta/Assign"
+input: "^batch_normalization_5/gamma/Assign"
+input: "^batch_normalization_5/moving_mean/Assign"
+input: "^batch_normalization_5/moving_variance/Assign"
+input: "^batch_normalization_6/beta/Assign"
+input: "^batch_normalization_6/gamma/Assign"
+input: "^batch_normalization_6/moving_mean/Assign"
+input: "^batch_normalization_6/moving_variance/Assign"
+input: "^batch_normalization_7/beta/Assign"
+input: "^batch_normalization_7/gamma/Assign"
+input: "^batch_normalization_7/moving_mean/Assign"
+input: "^batch_normalization_7/moving_variance/Assign"
+input: "^batch_normalization_8/beta/Assign"
+input: "^batch_normalization_8/gamma/Assign"
+input: "^batch_normalization_8/moving_mean/Assign"
+input: "^batch_normalization_8/moving_variance/Assign"
+input: "^conv2d/bias/Assign"
+input: "^conv2d/kernel/Assign"
+input: "^conv2d_1/bias/Assign"
+input: "^conv2d_1/kernel/Assign"
+input: "^conv2d_2/bias/Assign"
+input: "^conv2d_2/kernel/Assign"
+input: "^conv2d_3/bias/Assign"
+input: "^conv2d_3/kernel/Assign"
+input: "^conv2d_4/bias/Assign"
+input: "^conv2d_4/kernel/Assign"
+input: "^dense/bias/Assign"
+input: "^dense/kernel/Assign"
+input: "^depthwise_conv2d/bias/Assign"
+input: "^depthwise_conv2d/depthwise_kernel/Assign"
+input: "^depthwise_conv2d_1/bias/Assign"
+input: "^depthwise_conv2d_1/depthwise_kernel/Assign"
+input: "^depthwise_conv2d_2/bias/Assign"
+input: "^depthwise_conv2d_2/depthwise_kernel/Assign"
+input: "^depthwise_conv2d_3/bias/Assign"
+input: "^depthwise_conv2d_3/depthwise_kernel/Assign"
+name: "VarIsInitializedOp_56"
+op: "VarIsInitializedOp"
+input: "conv2d/kernel"
+name: "LogicalNot"
+op: "LogicalNot"
+input: "VarIsInitializedOp_56"
+name: "VarIsInitializedOp_57"
+op: "VarIsInitializedOp"
+input: "conv2d/bias"
+name: "LogicalNot_1"
+op: "LogicalNot"
+input: "VarIsInitializedOp_57"
+name: "VarIsInitializedOp_58"
+op: "VarIsInitializedOp"
+input: "batch_normalization/gamma"
+name: "LogicalNot_2"
+op: "LogicalNot"
+input: "VarIsInitializedOp_58"
+name: "VarIsInitializedOp_59"
+op: "VarIsInitializedOp"
+input: "batch_normalization/beta"
+name: "LogicalNot_3"
+op: "LogicalNot"
+input: "VarIsInitializedOp_59"
+name: "VarIsInitializedOp_60"
+op: "VarIsInitializedOp"
+input: "batch_normalization/moving_mean"
+name: "LogicalNot_4"
+op: "LogicalNot"
+input: "VarIsInitializedOp_60"
+name: "VarIsInitializedOp_61"
+op: "VarIsInitializedOp"
+input: "batch_normalization/moving_variance"
+name: "LogicalNot_5"
+op: "LogicalNot"
+input: "VarIsInitializedOp_61"
+name: "VarIsInitializedOp_62"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d/depthwise_kernel"
+name: "LogicalNot_6"
+op: "LogicalNot"
+input: "VarIsInitializedOp_62"
+name: "VarIsInitializedOp_63"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d/bias"
+name: "LogicalNot_7"
+op: "LogicalNot"
+input: "VarIsInitializedOp_63"
+name: "VarIsInitializedOp_64"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/gamma"
+name: "LogicalNot_8"
+op: "LogicalNot"
+input: "VarIsInitializedOp_64"
+name: "VarIsInitializedOp_65"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/beta"
+name: "LogicalNot_9"
+op: "LogicalNot"
+input: "VarIsInitializedOp_65"
+name: "VarIsInitializedOp_66"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/moving_mean"
+name: "LogicalNot_10"
+op: "LogicalNot"
+input: "VarIsInitializedOp_66"
+name: "VarIsInitializedOp_67"
+op: "VarIsInitializedOp"
+input: "batch_normalization_1/moving_variance"
+name: "LogicalNot_11"
+op: "LogicalNot"
+input: "VarIsInitializedOp_67"
+name: "VarIsInitializedOp_68"
+op: "VarIsInitializedOp"
+input: "conv2d_1/kernel"
+name: "LogicalNot_12"
+op: "LogicalNot"
+input: "VarIsInitializedOp_68"
+name: "VarIsInitializedOp_69"
+op: "VarIsInitializedOp"
+input: "conv2d_1/bias"
+name: "LogicalNot_13"
+op: "LogicalNot"
+input: "VarIsInitializedOp_69"
+name: "VarIsInitializedOp_70"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/gamma"
+name: "LogicalNot_14"
+op: "LogicalNot"
+input: "VarIsInitializedOp_70"
+name: "VarIsInitializedOp_71"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/beta"
+name: "LogicalNot_15"
+op: "LogicalNot"
+input: "VarIsInitializedOp_71"
+name: "VarIsInitializedOp_72"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/moving_mean"
+name: "LogicalNot_16"
+op: "LogicalNot"
+input: "VarIsInitializedOp_72"
+name: "VarIsInitializedOp_73"
+op: "VarIsInitializedOp"
+input: "batch_normalization_2/moving_variance"
+name: "LogicalNot_17"
+op: "LogicalNot"
+input: "VarIsInitializedOp_73"
+name: "VarIsInitializedOp_74"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_1/depthwise_kernel"
+name: "LogicalNot_18"
+op: "LogicalNot"
+input: "VarIsInitializedOp_74"
+name: "VarIsInitializedOp_75"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_1/bias"
+name: "LogicalNot_19"
+op: "LogicalNot"
+input: "VarIsInitializedOp_75"
+name: "VarIsInitializedOp_76"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/gamma"
+name: "LogicalNot_20"
+op: "LogicalNot"
+input: "VarIsInitializedOp_76"
+name: "VarIsInitializedOp_77"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/beta"
+name: "LogicalNot_21"
+op: "LogicalNot"
+input: "VarIsInitializedOp_77"
+name: "VarIsInitializedOp_78"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/moving_mean"
+name: "LogicalNot_22"
+op: "LogicalNot"
+input: "VarIsInitializedOp_78"
+name: "VarIsInitializedOp_79"
+op: "VarIsInitializedOp"
+input: "batch_normalization_3/moving_variance"
+name: "LogicalNot_23"
+op: "LogicalNot"
+input: "VarIsInitializedOp_79"
+name: "VarIsInitializedOp_80"
+op: "VarIsInitializedOp"
+input: "conv2d_2/kernel"
+name: "LogicalNot_24"
+op: "LogicalNot"
+input: "VarIsInitializedOp_80"
+name: "VarIsInitializedOp_81"
+op: "VarIsInitializedOp"
+input: "conv2d_2/bias"
+name: "LogicalNot_25"
+op: "LogicalNot"
+input: "VarIsInitializedOp_81"
+name: "VarIsInitializedOp_82"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/gamma"
+name: "LogicalNot_26"
+op: "LogicalNot"
+input: "VarIsInitializedOp_82"
+name: "VarIsInitializedOp_83"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/beta"
+name: "LogicalNot_27"
+op: "LogicalNot"
+input: "VarIsInitializedOp_83"
+name: "VarIsInitializedOp_84"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/moving_mean"
+name: "LogicalNot_28"
+op: "LogicalNot"
+input: "VarIsInitializedOp_84"
+name: "VarIsInitializedOp_85"
+op: "VarIsInitializedOp"
+input: "batch_normalization_4/moving_variance"
+name: "LogicalNot_29"
+op: "LogicalNot"
+input: "VarIsInitializedOp_85"
+name: "VarIsInitializedOp_86"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_2/depthwise_kernel"
+name: "LogicalNot_30"
+op: "LogicalNot"
+input: "VarIsInitializedOp_86"
+name: "VarIsInitializedOp_87"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_2/bias"
+name: "LogicalNot_31"
+op: "LogicalNot"
+input: "VarIsInitializedOp_87"
+name: "VarIsInitializedOp_88"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/gamma"
+name: "LogicalNot_32"
+op: "LogicalNot"
+input: "VarIsInitializedOp_88"
+name: "VarIsInitializedOp_89"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/beta"
+name: "LogicalNot_33"
+op: "LogicalNot"
+input: "VarIsInitializedOp_89"
+name: "VarIsInitializedOp_90"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/moving_mean"
+name: "LogicalNot_34"
+op: "LogicalNot"
+input: "VarIsInitializedOp_90"
+name: "VarIsInitializedOp_91"
+op: "VarIsInitializedOp"
+input: "batch_normalization_5/moving_variance"
+name: "LogicalNot_35"
+op: "LogicalNot"
+input: "VarIsInitializedOp_91"
+name: "VarIsInitializedOp_92"
+op: "VarIsInitializedOp"
+input: "conv2d_3/kernel"
+name: "LogicalNot_36"
+op: "LogicalNot"
+input: "VarIsInitializedOp_92"
+name: "VarIsInitializedOp_93"
+op: "VarIsInitializedOp"
+input: "conv2d_3/bias"
+name: "LogicalNot_37"
+op: "LogicalNot"
+input: "VarIsInitializedOp_93"
+name: "VarIsInitializedOp_94"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/gamma"
+name: "LogicalNot_38"
+op: "LogicalNot"
+input: "VarIsInitializedOp_94"
+name: "VarIsInitializedOp_95"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/beta"
+name: "LogicalNot_39"
+op: "LogicalNot"
+input: "VarIsInitializedOp_95"
+name: "VarIsInitializedOp_96"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/moving_mean"
+name: "LogicalNot_40"
+op: "LogicalNot"
+input: "VarIsInitializedOp_96"
+name: "VarIsInitializedOp_97"
+op: "VarIsInitializedOp"
+input: "batch_normalization_6/moving_variance"
+name: "LogicalNot_41"
+op: "LogicalNot"
+input: "VarIsInitializedOp_97"
+name: "VarIsInitializedOp_98"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_3/depthwise_kernel"
+name: "LogicalNot_42"
+op: "LogicalNot"
+input: "VarIsInitializedOp_98"
+name: "VarIsInitializedOp_99"
+op: "VarIsInitializedOp"
+input: "depthwise_conv2d_3/bias"
+name: "LogicalNot_43"
+op: "LogicalNot"
+input: "VarIsInitializedOp_99"
+name: "VarIsInitializedOp_100"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/gamma"
+name: "LogicalNot_44"
+op: "LogicalNot"
+input: "VarIsInitializedOp_100"
+name: "VarIsInitializedOp_101"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/beta"
+name: "LogicalNot_45"
+op: "LogicalNot"
+input: "VarIsInitializedOp_101"
+name: "VarIsInitializedOp_102"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/moving_mean"
+name: "LogicalNot_46"
+op: "LogicalNot"
+input: "VarIsInitializedOp_102"
+name: "VarIsInitializedOp_103"
+op: "VarIsInitializedOp"
+input: "batch_normalization_7/moving_variance"
+name: "LogicalNot_47"
+op: "LogicalNot"
+input: "VarIsInitializedOp_103"
+name: "VarIsInitializedOp_104"
+op: "VarIsInitializedOp"
+input: "conv2d_4/kernel"
+name: "LogicalNot_48"
+op: "LogicalNot"
+input: "VarIsInitializedOp_104"
+name: "VarIsInitializedOp_105"
+op: "VarIsInitializedOp"
+input: "conv2d_4/bias"
+name: "LogicalNot_49"
+op: "LogicalNot"
+input: "VarIsInitializedOp_105"
+name: "VarIsInitializedOp_106"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/gamma"
+name: "LogicalNot_50"
+op: "LogicalNot"
+input: "VarIsInitializedOp_106"
+name: "VarIsInitializedOp_107"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/beta"
+name: "LogicalNot_51"
+op: "LogicalNot"
+input: "VarIsInitializedOp_107"
+name: "VarIsInitializedOp_108"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/moving_mean"
+name: "LogicalNot_52"
+op: "LogicalNot"
+input: "VarIsInitializedOp_108"
+name: "VarIsInitializedOp_109"
+op: "VarIsInitializedOp"
+input: "batch_normalization_8/moving_variance"
+name: "LogicalNot_53"
+op: "LogicalNot"
+input: "VarIsInitializedOp_109"
+name: "VarIsInitializedOp_110"
+op: "VarIsInitializedOp"
+input: "dense/kernel"
+name: "LogicalNot_54"
+op: "LogicalNot"
+input: "VarIsInitializedOp_110"
+name: "VarIsInitializedOp_111"
+op: "VarIsInitializedOp"
+input: "dense/bias"
+name: "LogicalNot_55"
+op: "LogicalNot"
+input: "VarIsInitializedOp_111"

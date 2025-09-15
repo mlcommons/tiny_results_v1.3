@@ -1,0 +1,2 @@
+0803.211208 ulp-mlperf: Top 1% = 87.0
+0803.211208 ulp-mlperf: AUC = 0.988

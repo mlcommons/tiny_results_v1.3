@@ -1,0 +1,2 @@
+0809.000548 ulp-mlperf: Top 1% = 91.3
+0809.000548 ulp-mlperf: AUC = 0.978

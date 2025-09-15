@@ -1,0 +1,1 @@
+python3 -m tf2onnx.convert --saved-model ./kws_ref_model --output kws_model.onnx

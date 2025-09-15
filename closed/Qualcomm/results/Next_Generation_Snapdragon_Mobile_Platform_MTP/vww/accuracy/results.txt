@@ -1,0 +1,2 @@
+0812.164219 ulp-mlperf: Top 1% = 83.5
+0812.164219 ulp-mlperf: AUC = 0.935

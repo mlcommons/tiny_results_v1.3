@@ -1,0 +1,2 @@
+0803.212419 ulp-mlperf: Top 1% = 90.2
+0803.212419 ulp-mlperf: AUC = 0.995

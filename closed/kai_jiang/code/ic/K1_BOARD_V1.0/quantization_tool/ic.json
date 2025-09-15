@@ -1,0 +1,24 @@
+{
+    "model_parameters": {
+        "onnx_model": "path/to/unquantize/model",
+        "working_dir": "path/to/quantize/model"
+    },
+    "calibration_parameters": {
+        "input_parametres": [
+            {
+                "mean_value": [
+                    0.485,
+                    0.456,
+                    0.406
+                ],
+                "std_value": [
+                    0.229,
+                    0.224,
+                    0.225
+                ],
+                "color_format": "rgb",
+                "data_list_path": "../../../vww/K1/calib_data/output.txt"
+            }
+        ]
+    }
+}

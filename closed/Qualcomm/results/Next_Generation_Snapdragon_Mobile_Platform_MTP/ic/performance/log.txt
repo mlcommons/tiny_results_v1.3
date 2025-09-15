@@ -1,0 +1,64 @@
+Logging initialized. Writing output to sessions\20250809_200121\log.txt
+Backend tkagg is interactive backend. Turning interactive mode on.
+Initializing SerialDevice on port: COM25 at 115200 baud
+SerialDevice entering port COM25, entry_count (before increment) = 0
+WARNING: Failed to get name.
+Retrying _get_name (1/3)...
+WARNING: Failed to get name.
+Retrying _get_name (2/3)...
+WARNING: Failed to get name.
+Device model retrieved: ic01
+Device model retrieved: ic01
+SerialDevice exiting port COM25, entry_count (before decrement) = 1
+SerialDevice entering port COM25, entry_count (before increment) = 0
+0809.200132 ulp-mlperf: Loading file lippizaner_s_000613.bin segment 0
+0809.200140 ulp-mlperf: Load complete.
+Running inference with 10/110000 (warmup/measured) iterations ...
+done
+0809.200150 ulp-mlperf: Performance results for window 1:
+0809.200150 ulp-mlperf:   # Inferences :        110000
+0809.200150 ulp-mlperf:   Runtime      :     10.537 sec.
+0809.200150 ulp-mlperf:   Throughput   :  10439.282 inf./sec.
+0809.200150 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.022, 0.0, 0.0]
+0809.200151 ulp-mlperf: Loading file toy_spaniel_s_000285.bin segment 0
+0809.200159 ulp-mlperf: Load complete.
+Running inference with 10/110000 (warmup/measured) iterations ...
+done
+0809.200210 ulp-mlperf: Performance results for window 2:
+0809.200210 ulp-mlperf:   # Inferences :        110000
+0809.200210 ulp-mlperf:   Runtime      :     10.545 sec.
+0809.200210 ulp-mlperf:   Throughput   :  10431.840 inf./sec.
+0809.200210 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 1.022, 0.0, 0.0, 0.0, 0.0]
+0809.200210 ulp-mlperf: Loading file felis_domesticus_s_000074.bin segment 0
+0809.200218 ulp-mlperf: Load complete.
+Running inference with 10/110000 (warmup/measured) iterations ...
+done
+0809.200228 ulp-mlperf: Performance results for window 3:
+0809.200228 ulp-mlperf:   # Inferences :        110000
+0809.200228 ulp-mlperf:   Runtime      :     10.540 sec.
+0809.200228 ulp-mlperf:   Throughput   :  10436.648 inf./sec.
+0809.200228 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.204, 0.0, 0.204, 0.204, 0.409, 0.0, 0.0]
+0809.200228 ulp-mlperf: Loading file mackinaw_boat_s_000354.bin segment 0
+0809.200237 ulp-mlperf: Load complete.
+Running inference with 10/110000 (warmup/measured) iterations ...
+done
+0809.200247 ulp-mlperf: Performance results for window 4:
+0809.200247 ulp-mlperf:   # Inferences :        110000
+0809.200247 ulp-mlperf:   Runtime      :     10.543 sec.
+0809.200247 ulp-mlperf:   Throughput   :  10433.453 inf./sec.
+0809.200247 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.022, 0.0]
+0809.200247 ulp-mlperf: Loading file passenger_ship_s_000578.bin segment 0
+0809.200256 ulp-mlperf: Load complete.
+Running inference with 10/110000 (warmup/measured) iterations ...
+done
+0809.200306 ulp-mlperf: Performance results for window 5:
+0809.200306 ulp-mlperf:   # Inferences :        110000
+0809.200306 ulp-mlperf:   Runtime      :     10.533 sec.
+0809.200306 ulp-mlperf:   Throughput   :  10443.076 inf./sec.
+0809.200306 ulp-mlperf:   m-results    : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.022, 0.0]
+SerialDevice exiting port COM25, entry_count (before decrement) = 1
+[{'file': 'lippizaner_s_000613.bin', 'classes': '10', 'class': '7', 'bytes_to_send': None, 'stride': None, 'total_length': None, 'infer': {'start_time': 1428386259, 'end_time': 1438923382, 'results': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.022, 0.0, 0.0], 'elapsed_time': 10537123, 'total_inferences': 1, 'iterations': 110000, 'warmups': 10, 'throughput': 10439.282145610334}, 'mode': 'p'}, {'file': 'toy_spaniel_s_000285.bin', 'classes': '10', 'class': '5', 'bytes_to_send': None, 'stride': None, 'total_length': None, 'infer': {'start_time': 1447359075, 'end_time': 1457903715, 'results': [0.0, 0.0, 0.0, 0.0, 0.0, 1.022, 0.0, 0.0, 0.0, 0.0], 'elapsed_time': 10544640, 'total_inferences': 1, 'iterations': 110000, 'warmups': 10, 'throughput': 10431.84025248847}, 'mode': 'p'}, {'file': 'felis_domesticus_s_000074.bin', 'classes': '10', 'class': '3', 'bytes_to_send': None, 'stride': None, 'total_length': None, 'infer': {'start_time': 1466376272, 'end_time': 1476916054, 'results': [0.0, 0.0, 0.0, 0.204, 0.0, 0.204, 0.204, 0.409, 0.0, 0.0], 'elapsed_time': 10539782, 'total_inferences': 1, 'iterations': 110000, 'warmups': 10, 'throughput': 10436.648499940511}, 'mode': 'p'}, {'file': 'mackinaw_boat_s_000354.bin', 'classes': '10', 'class': '8', 'bytes_to_send': None, 'stride': None, 'total_length': None, 'infer': {'start_time': 1485345426, 'end_time': 1495888436, 'results': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.022, 0.0], 'elapsed_time': 10543010, 'total_inferences': 1, 'iterations': 110000, 'warmups': 10, 'throughput': 10433.453065111386}, 'mode': 'p'}, {'file': 'passenger_ship_s_000578.bin', 'classes': '10', 'class': '8', 'bytes_to_send': None, 'stride': None, 'total_length': None, 'infer': {'start_time': 1504359050, 'end_time': 1514892345, 'results': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.022, 0.0], 'elapsed_time': 10533295, 'total_inferences': 1, 'iterations': 110000, 'warmups': 10, 'throughput': 10443.07597954866}, 'mode': 'p'}]
+0809.200307 ulp-mlperf: ---------------------------------------------------------
+0809.200307 ulp-mlperf: Median throughput is  10436.648 inf./sec.
+0809.200307 ulp-mlperf: ---------------------------------------------------------
+Session logged in file sessions\20250809_200121\log.txt

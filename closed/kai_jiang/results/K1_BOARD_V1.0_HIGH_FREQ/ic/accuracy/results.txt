@@ -1,0 +1,2 @@
+0802.114813 ulp-mlperf: Top 1% = 86.5
+0802.114813 ulp-mlperf: AUC = 0.988

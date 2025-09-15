@@ -1,0 +1,174 @@
+Logging initialized. Writing output to sessions/20250821_025359/log.txt
+Initializing SerialDevice on port: /dev/cu.usbmodem1203 at 115200 baud
+Initializing SerialDevice on port: /dev/cu.usbmodem2061398A4D431 at 3686400 baud
+SerialDevice entering port /dev/cu.usbmodem2061398A4D431, entry_count (before increment) = 0
+SerialDevice entering port /dev/cu.usbmodem1203, entry_count (before increment) = 0
+setbaud 9600%
+RX:set baud to: 9600
+RX:m-ready
+Retrieving name from DUT ...
+dut name%
+RX:m-dut-passthrough(name)
+RX:m-ready
+RX:[dut]: m-name-dut-[syntiant]
+RX:[dut]: m-ready
+Device name retrieved: syntiant
+dut profile%
+RX:m-dut-passthrough(profile)
+RX:m-ready
+RX:[dut]: m-profile-[ULPMark for tinyML Firmware V0.0.1]
+RX:[dut]: m-model-[sww01]
+RX:[dut]: m-ready
+Device profile retrieved: ULPMark for tinyML Firmware V0.0.1
+Device model retrieved: sww01
+dut stop%
+RX:m-dut-passthrough(stop)
+RX:m-ready
+RX:[dut]: Stopping ww detection.
+RX:[dut]: m-ready
+dut start%
+RX:m-dut-passthrough(start)
+RX:m-ready
+RX:[dut]: do_watch, input_type = 0:
+RX:[dut]: In PDM clock block
+RX:[dut]: Buff threshold (0) = 20002100 (8448)
+RX:[dut]: Buff threshold (1) = 20002100 (8448)
+RX:[dut]: Buff threshold (2) = 20002100 (8448)
+RX:[dut]: Buff threshold (3) = 20002100 (8448)
+RX:[dut]: Buff threshold (4) = 1FFFC101 (49409)
+RX:[dut]:
+RX:[dut]: Buff start (0) = 3008D330
+RX:[dut]: Buff start (1) = 00000000
+RX:[dut]: Buff start (2) = 3008D6C0
+RX:[dut]: Buff start (3) = 00000000
+RX:[dut]: Buff start (4) = 3008E790
+RX:[dut]:
+RX:[dut]: Polling for keyword until stop command
+RX:[dut]: m-ready
+record_detections%
+RX:Now recording detections
+RX:m-ready
+Playing long_wav.wav (length = 1200.0s) at 02:54:54...
+play long_wav.wav%
+RX:Attempting to play long_wav.wav
+RX:succeeded.
+RX:m-ready
+dut stop%
+RX:m-dut-passthrough(stop)
+RX:m-ready
+RX:[dut]: Stopping ww detection.
+RX:[dut]: m-ready
+... done
+No activation data found.
+print_detections%
+RX:Detection Timestamps (ms)
+RX:35,
+RX:9945,
+RX:15782,
+RX:30405,
+RX:41082,
+RX:71990,
+RX:76126,
+RX:89782,
+RX:98405,
+RX:111771,
+RX:111963,
+RX:133250,
+RX:142194,
+RX:142259,
+RX:150081,
+RX:167396,
+RX:179323,
+RX:179452,
+RX:179612,
+RX:186152,
+RX:193622,
+RX:207571,
+RX:212381,
+RX:234086,
+RX:261911,
+RX:267232,
+RX:275663,
+RX:286373,
+RX:293587,
+RX:293683,
+RX:303398,
+RX:318915,
+RX:336901,
+RX:341004,
+RX:355273,
+RX:367650,
+RX:374350,
+RX:388395,
+RX:396379,
+RX:400804,
+RX:405517,
+RX:412410,
+RX:412603,
+RX:419657,
+RX:443099,
+RX:468402,
+RX:482671,
+RX:490239,
+RX:497871,
+RX:503931,
+RX:529488,
+RX:542123,
+RX:548473,
+RX:559920,
+RX:614042,
+RX:717128,
+RX:983231,
+RX:m-ready
+[35, 9945, 15782, 30405, 41082, 71990, 76126, 89782, 98405, 111771, 111963, 133250, 142194, 142259, 150081, 167396, 179323, 179452, 179612, 186152, 193622, 207571, 212381, 234086, 261911, 267232, 275663, 286373, 293587, 293683, 303398, 318915, 336901, 341004, 355273, 367650, 374350, 388395, 396379, 400804, 405517, 412410, 412603, 419657, 443099, 468402, 482671, 490239, 497871, 503931, 529488, 542123, 548473, 559920, 614042, 717128, 983231]
+print_dutycycle%
+RX:Duty cycle start times (s)
+RX:6718, 9924, 13132, 16339, 19547, 22754, 25961, 29169,
+RX:32377, 35584, 38792, 41999, 45206, 48414, 51621, 54828,
+RX:58036, 61244, 64451, 67658, 70865, 74073, 77280, 80488,
+RX:83695, 86902, 90109, 93316, 96523, 99730, 102937, 106144,
+RX:109351, 112558, 115766, 118973, 122180, 125388, 128595, 131802,
+RX:135009, 138216, 141424, 144631, 147839, 151047, 154254, 157462,
+RX:160669, 163877, 167084, 170291, 173499, 176706, 179913, 183120,
+RX:186327, 189535, 192743, 195950, 199158, 202365, 205573, 208780,
+RX:211987, 215194, 218401, 221608, 224815, 228023, 231230, 234437,
+RX:237644, 240851, 244058, 247265, 250473, 253680, 256887, 260094,
+RX:263302, 266509, 269716, 272924, 276131, 279339, 282546, 285753,
+RX:288960, 292166, 295373, 298580, 301787, 304993, 308199, 311406,
+RX:314613, 317819, 321025, 324232,
+RX:Duty cycle stop times (s)
+RX:6787, 9994, 13202, 16409, 19617, 22824, 26031, 29239,
+RX:32446, 35654, 38862, 42069, 45276, 48483, 51691, 54898,
+RX:58106, 61313, 64521, 67728, 70935, 74142, 77350, 80558,
+RX:83765, 86972, 90179, 93386, 96593, 99800, 103007, 106214,
+RX:109421, 112628, 115836, 119043, 122250, 125458, 128665, 131872,
+RX:135079, 138286, 141494, 144701, 147909, 151116, 154324, 157532,
+RX:160739, 163947, 167154, 170361, 173568, 176776, 179983, 183190,
+RX:186397, 189605, 192812, 196020, 199228, 202435, 205642, 208850,
+RX:212057, 215264, 218471, 221678, 224885, 228093, 231299, 234507,
+RX:237714, 240921, 244128, 247335, 250543, 253750, 256957, 260164,
+RX:263372, 266579, 269786, 272994, 276201, 279409, 282616, 285823,
+RX:289029, 292236, 295443, 298650, 301857, 305063, 308269, 311476,
+RX:314683, 317889, 321095, 324302, m-ready
+Duty cycle = 0.022, Period = 32.1 ms
+samples:1209558 timestamps:3
+SerialDevice exiting port /dev/cu.usbmodem1203, entry_count (before decrement) = 1
+SerialDevice exiting port /dev/cu.usbmodem2061398A4D431, entry_count (before decrement) = 1
+Power Edition Output
+Energy data for trial 0
+Elapsed time  : 1202.829
+Inferences    : 1
+Power         : 0.5067 mW.
+Total Energy  : 609485.073 uJ
+Energy/Inf    : 609485.073 uJ/inf
+---------------------------------------------------------
+Median energy cost is 609485.0735 uJ/inf.
+---------------------------------------------------------
+== File long_wav.wav (1200.0 s) ==
+Accuracy: 46 True positives, 4 False negatives, 4 False positives
+False negatives: [127.87707248408691, 198.48536964291674, 254.19470632991752, 570.0]
+False positives: [207.536 614.007 717.093 983.196]
+Average duty cycle: 0.021792
+Average period: 0.032072 s
+Estimated throughput: 1430.8 inf./sec.
+Session logged in file sessions/20250821_025359/log.txt
